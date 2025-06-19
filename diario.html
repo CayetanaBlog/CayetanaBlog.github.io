@@ -1,57 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Diario de Cayetana</title>
+  <title>Diario de Cayetana - El Sueño de una Futbolista</title>
   <style>
-    body { font-family: 'Poppins', sans-serif; background: #fff; color: #222; padding: 20px; max-width: 800px; margin: auto; }
-    h1, h2 { color: #e91e63; }
-    p { line-height: 1.6; }
-    .entry { border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 30px; }
-    .button-link {
-      display: inline-block;
-      margin-top: 15px;
-      background: #e91e63;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 8px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    nav {
+      background:#fff;
+      border-bottom: 2px solid #e91e63;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 12px;
       text-decoration: none;
+      color: #e91e63;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-    .button-link:hover {
-      background: #d81b60;
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      margin-top: 20px;
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 50%; height: 50%;
+
+    article {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-left: 5px solid #e91e63;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .fecha {
+      color: #999;
+      font-size: 0.9em;
+    }
+
+    .video {
+      margin-top: 10px;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>📖 Diario de Cayetana</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="diario.html">Diario</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
 
-  <div class="entry">
-    <h2>Capitana y Gol con la Selección Granadina 🏆</h2>
-    <p><strong>Fecha:</strong> 9 de noviembre de 2024</p>
-    <p>Una fecha inolvidable: Cayetana fue convocada como capitana de la Selección Granadina Sub-14. Ese mismo día, marcó un gol espectacular contra la Selección de Jaén, dejando huella no solo como líder sino también como goleadora.</p>
+  <header>
+    <h1>Diario de Cayetana</h1>
+    <p>Entradas especiales sobre sus logros y emociones</p>
+  </header>
 
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/dkcy_MvBAaU" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <div class="container">
 
-    <a class="button-link" href="logros.html">▶ Ver el gol y más logros</a>
+    <article>
+      <h2>Gol como capitana frente a Jaén</h2>
+      <p class="fecha">7 de noviembre de 2024</p>
+      <p>Durante su convocatoria con la Selección Granadina, Cayetana no solo fue una de las capitanas, también marcó un impresionante gol frente a la selección de Jaén. ¡Un momento inolvidable!</p>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/dkcy_MvBAaU" allowfullscreen></iframe>
+      </div>
+
+      <a href="galeria.html#2024" class="boton">▶ Ver en Logros</a>
+    </article>
+
+    <!-- Puedes añadir más artículos aquí -->
+
   </div>
 
-  <p><a href="index.html">⬅ Volver a la página principal</a></p>
+  <footer>
+    © 2025 Cayetana Encinas | Diario personal
+  </footer>
 </body>
 </html>
