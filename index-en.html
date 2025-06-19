@@ -1,116 +1,45 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cayetana Encinas - The Dream of a Footballer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Footballer’s Dream - Cayetana</title>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: url('header-image.jpg') center/cover no-repeat;
-      height: 80vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    header p {
-      font-size: 1.2rem;
-      text-shadow: 0 0 8px rgba(0,0,0,0.3);
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .timeline {
-      border-left: 4px solid #ccc;
-      padding-left: 2rem;
-    }
-    .event {
-      margin-bottom: 2rem;
-      position: relative;
-    }
-    .event::before {
-      content: '';
-      position: absolute;
-      left: -1.3rem;
-      top: 0.3rem;
-      width: 1rem;
-      height: 1rem;
-      background: #222;
-      border-radius: 50%;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      background: #111;
-      color: #fff;
-      padding: 2rem;
-    }
+    body { font-family: 'Arial', sans-serif; margin: 0; background: #f8f8f8; }
+    header { background: #2c3e50; color: white; padding: 2rem; text-align: center; position: relative; }
+    header h1 { margin: 0; }
+    nav { display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; }
+    nav a { text-decoration: none; color: #2c3e50; font-weight: bold; }
+    section { padding: 2rem; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>The Dream of a Footballer</h1>
-    <p>The story of Cayetana Encinas from her first steps to becoming a captain</p>
+    <h1>A Footballer’s Dream</h1>
+    <p>Sigue el camino de Cayetana Encinas desde sus primeros pasos en el fútbol...</p>
+    <div style="position: absolute; top: 1rem; right: 1rem;">
+      <a href="index.html" style="color:white; margin-right: 1rem;">🇪🇸 Español</a>
+      <a href="index-en.html" style="color:white;">🇬🇧 English</a>
+    </div>
   </header>
 
-  <section>
-    <h2>📅 Timeline</h2>
-    <div class="timeline">
-      <div class="event">
-        <h3>2019 - First Training</h3>
-        <p>At just 7 years old, Cayetana began her football journey at her local school.</p>
-      </div>
-      <div class="event">
-        <h3>2022 - Captain in the Granada Selection</h3>
-        <p>Chosen as one of the captains of her provincial team.</p>
-      </div>
-      <div class="event">
-        <h3>2023 - Pre-selected by the Andalusian Team</h3>
-        <p>Almost reaching the dream of representing Andalusia, a huge step in her career.</p>
-      </div>
-    </div>
-  </section>
+  <nav>
+    <a href="gallery.html">Galería</a>
+    <a href="posts/primer-dia.html">Diario</a>
+    <a href="logros/capitana.html">Logros</a>
+    <a href="calendario/partidos.html">Calendario</a>
+    <a href="#sobre">Sobre Nosotros</a>
+  </nav>
 
-  <section>
-    <h2>📸 Gallery</h2>
-    <div class="gallery">
-      <img src="header-image.jpg" alt="Cayetana jugando fútbol">
-      <img src="header-image.jpg" alt="Celebrando un gol">
-    </div>
-  </section>
-
-  <section>
-    <h2>👧 About Cayetana</h2>
-    <p>Cayetana Encinas is a young talent of Spanish women's football. With effort, passion and heart, she has grown as a player and as a person. This blog follows her journey and dreams.</p>
+  <section id="sobre">
+    <h2>About Cayetana</h2>
+    <p>Cayetana empezó a jugar al fútbol con 7 años, demostrando desde el inicio talento, pasión y liderazgo.</p>
   </section>
 
   <footer>
-    &copy; 2025 The Dream of a Footballer. Site lovingly created by her family.
+    © 2025 A Footballer’s Dream - Todos los derechos reservados.
   </footer>
 </body>
 </html>
