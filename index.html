@@ -31,6 +31,33 @@
       flex-direction: column;
       justify-content: flex-start;
     }*/
+    /*body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      height: 100vh;
+      min-height: 100vh;
+      background: #000 url('images/caye_futurista.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }*/
+    
+    /* 🔄 En pantallas muy anchas: mostrar toda la imagen */
+    /*@media (min-aspect-ratio: 16/9) {
+      body {
+        background-size: contain;
+      }
+    }*/
+    
+    /* 📱 En pantallas muy altas o móviles: cubrir pantalla */
+    /*@media (max-aspect-ratio: 9/16) {
+      body {
+        background-size: cover;
+      }
+    }*/
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -45,17 +72,24 @@
       justify-content: flex-start;
     }
     
-    /* 🔄 En pantallas muy anchas: mostrar toda la imagen */
-    @media (min-aspect-ratio: 16/9) {
+    /* 📱 Móviles o pantallas verticales (proporción alta) */
+    @media (max-aspect-ratio: 3/4) {
       body {
-        background-size: contain;
+        background-size: cover;
       }
     }
     
-    /* 📱 En pantallas muy altas o móviles: cubrir pantalla */
-    @media (max-aspect-ratio: 9/16) {
+    /* 💻 Pantallas medianas como laptops */
+    @media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {
       body {
         background-size: cover;
+      }
+    }
+    
+    /* 🖥️ Pantallas muy anchas (ultrawide) */
+    @media (min-aspect-ratio: 17/9) {
+      body {
+        background-size: contain;
       }
     }
 
