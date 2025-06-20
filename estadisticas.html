@@ -49,13 +49,13 @@
     td {
       border: 1px solid #ddd;
       padding: 10px;
-      text-align: center;
+      text-align: center;  /* centra por defecto */
     }
 
     th {
       border: 1px solid #ddd;
       padding: 10px;
-      text-align: justify;
+      text-align: center;
     }
 
     th {
@@ -77,6 +77,11 @@
       padding: 20px;
       font-size: 0.9em;
       color: #aaa;
+    }
+
+    /* 👇 Clase especial para justificar la columna de observaciones */
+    .observaciones {
+      text-align: justify;
     }
   </style>
 </head>
@@ -119,7 +124,7 @@
       <td>—</td>
       <td>—</td>
       <td>0</td>
-      <th>Campeona de liga, única niña</th>
+      <td class="observaciones">Campeona de liga, única niña</td>
     </tr>
     <tr>
       <td>2019/20</td>
@@ -130,7 +135,7 @@
       <td>—</td>
       <td>—</td>
       <td>0</td>
-      <td>Temporada afectada por COVID</td>
+      <td class="observaciones">Temporada afectada por COVID</td>
     </tr>
     <tr>
       <td>2020/21</td>
@@ -141,7 +146,7 @@
       <td>2</td>
       <td>—</td>
       <td>0</td>
-      <td>Defensa goleadora</td>
+      <td class="observaciones">Defensa goleadora</td>
     </tr>
     <tr>
       <td>2021/22</td>
@@ -152,7 +157,7 @@
       <td>1</td>
       <td>Varias</td>
       <td>0</td>
-      <td>Lesión (brazo) — convocatoria con la Selección Granadina Femenina</td>
+      <td class="observaciones">Lesión (brazo) — convocatoria con la Selección Granadina Femenina</td>
     </tr>
     <tr>
       <td>2022/23</td>
@@ -163,7 +168,7 @@
       <td>—</td>
       <td>Varias</td>
       <td>0</td>
-      <td>Jugó Copa Andalucía con la Selección Granadina Femenina</td>
+      <td class="observaciones">Jugó Copa Andalucía con la Selección Granadina Femenina</td>
     </tr>
     <tr>
       <td>2023/24</td>
@@ -174,7 +179,7 @@
       <td>4</td>
       <td>Varias</td>
       <td>0</td>
-      <td>Capitana del equipo</td>
+      <td class="observaciones">Capitana del equipo</td>
     </tr>
     <tr>
       <td>2024/25</td>
@@ -185,7 +190,7 @@
       <td>11</td>
       <td>Varias</td>
       <td>0</td>
-      <td>Selección Granadina SUB-14 y varios torneos con sus respectivos equipos tanto con las cadetes como con las infantiles</td>
+      <td class="observaciones">Selección Granadina SUB-14 y varios torneos con sus respectivos equipos tanto con las cadetes como con las infantiles</td>
     </tr>
   </table>
 </div>
