@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Logros de Cayetana - El Sueño de una Futbolista</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -38,8 +39,18 @@
       background-color: #fce4ec;
       border-left: 5px solid #e91e63;
       padding: 16px;
-      margin-bottom: 20px;
-      border-radius: 8px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .logro .icono {
+      flex: 0 0 120px;
+      margin-right: 20px;
+    }
+    .logro-content {
+      flex: 1;
     }
     .logro img {
       max-width: 100%;
@@ -59,12 +70,6 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border-radius: 12px;
-      margin-top: 15px;
     }
     footer {
       text-align: center;
@@ -90,32 +95,65 @@
   </header>
 
   <div class="container">
+
     <div class="logro">
-      <h3>⚽ Gol como capitana de la selección granadina (Noviembre 2024)</h3>
-      <p>En la concentración con la selección granadina sub-14, Cayetana fue elegida como una de las capitanas y marcó un gol contra la selección de Jaén.</p>
-      <img src="images/2024/2024_Capitana.jpg" alt="Cayetana capitana con selección granadina" />
-      <a class="video-button" href="https://youtu.be/dkcy_MvBAaU" target="_blank">▶ Ver el gol</a>
+      <div class="icono">
+        <lottie-player src="https://lottie.host/8bb4ebc5-7a65-4c68-a8d0-6d5dc6514721/zB0b1ChO4y.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="logro-content">
+        <h3>🥇 Campeona prebenjamín (2018/2019)</h3>
+        <p>Con solo 7 años, Cayetana lideró al Ogíjares 89 CF como única niña en un equipo masculino campeón de liga.</p>
+		<img src="images/campeones_liga_prebe.jpg" />
+		<img src="images/primera_equipa_20181109.jpg" /> /*alt="Cayetana capitana con selección granadina" />*/
+		<img src="images/primera_equipacion_prebenja.jpg" />
+      </div>
+    </div>
+	
+	<div class="logro">
+      <div class="icono">
+        <lottie-player src="https://lottie.host/c43201a3-c6e5-4d44-8a4e-66d38e6b6b1f/cAybU0r03A.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="logro-content">
+        <h3>💪 Regreso tras lesión (2022)</h3>
+        <p>Superó una fractura en el brazo y volvió a los terrenos de juego con más fuerza y carácter.</p>
+      </div>
     </div>
 
     <div class="logro">
-      <h3>🥇 Campeona prebenjamín (2018/2019)</h3>
-      <p>Con solo 7 años, Cayetana lideró al Ogíjares 89 CF como única niña del equipo masculino, ganando la liga prebenjamín.</p>
+      <div class="icono">
+        <lottie-player src="https://lottie.host/127cd8cf-9f40-4e57-b5cc-3bc9b5d801e6/mZZsbBzK3s.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="logro-content">
+        <h3>⚽ Participación en Copa de Andalucía (Enero 2023)</h3>
+        <p>Fue titular con la Selección Granadina Alevín Femenina en la Copa de Andalucía, destacando por su entrega y liderazgo.</p>
+      </div>
     </div>
+	   
 
     <div class="logro">
-      <h3>🦿 Regreso tras lesión (2022)</h3>
-      <p>Tras una fractura de brazo que le impidió asistir al campeonato andaluz, volvió con más fuerza, compromiso y espíritu de superación.</p>
+      <div class="icono">
+        <lottie-player src="https://lottie.host/dde36b6f-1899-4bb2-80c7-cdcff6d96ef2/LkHNoE0Wqj.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="logro-content">
+        <h3>🎯 Subida a Cadete (2024/2025)</h3>
+        <p>Siendo infantil, fue subida a competir en la categoría 1ª Andaluza Cadete del Granada CF S.A.D., siendo titular en 24 partidos y marcando 11 goles
+		   en total entre el equipo de cadete e infantil del Granada.</p>
+      </div>
+    </div>
+	
+	<div class="logro">
+      <div class="icono">
+        <lottie-player src="https://lottie.host/93d9877d-2c20-4c0e-8b3b-b320cc5a2ef4/WwGvF4yJv3.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="logro-content">
+        <h3>⚽ Gol como capitana de la selección granadina (Noviembre 2024)</h3>
+        <p>Cayetana marcó un gol ante Jaén y fue una de las capitanas del combinado provincial sub-14.</p>
+		<img src="images/entrenoandaluza.jpg" />
+        <img src="images/2024/2024_Capitana.jpg" alt="Cayetana capitana con selección granadina" />
+        <a class="video-button" href="https://youtu.be/dkcy_MvBAaU" target="_blank">▶ Ver el gol</a>
+      </div>
     </div>
 
-    <div class="logro">
-      <h3>⚽ Participación destacada en Copa de Andalucía (Enero 2023)</h3>
-      <p>Representó a Granada en la Copa de Andalucía con la selección alevín femenina. Gran actuación y entrega en todos los partidos.</p>
-    </div>
-
-    <div class="logro">
-      <h3>🎯 Subida a Cadete (Temporada 2024/25)</h3>
-      <p>Siendo infantil, fue subida al equipo cadete femenino del Granada CF S.A.D. Disputó 24 partidos como titular en Primera Andaluza Cadete, marcando goles y dando asistencias.</p>
-    </div>
   </div>
 
   <footer>
