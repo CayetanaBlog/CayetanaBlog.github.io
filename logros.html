@@ -1,34 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Logros de Cayetana</title>
+  <meta charset="UTF-8" />
+  <title>Logros de Cayetana - El Sueño de una Futbolista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; padding: 20px; }
-    h1, h2 { color: #e91e63; }
-    img, iframe { max-width: 50%; border-radius: 8px; margin-top: 20px; }
-    a { color: #e91e63; text-decoration: none; }
-    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; }
-    .video-container iframe { position: absolute; top: 0; left: 0; width: 50%; height: 50%; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #e91e63;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+    }
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .logro {
+      background-color: #fce4ec;
+      border-left: 5px solid #e91e63;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .logro img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .logro h3 {
+      margin-top: 0;
+      color: #c2185b;
+    }
+    .video-button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #e91e63;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <h1>Logros Destacados</h1>
-  <h2>Concentración con la Selección Granadina</h2>
-  <p><strong>Fecha:</strong> 7 de noviembre de 2024</p>
-  <p>Cayetana fue convocada como una de las capitanas de la <strong>Selección Granadina Sub-14</strong>,
-  representando con orgullo a su club, equipo y ciudad. Demostró su liderazgo y compromiso durante toda la experiencia.</p>
-  <p>Ese día, además de portar el brazalete de capitana, anotó un <strong>gol crucial contra la Selección de Jaén</strong>,
-  demostrando su instinto ofensivo y calidad técnica. Fue un momento inolvidable tanto para ella como para su familia.</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="diario.html">Diario</a>
+    <a href="logros.html">Logros</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
 
-  <h3>🎥 Gol contra Jaén (07/11/2024)</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/dkcy_MvBAaU" frameborder="0" allowfullscreen></iframe>
+  <header>
+    <h1>🏆 Logros de Cayetana</h1>
+    <p>Un viaje lleno de pasión, esfuerzo y grandes momentos</p>
+  </header>
+
+  <div class="container">
+    <div class="logro">
+      <h3>⚽ Gol como capitana de la selección granadina (Noviembre 2024)</h3>
+      <p>En la concentración con la selección granadina sub-14, Cayetana fue elegida como una de las capitanas y marcó un gol contra la selección de Jaén.</p>
+      <img src="fotos/2024_Capitana.jpg" alt="Cayetana capitana con selección granadina" />
+      <a class="video-button" href="https://youtu.be/dkcy_MvBAaU" target="_blank">▶ Ver el gol</a>
+    </div>
+
+    <div class="logro">
+      <h3>🥇 Campeona prebenjamín (2018/2019)</h3>
+      <p>Con solo 7 años, Cayetana lideró al Ogíjares 889 CF como única niña del equipo masculino, ganando la liga prebenjamín.</p>
+    </div>
+
+    <div class="logro">
+      <h3>⚽ Participación destacada en Copa de Andalucía (Enero 2023)</h3>
+      <p>Representó a Granada en la Copa de Andalucía con la selección alevín femenina. Gran actuación y entrega en todos los partidos.</p>
+    </div>
+
+    <div class="logro">
+      <h3>🦿 Regreso tras lesión (2022)</h3>
+      <p>Tras una fractura de brazo que le impidió asistir al campeonato andaluz, volvió con más fuerza, compromiso y espíritu de superación.</p>
+    </div>
+
+    <div class="logro">
+      <h3>🎯 Subida a Cadete (Temporada 2024/25)</h3>
+      <p>Siendo infantil, fue subida al equipo cadete femenino del Granada CF. Disputó 24 partidos como titular en Primera Andaluza Cadete, marcando goles y dando asistencias.</p>
+    </div>
   </div>
 
-  <img src="images/2024_Capitana.jpg" alt="Cayetana como capitana">
-
-  <p><a href="diario.html">⬅ Volver al diario</a></p>
+  <footer>
+    © 2025 El Sueño de una Futbolista | Cayetana Encinas
+  </footer>
 </body>
 </html>
