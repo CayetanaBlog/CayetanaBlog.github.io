@@ -45,5 +45,13 @@
     © 2025 Cayetana Encinas | Diario personal
   </footer>
   <button id="toTop">🔝</button>
+  <script>
+    const btn = document.getElementById('toTop');
+    window.onscroll = () => {
+      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
+
 </body>
 </html>
