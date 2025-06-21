@@ -238,7 +238,7 @@ li {
 
 /* Index */
 body.index {
-  background: #000 url('images/caye_futurista.jpg') no-repeat center center fixed;
+  background: #000 url('header-image.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   display: flex;
