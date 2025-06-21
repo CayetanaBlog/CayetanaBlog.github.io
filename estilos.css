@@ -13,7 +13,8 @@ body {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: #fff;
+  border-bottom: 2px solid #e91e63;
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +35,7 @@ nav a.active {
 }
 
 nav a:hover {
-  background-color: #fce4ec;
+  background-color: #ff4081;
   border-radius: 6px;
 }
 
