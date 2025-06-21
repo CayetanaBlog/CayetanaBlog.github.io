@@ -73,7 +73,7 @@
         <li>  -Torneo en Nerja (31/05/25) con el equipo de infantiles.</li>      
       </ul>
       <p>Esta temporada entre todas las competiciones ha jugado en todas las posiciones del campo excepto de delantera
-         juega igual en la izquierda que por la derecha o por el centro. ¡¡Es polivalente!!.</p>
+         juega igual en la izquierda que por la derecha, de central o en el medio del campo en cualquir posición. ¡¡Es polivalente!!.</p>
     </div>
 
   </div>
@@ -82,6 +82,13 @@
     © 2025 Cayetana Encinas | Historia deportiva
   </footer>
   <button id="toTop">🔝</button>
+  <script>
+    const btn = document.getElementById('toTop');
+    window.onscroll = () => {
+      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
 
 </body>
 </html>
