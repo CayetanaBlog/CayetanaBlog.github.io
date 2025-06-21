@@ -33,7 +33,7 @@ nav a.active {
   border-bottom: 2px solid #e91e63;
   color: #333;
 }
-
+/* este hover es el efecto al pasar el raton por el menu*/
 nav a:hover {
   background-color: #ff4081;
   border-radius: 6px;
