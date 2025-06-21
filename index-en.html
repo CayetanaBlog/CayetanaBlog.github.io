@@ -41,5 +41,25 @@
   <footer>
     © 2025 A Footballer’s Dream - Todos los derechos reservados.
   </footer>
+    <button id="toTop title="Volver arriba"">🔝</button>
+  <script>
+    // Mostrar el botón al hacer scroll hacia abajo
+    window.addEventListener("scroll", function () {
+      const toTop = document.getElementById("toTop");
+      if (window.scrollY > 300) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+    });
+  
+    // Subir arriba al hacer clic
+    document.getElementById("toTop").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
 </html>
