@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Sobre Cayetana - El Sueño de una Futbolista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #fefefe;
+      background-color: #fff;
       color: #333;
-      line-height: 1.6;
     }
-
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #e91e63;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+    }
     header {
       background-color: #e91e63;
       color: white;
@@ -19,29 +30,46 @@
       text-align: center;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+	nav a.active {
+	  color: #fff;
+	  background-color: #e91e63;
+	  padding: 8px 12px;
+	  border-radius: 6px;
+	}
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 30px auto;
       padding: 0 20px;
     }
-
-    .foto {
-      text-align: center;
-      margin: 30px 0;
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
     }
-
-    .foto img {
+    .intro img {
       max-width: 300px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-
+    .text {
+      flex: 1;
+    }
+    h2 {
+      color: #c2185b;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #888;
+      margin: 20px 0;
+      border-left: 4px solid #e91e63;
+      padding-left: 16px;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -51,33 +79,51 @@
   </style>
 </head>
 <body>
-  <nav style="background:#fff; border-bottom: 2px solid #e91e63; padding: 12px; text-align: center;">
-    <a href="index.html" style="margin: 0 12px; text-decoration:none; color:#e91e63; font-weight:bold;">Inicio</a>
-    <a href="galeria.html" style="margin: 0 12px; text-decoration:none; color:#e91e63; font-weight:bold;">Galería</a>
-    <a href="eventos.html" style="margin: 0 12px; text-decoration:none; color:#e91e63; font-weight:bold;">Eventos</a>
-    <a href="diario.html" style="margin: 0 12px; text-decoration:none; color:#e91e63; font-weight:bold;">Diario</a>
-    <a href="sobre.html" style="margin: 0 12px; text-decoration:none; color:#e91e63; font-weight:bold;">Sobre</a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="diario.html">Diario</a>
+    <a href="logros.html">Logros</a>
+	<a href="historia.html">Historia</a>
+	<a href="estadisticas.html">Estadisticas</a>
+    <a href="sobre.html" class=active">Sobre</a>
   </nav>
 
   <header>
-    <h1>Sobre Cayetana</h1>
-    <p>La historia detrás de la jugadora</p>
+    <h1>💬 Sobre Cayetana</h1>
+    <p>“El fútbol es más que un juego: es mi historia”</p>
   </header>
 
   <div class="container">
-    <div class="foto">
-      <img src="images/2024/2024_Capitana.jpg" alt="Cayetana como capitana" />
+    <div class="intro">
+      <img src="images/foto_caye.jpg" alt="Cayetana Encinas sonriendo" />
+      <div class="text">
+        <h2>Quién soy</h2>
+        <p>Me llamo Cayetana Encinas y tengo 13 años. Empecé a jugar al fútbol cuando tenía solo 7 años, en el Ogíjares 89 CF, como la única niña en un equipo lleno de niños. Desde entonces no he parado,
+		   el balón ha sido parte de mi vida….</p>
+        <p>Mi posición es la defensa, aunque también marco goles. Me encanta recuperar el balón, liderar al equipo y darlo todo en cada entrenamiento y partido.</p>
+      </div>
     </div>
 
-    <p>Cayetana Encinas empezó su camino en el fútbol con solo 7 años. Desde el primer momento demostró pasión, carácter y un espíritu incansable. Con el apoyo de su familia, fue creciendo en cada entrenamiento, cada partido, y cada desafío.</p>
+    <h2>Por qué juego al fútbol</h2>
+    <p>Para mí, el fútbol no es solo un deporte. Es donde soy feliz, es mi forma de expresarme, de soñar, donde aprendo a caerme y levantarme. Me encanta defender, recuperar el balón y también marcar cuando
+	   puedo, cada partido me enseña algo nuevo: compañerismo, esfuerzo, disciplina y superación.</p>
 
-    <p>Este sitio recoge todos esos momentos: las victorias, los aprendizajes, las emociones y los sueños que sigue persiguiendo con fuerza. En 2024 fue convocada por la <strong>Selección Granadina</strong> y tuvo el honor de ser una de las <strong>capitanas</strong>, marcando incluso un gol ante Jaén.</p>
+    <h2>Lo que me ha enseñado el camino</h2>
+    <p>He jugado con niños, he entrenado con fiebre, he sido capitana, he vuelto después de una lesión, he competido en campeonatos con la selección Granadina... Cada experiencia me ha dado fuerza y humildad
+	   y me ha hecho más fuerte.</p>
 
-    <p>Con este blog queremos acompañarla, inspirar a otras niñas y guardar en un lugar especial todo lo que construye este maravilloso viaje.</p>
+    <blockquote>
+      “Nada me detiene cuando salgo al campo. Allí soy yo misma.”
+    </blockquote>
+
+    <h2>Mis sueños</h2>
+    <p>Quiero seguir creciendo como futbolista y como persona. Sueño con llegar a lo más alto, vestir la camiseta de España, a estudiar algo relacionado con el deporte y abrir camino para que muchas niñas más se atrevan a seguir su pasión.</p>
   </div>
 
   <footer>
-    © 2025 Cayetana Encinas | Historia personal
+    © 2025 El Sueño de una Futbolista | Cayetana Encinas
   </footer>
 </body>
 </html>
