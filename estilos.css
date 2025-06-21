@@ -98,7 +98,33 @@ article {
   border-radius: 6px;
   font-size: 0.9em;
 }
+/* Sobre*/
+/* Sección "Sobre" con imagen al lado */
+.intro {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
 
+.intro img {
+  max-width: 200px;
+  border-radius: 12px;
+}
+
+.intro .text {
+  flex: 1;
+  min-width: 250px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #ff4081;
+  padding-left: 1em;
+  margin: 1em 0;
+}
 /* Estadísticas */
 table {
   width: 100%;
