@@ -280,6 +280,12 @@ body.index {
 body.index header {
   /*background: rgba(0, 0, 0, 0.7);*/
   /*padding: 60px 20px 40px;*/
+  body.index header {
+  background: none;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
 }
 
 body.index header h1 {
