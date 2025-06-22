@@ -11,6 +11,8 @@
 
   <title>Galería - El Sueño de una Futbolista</title>
   <link rel="stylesheet" href="estilos.css">
+  <!-- Lightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <nav>
@@ -24,26 +26,23 @@
     <a href="sobre.html">Sobre</a>
   </nav>
 
-
   <header>
-    <h1>Galería de Cayetana</h1>
+    <h1>📸 Galería de Cayetana</h1>
     <p>Fotos y momentos de cada temporada</p>
   </header>
 
-  <div class="container">
-    <h2>📸 Temporada 2024</h2>
-    <div class="grid">
+  <div class="galeria">
+	<h2>📸 Temporada 2024</h2>
+    <a href="images/2024/2024_Capitana.jpg" data-lightbox="galeria" data-title="Cayetana como capitana">
       <img src="images/2024/2024_Capitana.jpg" alt="Cayetana como capitana" />
-      <!-- Agrega aquí más fotos de 2024 -->
-    </div>
-
-    <h2>📸 Temporadas anteriores</h2>
-    <div class="grid">
-      <!-- Ejemplo:
-      <img src="images/2023/foto1.jpg" alt="Entrenamiento 2023" />
-      <img src="images/2022/foto2.jpg" alt="Partido 2022" />
-      -->
-    </div>
+    </a>
+    <a href="images/caye2.jpg" data-lightbox="galeria" data-title="Capitana en partido importante">
+      <img src="images/caye2.jpg" alt="Capitana">
+    </a>
+    <a href="images/caye3.jpg" data-lightbox="galeria" data-title="Selección Granadina">
+      <img src="images/caye3.jpg" alt="Selección Granadina">
+    </a>
+    <!-- Puedes seguir añadiendo más imágenes -->
   </div>
 
   <footer>
@@ -51,6 +50,9 @@
   </footer>
   <button id="toTop" title="Volver arriba">🔝</button>
 
+
+  <!-- Lightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
   <script>
     // Mostrar el botón al hacer scroll hacia abajo
     window.addEventListener("scroll", function () {
@@ -70,6 +72,5 @@
       });
     });
   </script>
-
 </body>
 </html>
