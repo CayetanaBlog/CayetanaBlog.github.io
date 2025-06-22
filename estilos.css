@@ -346,7 +346,15 @@ body.index header p {
   background: #e91e63;
 }
 footer.index {
-  color: #000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent; /* o un color si quieres fondo */
+  font-size: 0.9em;
+}
+
 }
 
 /* Responsive background for index.html */
