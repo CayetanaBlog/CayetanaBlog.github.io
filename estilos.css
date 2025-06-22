@@ -284,11 +284,11 @@ body.index nav a {
   margin: 0 12px;
   text-decoration: none;
   color: #e91e63;
-  font-weight: #ffffff;
+  font-weight: bold;
 }
 body.index nav a.active {
   border-bottom: 2px solid #e91e63;
-  color: #333;
+  color: #00e5ff;
 }
 
 body.index nav a:hover {
