@@ -278,6 +278,14 @@ li {
 body.index nav {
   background: transparent;
  /* border-bottom: none; /* Opcional: quita la línea rosa si no la quieres */
+  
+}
+
+body.index nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: #00e5ff;
 }
 
 body.index {
