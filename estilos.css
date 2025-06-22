@@ -275,6 +275,11 @@ li {
 }
 
 /* Index */
+body.index nav {
+  background: transparent;
+ /* border-bottom: none; /* Opcional: quita la línea rosa si no la quieres */
+}
+
 body.index {
   background: #000 url('header-image.jpg') no-repeat center center fixed;
   background-size: cover;
