@@ -376,7 +376,7 @@ li {
 /* Index */
 body.index nav {
   background: transparent;
- /* border-bottom: none; /* Opcional: quita la línea rosa si no la quieres */
+  border-bottom: none; /* Opcional: quita la línea rosa si no la quieres */
 }  
 
 body.index nav a {
