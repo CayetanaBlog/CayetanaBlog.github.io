@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería 2018/2019 - El Sueño de una Futbolista</title>
+  <link rel="stylesheet" href="../estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+      font-family: 'Poppins', sans-serif;
+    }
+    .galeria {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .galeria h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .foto {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #fff;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .foto img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .foto p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../galeria.html" class="active">Galería</a>
+  </nav>
+
+  <div class="galeria">
+    <h1>🌟 Temporada 2018/2019</h1>
+    <div class="fotos">
+      <div class="foto">
+        <a href="https://via.placeholder.com/800x600" data-lightbox="galeria2018" data-title="Primera equipación">
+          <img src="https://via.placeholder.com/400x300" alt="Primera equipación">
+        </a>
+        <p>Primera equipación</p>
+      </div>
+      <div class="foto">
+        <a href="https://via.placeholder.com/800x600" data-lightbox="galeria2018" data-title="Noticia en el periódico">
+          <img src="https://via.placeholder.com/400x300" alt="Noticia en el periódico">
+        </a>
+        <p>Noticia en el periódico</p>
+      </div>
+      <div class="foto">
+        <a href="https://via.placeholder.com/800x600" data-lightbox="galeria2018" data-title="Primer torneo">
+          <img src="https://via.placeholder.com/400x300" alt="Primer torneo">
+        </a>
+        <p>Primer torneo</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 El Sueño de una Futbolista | Cayetana Encinas
+  </footer>
+  <button id="toTop">🔝</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    const btn = document.getElementById('toTop');
+    window.onscroll = () => {
+      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
+</body>
+</html>
