@@ -408,7 +408,7 @@ body.index nav {
 body.index nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #e91e63;
+  color: #fff;
   font-weight: bold;
 }
 body.index nav a.active {
@@ -446,7 +446,7 @@ body.index header h1 {
 
 body.index header p {
   font-size: 1.2em;
-  color: #ccc;
+  color: #666;
 }
 
 .content {
