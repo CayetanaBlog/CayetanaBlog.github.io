@@ -395,7 +395,7 @@ body.index nav a:hover {
   border-radius: 6px;
 }
 body.index {
-  background: #0d1b2a url('header-image.jpg') no-repeat center center fixed;
+  background: #1b263b url('header-image.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   display: flex;
