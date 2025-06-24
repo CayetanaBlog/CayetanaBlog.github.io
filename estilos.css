@@ -219,6 +219,29 @@ li {
   transform: scale(1.05);
   cursor: pointer;
 }
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.season-card {
+  background: linear-gradient(135deg, #ee9ca7, #ffdde1);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+.season-card:hover {
+  transform: scale(1.05);
+}
+
 
 /* Historia */
 /*.timeline {
