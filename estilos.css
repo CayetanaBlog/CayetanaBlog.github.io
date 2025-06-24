@@ -409,12 +409,12 @@ body.index nav {
 body.index nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #fff;
+  color: #e91e63;
   font-weight: white;
 }
 body.index nav a.active {
   border-bottom: 2px solid #e91e63;
-  color: #00e5ff;
+  color: #fff;
 }
 
 body.index nav a:hover {
