@@ -144,7 +144,7 @@ footer {
   height: 250px;               /* Altura fija para todas */
   object-fit: contain;         /* Mostrar la imagen completa */
   object-position: center;     /* Centrar la imagen en el contenedor */
-  background-color: #fff;      /* Fondo blanco o el que prefieras */
+  background-color: #fcd6e3;      /* Fondo blanco o el que prefieras */
   margin-top: 1rem;
   border-radius: 12px;
   cursor: pointer;
