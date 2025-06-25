@@ -98,6 +98,22 @@
   <footer>
     © 2025 El Sueño de una Futbolista | Cayetana Encinas
   </footer>
+  <script>
+      document.querySelectorAll('.diario-item img').forEach(img => {
+      img.addEventListener('click', () => {
+        const popup = document.createElement('div');
+        popup.classList.add('img-popup');
+        popup.innerHTML = `<img src="${img.src}" alt="Imagen ampliada">`;
+    
+        // Cerrar al hacer clic en cualquier parte
+        popup.addEventListener('click', () => popup.remove());
+    
+        document.body.appendChild(popup);
+      });
+    });
+  </script>
+
+	
   <button id="toTop" title="Volver arriba">🔝</button>
 
   <script>
