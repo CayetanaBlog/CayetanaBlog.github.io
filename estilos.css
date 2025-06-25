@@ -110,6 +110,7 @@ footer {
 .diario-item {
   background: linear-gradient(135deg, #ffe6f0, #fcd6e3);
   /*border-left: 3px solid #ff69b4; /* rosa chicle */
+  border: 1px solid #eee;
   border-left: 5px solid #e91e63;
   border-radius: 16px;
   padding: 1.8rem;
