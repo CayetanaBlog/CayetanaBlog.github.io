@@ -13,6 +13,16 @@ body {
   background-color: #f6f6f6;
 }
 
+/*nav {
+  background: #fff;
+  border-bottom: 2px solid #e91e63;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}*/
+/* Navegación centrada, con diseño responsive */
 nav {
   background: #fff;
   border-bottom: 2px solid #e91e63;
@@ -21,6 +31,9 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -41,12 +54,26 @@ nav a:hover {
   color: #fff;
 }
 
+/*header {
+  background-color: #e91e63;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}*/
+/* Encabezado fijo */
 header {
   background-color: #e91e63;
   color: white;
   padding: 40px 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+
+
 
 /* Footer */
 footer {
@@ -57,11 +84,18 @@ footer {
 }
 
 /* Diario */
+/*.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}*/
 .container {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
+  text-align: center;
 }
+
 
 /*article {
   background-color: #fce4ec;
@@ -301,6 +335,7 @@ footer {
   color: white;
   margin-top: 2rem;
 }*/
+
 /* Sobre*/
 /* Sección "Sobre" con imagen al lado */
 .intro {
@@ -328,8 +363,10 @@ blockquote {
   padding-left: 1em;
   margin: 1em 0;
 }
+
 /* Estadísticas */
-table {
+
+/*table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -340,6 +377,19 @@ td,th {
   border: 2px solid #e91e63;
   padding: 10px;
   text-align: center;
+}*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95em;
+  overflow-x: auto;
+}
+
+table th,
+table td {
+  min-width: 100px;
+  word-wrap: break-word;
 }
 
 th {
@@ -358,6 +408,10 @@ h2 {
 /* 👇 Clase especial para justificar la columna de observaciones */
 .observaciones {
   text-align: justify;
+}
+.grafico-container {
+  max-width: 700px;
+  margin: 30px auto;
 }
 
 /* Eventos */
@@ -806,7 +860,7 @@ body.index header p {
 }
 
 /* Botón "subir arriba" */
-#toTop {
+/*#toTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -823,7 +877,7 @@ body.index header p {
 
 #toTop:hover {
   background: #e91e63;
-}
+}*/
 footer.index {
   position: fixed;
   bottom: 0;
@@ -834,6 +888,26 @@ footer.index {
   font-size: 0.9em;
 }
 
+}
+
+/* Botón "subir arriba" */
+#toTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#toTop:hover {
+  background-color: #c2185b;
 }
 
 /*Boton volveer atras */
