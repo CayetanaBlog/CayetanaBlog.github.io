@@ -205,6 +205,10 @@ footer {
   cursor: zoom-out;
 }
 
+.img-popup:focus {
+  outline: none;
+}
+
 .img-caption {
   margin-top: 15px;
   font-size: 1rem;
