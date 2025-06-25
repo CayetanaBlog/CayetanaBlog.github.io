@@ -86,42 +86,48 @@
     © 2025 Cayetana Encinas | Diario personal
   </footer>
   <script>
-    document.querySelectorAll('.diario-item img').forEach(img => {
-      img.addEventListener('click', () => {
-        const popup = document.createElement('div');
-        popup.classList.add('img-popup');
+    const images = Array.from(document.querySelectorAll('.diario-item img, .galeria-grid img'));
+    let currentIndex = 0;
   
-        const contenedor = document.createElement('div');
-        contenedor.classList.add('img-popup-content');
-  
-        const imgClon = document.createElement('img');
-        imgClon.src = img.src;
-        imgClon.alt = img.alt || "";
-  
-        const caption = document.createElement('p');
-        caption.classList.add('img-caption');
-        caption.textContent = img.alt || "";
-  
-        contenedor.appendChild(imgClon);
-        contenedor.appendChild(caption);
-        popup.appendChild(contenedor);
-        document.body.appendChild(popup);
-  
-        // Cerrar al hacer clic fuera del contenedor
-        popup.addEventListener('click', (e) => {
-          if (e.target === popup) popup.remove();
-        });
-  
-        // Cerrar con ESC
-        document.addEventListener('keydown', function escHandler(ev) {
-          if (ev.key === "Escape") {
-            popup.remove();
-            document.removeEventListener('keydown', escHandler);
-          }
-        });
-      });
+    images.forEach((img, index) => {
+      img.dataset.index = index;
+      img.addEventListener('click', () => openPopup(index));
     });
+  
+    function openPopup(index) {
+      currentIndex = index;
+      const { src, alt } = images[index];
+      const popup = document.createElement('div');
+      popup.classList.add('img-popup');
+      popup.innerHTML = `
+        <div class="img-popup-content">
+          <button class="close-btn">✖</button>
+          <button class="nav-btn prev-btn">◀</button>
+          <img src="${src}" alt="${alt}">
+          <p class="img-caption">${alt}</p>
+          <button class="nav-btn next-btn">▶</button>
+        </div>
+      `;
+  
+      document.body.appendChild(popup);
+  
+      popup.querySelector('.close-btn').onclick = () => popup.remove();
+      popup.querySelector('.prev-btn').onclick = () => navigate(-1);
+      popup.querySelector('.next-btn').onclick = () => navigate(1);
+      popup.onclick = e => {
+        if (e.target === popup) popup.remove(); // cerrar al hacer clic fuera
+      };
+    }
+  
+    function navigate(direction) {
+      let nextIndex = currentIndex + direction;
+      if (nextIndex < 0) nextIndex = images.length - 1;
+      if (nextIndex >= images.length) nextIndex = 0;
+      document.querySelector('.img-popup').remove();
+      openPopup(nextIndex);
+    }
   </script>
+
 
  <!-- <script>
     document.querySelectorAll('.diario-item img').forEach(img => {
