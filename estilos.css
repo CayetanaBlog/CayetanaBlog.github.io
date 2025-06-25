@@ -57,13 +57,13 @@ footer {
 }
 
 /* Diario */
-/*.container {
+.container {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-article {
+/*article {
   background-color: #fce4ec;
   border: 1px solid #eee;
   border-left: 5px solid #e91e63;
