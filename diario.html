@@ -88,6 +88,7 @@
   <script>
     const images = Array.from(document.querySelectorAll('.diario-item img, .galeria-grid img'));
     let currentIndex = 0;
+    let popup = null;
   
     images.forEach((img, index) => {
       img.dataset.index = index;
@@ -97,34 +98,62 @@
     function openPopup(index) {
       currentIndex = index;
       const { src, alt } = images[index];
-      const popup = document.createElement('div');
+      popup = document.createElement('div');
       popup.classList.add('img-popup');
       popup.innerHTML = `
         <div class="img-popup-content">
-          <button class="close-btn">✖</button>
-          <button class="nav-btn prev-btn">◀</button>
+          <button class="close-btn" aria-label="Cerrar">✖</button>
+          <button class="nav-btn prev-btn" aria-label="Anterior">◀</button>
           <img src="${src}" alt="${alt}">
           <p class="img-caption">${alt}</p>
-          <button class="nav-btn next-btn">▶</button>
+          <button class="nav-btn next-btn" aria-label="Siguiente">▶</button>
         </div>
       `;
-  
       document.body.appendChild(popup);
   
-      popup.querySelector('.close-btn').onclick = () => popup.remove();
+      popup.querySelector('.close-btn').onclick = closePopup;
       popup.querySelector('.prev-btn').onclick = () => navigate(-1);
       popup.querySelector('.next-btn').onclick = () => navigate(1);
       popup.onclick = e => {
-        if (e.target === popup) popup.remove(); // cerrar al hacer clic fuera
+        if (e.target === popup) closePopup(); // cerrar al hacer clic fuera
       };
+  
+      document.addEventListener('keydown', handleKeydown);
+    }
+  
+    function closePopup() {
+      if (popup) {
+        popup.remove();
+        popup = null;
+        document.removeEventListener('keydown', handleKeydown);
+      }
     }
   
     function navigate(direction) {
       let nextIndex = currentIndex + direction;
       if (nextIndex < 0) nextIndex = images.length - 1;
       if (nextIndex >= images.length) nextIndex = 0;
-      document.querySelector('.img-popup').remove();
+      closePopup();
       openPopup(nextIndex);
+    }
+  
+    function handleKeydown(e) {
+      if (!popup) return;
+      switch (e.key) {
+        case 'Escape':
+          closePopup();
+          break;
+        case 'ArrowLeft':
+          navigate(-1);
+          break;
+        case 'ArrowRight':
+          navigate(1);
+          break;
+        case ' ':
+          e.preventDefault(); // evita que la página se desplace
+          navigate(1);
+          break;
+      }
     }
   </script>
 
