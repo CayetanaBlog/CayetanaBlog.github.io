@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: #f9f9fb;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #f6f6f6;
+  transition: all 0.3s ease-in-out;
 }
 
 /*nav {
@@ -22,25 +24,31 @@ body {
   justify-content: center;
   gap: 10px;
 }*/
+
 /* Navegación centrada, con diseño responsive */
 nav {
   background: #fff;
   border-bottom: 2px solid #e91e63;
-  padding: 1em;
+  padding: 1em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  position: sticky;
+  position: sticky; /* fija el nav */
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  
 }
 
 nav a {
-  margin: 0 12px;
+  /*margin: 0 12px;*/
   text-decoration: none;
   color: #e91e63;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 nav a.active {
@@ -70,10 +78,8 @@ header {
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -94,6 +100,10 @@ footer {
   margin: 30px auto;
   padding: 0 20px;
   text-align: center;
+  overflow-x: auto; /* permite desplazamiento horizontal si es necesario */
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 12px;
 }
 
 
@@ -384,10 +394,11 @@ table {
   margin-top: 20px;
   font-size: 0.95em;
   overflow-x: auto;
+  min-width: 800px; /* para evitar que se comprima demasiado */
 }
 
-table th,
-table td {
+th,
+td {
   min-width: 100px;
   word-wrap: break-word;
 }
@@ -412,6 +423,10 @@ h2 {
 .grafico-container {
   max-width: 700px;
   margin: 30px auto;
+}
+#myChart {
+  max-width: 100%;
+  margin-top: 40px;
 }
 
 /* Eventos */
@@ -703,7 +718,7 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;*/
-    width: 100%;
+  width: 100%;
   height: 250px;               /* Altura fija para todas */
   object-fit: contain;         /* Mostrar la imagen completa */
   object-position: center;     /* Centrar la imagen en el contenedor */
@@ -903,7 +918,9 @@ footer.index {
   cursor: pointer;
   display: none;
   font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   z-index: 1000;
+  transition: background-color 0.3s;
 }
 
 #toTop:hover {
@@ -911,13 +928,13 @@ footer.index {
 }
 
 /*Boton volveer atras */
-#volverAtras {
+/*#volverAtras {
   position: fixed;
   top: 20px;
   left: 20px;
   background-color: #f8bbd0; /* rosa pastel */
-  color: #880e4f;             /* color de texto más oscuro */
-  border: none;
+  /*color: #880e4f;             /* color de texto más oscuro */
+  /*border: none;
   border-radius: 30px;
   padding: 10px 18px;
   font-size: 15px;
@@ -926,7 +943,7 @@ footer.index {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   transition: transform 0.3s ease, background-color 0.3s ease;
-}
+}*/
 
 /* Efecto hover para pantallas grandes */
 #volverAtras:hover {
@@ -943,6 +960,47 @@ footer.index {
     left: 15px;
   }
 }
+
+/*@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  th, td {
+    font-size: 0.85em;
+    padding: 6px;
+  }
+}*/
+
+/* Responsividad mejorada en móviles*/
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.85em;
+  }
+
+  h1, h2 {
+    font-size: 1.4em;
+  }
+}
+
 
 
 
