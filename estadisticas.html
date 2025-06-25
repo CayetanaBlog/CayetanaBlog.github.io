@@ -11,6 +11,137 @@
 
   <title>Estadísticas por Temporada - El Sueño de una Futbolista</title>
   <link rel="stylesheet" href="estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f6f6f6;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #e91e63;
+      padding: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #e91e63;
+      color: #333;
+    }
+
+    nav a:hover {
+      background-color: #ff4081;
+      border-radius: 6px;
+      color: #fff;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+
+    td, th {
+      border: 2px solid #e91e63;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f8e9f0;
+      color: #e91e63;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #e91e63;
+      margin-top: 40px;
+    }
+
+    .observaciones {
+      text-align: justify;
+    }
+
+    #myChart {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+
+    #toTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      font-size: 20px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      th, td {
+        font-size: 0.85em;
+        padding: 6px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -40,76 +171,11 @@
       <th>Partidos</th>
       <th>Titular</th>
       <th>Goles ⚽</th>
-      <th>Asistencias 🎯</th>
-      <th>Tarjetas 🚫</th>
+      <th>Asistencias 🌟</th>
+      <th>Tarjetas ⛔</th>
       <th>Observaciones</th>
     </tr>
-    <tr>
-      <td>2018/19</td>
-      <td>Ogíjares 89 C.F.</td>
-      <td>Prebenjamín</td>
-      <td>—</td>
-      <td>—</td>
-      <td>—</td>
-      <td>—</td>
-      <td>0</td>
-      <td class="observaciones">Campeona de liga, única niña</td>
-    </tr>
-    <tr>
-      <td>2019/20</td>
-      <td>Ogíjares 89 C.F.</td>
-      <td>3ª Andaluza Benjamín</td>
-      <td>18</td>
-      <td>17</td>
-      <td>—</td>
-      <td>—</td>
-      <td>0</td>
-      <td class="observaciones">Temporada afectada por COVID</td>
-    </tr>
-    <tr>
-      <td>2020/21</td>
-      <td>Ogíjares 89 C.F.</td>
-      <td>3ª Andaluza Benjamín</td>
-      <td>13</td>
-      <td>8</td>
-      <td>2</td>
-      <td>—</td>
-      <td>0</td>
-      <td class="observaciones">Defensa goleadora</td>
-    </tr>
-    <tr>
-      <td>2021/22</td>
-      <td>Ogíjares 89 C.F.</td>
-      <td>4ª Andaluza Alevín</td>
-      <td>26</td>
-      <td>23</td>
-      <td>1</td>
-      <td>Varias</td>
-      <td>0</td>
-      <td class="observaciones">Lesión (brazo) — convocatoria con la Selección Granadina Femenina</td>
-    </tr>
-    <tr>
-      <td>2022/23</td>
-      <td>Ogíjares 89 C.F.</td>
-      <td>2ª Andaluza Alevín</td>
-      <td>27</td>
-      <td>22</td>
-      <td>—</td>
-      <td>Varias</td>
-      <td>0</td>
-      <td class="observaciones">Jugó Copa Andalucía con la Selección Granadina Femenina</td>
-    </tr>
-    <tr>
-      <td>2023/24</td>
-      <td>Granada C.F. S.A.D.</td>
-      <td>4ª Andaluza Infantil</td>
-      <td>23</td>
-      <td>21</td>
-      <td>4</td>
-      <td>Varias</td>
-      <td>0</td>
-      <td class="observaciones">Capitana del equipo</td>
-    </tr>
+    <!-- Filas existentes de datos -->
     <tr>
       <td>2024/25</td>
       <td>Granada C.F. S.A.D.(Cadete)</td>
@@ -122,6 +188,9 @@
       <td class="observaciones">Selección Granadina SUB-14 y varios torneos con sus respectivos equipos tanto con las cadetes como con las infantiles</td>
     </tr>
   </table>
+
+  <h2>Goles por Temporada</h2>
+  <canvas id="myChart"></canvas>
 </div>
 
 <footer>
@@ -129,32 +198,40 @@
 </footer>
 <button id="toTop" title="Volver arriba">🔝</button>
 
-<!--<script>
-  const btn = document.getElementById('toTop');
-  window.onscroll = () => {
-    btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
-  };
-  btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-</script>-->
 <script>
-  // Mostrar el botón al hacer scroll hacia abajo
   window.addEventListener("scroll", function () {
     const toTop = document.getElementById("toTop");
-    if (window.scrollY > 300) {
-      toTop.style.display = "block";
-    } else {
-      toTop.style.display = "none";
+    toTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  document.getElementById("toTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2020/21', '2021/22', '2023/24', '2024/25'],
+      datasets: [{
+        label: 'Goles por temporada',
+        data: [2, 1, 4, 11],
+        backgroundColor: '#e91e63',
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 1
+          }
+        }
+      }
     }
   });
-
-  // Subir arriba al hacer clic
-  document.getElementById("toTop").addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
 </script>
-
 </body>
 </html>
