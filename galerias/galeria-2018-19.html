@@ -98,7 +98,9 @@
   <footer>
     © 2025 El Sueño de una Futbolista | Cayetana Encinas
   </footer>
-  <button id="volverAtras">⬅️ Volver</button>
+  <!--<button id="volverAtras">⬅️ Volver</button>-->
+  <button id="volverAtras" onclick="history.back()">⬅️ Volver</button>
+
   <script>
     document.getElementById('volverAtras').onclick = () => {
       window.history.back();
