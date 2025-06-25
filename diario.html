@@ -29,60 +29,45 @@
     <p>Entradas especiales sobre sus logros y emociones</p>
   </header>
 
-  <div class="container">
+  <main class="diario-container">
 
-    <article>
+    <div class="diario-item">
       <h2>Gol como capitana frente a Jaén</h2>
       <p class="fecha">7 de noviembre de 2024</p>
       <p>Durante su convocatoria con la Selección Granadina, Cayetana no solo fue una de las capitanas, también marcó un impresionante gol frente a la selección de Jaén. ¡Un momento inolvidable!</p>
-
       <div class="video">
         <iframe src="https://www.youtube.com/embed/dkcy_MvBAaU" allowfullscreen></iframe>
       </div>
-
       <a href="logros.html#2024" class="boton">▶ Ver en Logros</a>
-    </article>
-</div>
-<div class="logro">
-  <div class="logro-content">
-    <article>
+    </div>
+
+    <div class="diario-item">
       <h2>Primera Equipación</h2>
       <p class="fecha">7 de noviembre de 2024</p>
-      <p>Mi primera eqipacion con mi número de la suerte la niña bonita</p>
-      <img src="images/primera_equipa_20181109.jpg" style="display: block; margin: 0 auto;" />
-      <img src="images/primera_equipacion_prebenja.jpg" style="display: block; margin: 0 auto;" />
-    </article>
-  </div>
-</div>
-    <!-- Puedes añadir más artículos aquí -->
+      <p>Mi primera equipación con mi número de la suerte, la niña bonita.</p>
+      <img src="images/primera_equipa_20181109.jpg" alt="Primera equipación" />
+      <img src="images/primera_equipacion_prebenja.jpg" alt="Primera equipación Prebenjamín" />
+    </div>
 
- <!-- </div> *-->
+    <!-- Agrega más .diario-item aquí para nuevas entradas -->
+
+  </main>
 
   <footer>
     © 2025 Cayetana Encinas | Diario personal
   </footer>
-  
+
   <button id="toTop" title="Volver arriba">🔝</button>
 
   <script>
-    // Mostrar el botón al hacer scroll hacia abajo
     window.addEventListener("scroll", function () {
       const toTop = document.getElementById("toTop");
-      if (window.scrollY > 300) {
-        toTop.style.display = "block";
-      } else {
-        toTop.style.display = "none";
-      }
+      toTop.style.display = window.scrollY > 300 ? "block" : "none";
     });
-  
-    // Subir arriba al hacer clic
+
     document.getElementById("toTop").addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
-
 </body>
 </html>
