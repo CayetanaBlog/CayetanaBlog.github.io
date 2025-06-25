@@ -165,6 +165,18 @@
   <h2>Resumen de Rendimiento</h2>
   <table>
     <tr>
+      <th>Temporada</th>
+      <th>Equipo</th>
+      <th>Categoría</th>
+      <th>Partidos</th>
+      <th>Titular</th>
+      <th>Goles ⚽</th>
+      <th>Asistencias 🌟</th>
+      <th>Tarjetas ⛔</th>
+      <th>Observaciones</th>
+    </tr>
+
+    <tr>
       <td>2018/19</td>
       <td>Ogíjares 89 C.F.</td>
       <td>Prebenjamín</td>
@@ -230,17 +242,7 @@
       <td>0</td>
       <td class="observaciones">Capitana del equipo</td>
     </tr>
-    <tr>
-      <th>Temporada</th>
-      <th>Equipo</th>
-      <th>Categoría</th>
-      <th>Partidos</th>
-      <th>Titular</th>
-      <th>Goles ⚽</th>
-      <th>Asistencias 🌟</th>
-      <th>Tarjetas ⛔</th>
-      <th>Observaciones</th>
-    </tr>
+
     <!-- Filas existentes de datos -->
     <tr>
       <td>2024/25</td>
@@ -265,32 +267,37 @@
 <button id="toTop" title="Volver arriba">🔝</button>
 
 <script>
-  window.addEventListener("scroll", function () {
-    const toTop = document.getElementById("toTop");
-    toTop.style.display = window.scrollY > 300 ? "block" : "none";
-  });
-
-  document.getElementById("toTop").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
   const ctx = document.getElementById('myChart').getContext('2d');
   const chart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['2020/21', '2021/22', '2023/24', '2024/25'],
+      labels: ['2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25'],
       datasets: [{
-        label: 'Goles por temporada',
-        data: [2, 1, 4, 11],
+        label: 'Goles ⚽',
+        data: [17, 2, 1, 0, 4, 11],
         backgroundColor: '#e91e63',
-        borderRadius: 6
+        borderRadius: 8
       }]
     },
     options: {
       responsive: true,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          callbacks: {
+            label: context => `${context.parsed.y} goles`
+          }
+        }
+      },
       scales: {
         y: {
           beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Goles'
+          },
           ticks: {
             stepSize: 1
           }
@@ -299,5 +306,6 @@
     }
   });
 </script>
+  
 </body>
 </html>
