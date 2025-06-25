@@ -71,7 +71,7 @@ nav a:hover {
 /* Encabezado fijo */
 header {
   background-color: #e91e63;
-  color: white;
+  /*color: white;*/
   padding: 40px 20px;
   text-align: center;
   position: sticky;
