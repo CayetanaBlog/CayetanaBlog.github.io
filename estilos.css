@@ -227,8 +227,6 @@ li {
   padding: 16px;
   margin-bottom: 30px;
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
   padding: 40px;
   background: linear-gradient(to bottom right, #f0f4f8, #eaf3fb);
 }
