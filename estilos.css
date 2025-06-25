@@ -398,7 +398,7 @@ li {
   height: 200px;               /* Altura fija uniforme */
   object-fit: contain;         /* Mostrar imagen completa sin recortes */
   object-position: center;     /* Centrar imagen */
-  background-color: #fff;      /* Fondo blanco o el que prefieras */
+  background-color: #fcd6e3;      /* Fondo rosa pastel o el que prefieras */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: block;
