@@ -110,6 +110,8 @@
         </div>
       `;
       document.body.appendChild(popup);
+      popup.setAttribute('tabindex', '-1');
+      popup.focus();
   
       popup.querySelector('.close-btn').onclick = closePopup;
       popup.querySelector('.prev-btn').onclick = () => navigate(-1);
