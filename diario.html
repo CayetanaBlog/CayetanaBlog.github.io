@@ -90,6 +90,35 @@
       img.addEventListener('click', () => {
         const popup = document.createElement('div');
         popup.classList.add('img-popup');
+  
+        const imgClon = document.createElement('img');
+        imgClon.src = img.src;
+        imgClon.alt = img.alt || "Imagen ampliada";
+  
+        popup.appendChild(imgClon);
+        document.body.appendChild(popup);
+  
+        // Cerrar al hacer clic fuera de la imagen
+        popup.addEventListener('click', (e) => {
+          if (e.target === popup) popup.remove();
+        });
+  
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', function escHandler(ev) {
+          if (ev.key === "Escape") {
+            popup.remove();
+            document.removeEventListener('keydown', escHandler);
+          }
+        });
+      });
+    });
+  </script>
+
+ <!-- <script>
+    document.querySelectorAll('.diario-item img').forEach(img => {
+      img.addEventListener('click', () => {
+        const popup = document.createElement('div');
+        popup.classList.add('img-popup');
         popup.innerHTML = `<img src="${img.src}" alt="Imagen ampliada">`;
     
         // Cerrar al hacer clic en cualquier parte
@@ -98,7 +127,7 @@
         document.body.appendChild(popup);
       });
     });
-  </script>
+  </script>-->
 
   <button id="toTop" title="Volver arriba">🔝</button>
 
