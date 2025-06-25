@@ -91,19 +91,28 @@
         const popup = document.createElement('div');
         popup.classList.add('img-popup');
   
+        const contenedor = document.createElement('div');
+        contenedor.classList.add('img-popup-content');
+  
         const imgClon = document.createElement('img');
         imgClon.src = img.src;
-        imgClon.alt = img.alt || "Imagen ampliada";
+        imgClon.alt = img.alt || "";
   
-        popup.appendChild(imgClon);
+        const caption = document.createElement('p');
+        caption.classList.add('img-caption');
+        caption.textContent = img.alt || "";
+  
+        contenedor.appendChild(imgClon);
+        contenedor.appendChild(caption);
+        popup.appendChild(contenedor);
         document.body.appendChild(popup);
   
-        // Cerrar al hacer clic fuera de la imagen
+        // Cerrar al hacer clic fuera del contenedor
         popup.addEventListener('click', (e) => {
           if (e.target === popup) popup.remove();
         });
   
-        // Cerrar con tecla ESC
+        // Cerrar con ESC
         document.addEventListener('keydown', function escHandler(ev) {
           if (ev.key === "Escape") {
             popup.remove();
