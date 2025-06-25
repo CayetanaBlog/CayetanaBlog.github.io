@@ -14,6 +14,14 @@
 
 </head>
 <body>
+    <!-- Boton volver atras -->
+  <button id="volverAtras" onclick="history.back()">⬅️ Volver</button>
+
+  <script>
+    document.getElementById('volverAtras').onclick = () => {
+      window.history.back();
+    };
+  </script>
   <nav>
     <a href="../index.html">Inicio</a>
     <a href="../galeria.html" class="active">Galería</a>
@@ -99,14 +107,8 @@
     © 2025 El Sueño de una Futbolista | Cayetana Encinas
   </footer>
   <!--<button id="volverAtras">⬅️ Volver</button>-->
-  <button id="volverAtras" onclick="history.back()">⬅️ Volver</button>
 
-  <script>
-    document.getElementById('volverAtras').onclick = () => {
-      window.history.back();
-    };
-  </script>
-
+  <!-- Boton volver arriba -->
   <button id="toTop">🔝</button>
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
   <script>
