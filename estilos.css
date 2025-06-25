@@ -144,7 +144,7 @@ footer {
   height: 250px;               /* Altura fija para todas */
   object-fit: contain;         /* Mostrar la imagen completa */
   object-position: center;     /* Centrar la imagen en el contenedor */
-  background-color: #fcd6e3;      /* Fondo blanco o el que prefieras */
+  background-color: #fcd6e3;      /* Fondo rosa pastel o el que prefieras */
   margin-top: 1rem;
   border-radius: 12px;
   cursor: pointer;
@@ -316,6 +316,7 @@ li {
   height: 200px;
   object-fit: cover; /* Recorta de forma elegante */
   border-radius: 8px;
+  background: #fcd6e3; 
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
