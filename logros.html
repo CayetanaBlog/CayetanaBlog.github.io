@@ -106,19 +106,77 @@
     © 2025 El Sueño de una Futbolista | Cayetana Encinas
   </footer>
   <script>
-  document.querySelectorAll('.diario-item img').forEach(img => {
-    img.addEventListener('click', () => {
-      const popup = document.createElement('div');
-      popup.classList.add('img-popup');
-      popup.innerHTML = `<img src="${img.src}" alt="Imagen ampliada">`;
-	
-      // Cerrar al hacer clic en cualquier parte
-      popup.addEventListener('click', () => popup.remove());
-	
-      document.body.appendChild(popup);
+    const images = Array.from(document.querySelectorAll('.diario-item img, .galeria-grid img'));
+    let currentIndex = 0;
+    let popup = null;
+  
+    images.forEach((img, index) => {
+      img.dataset.index = index;
+      img.addEventListener('click', () => openPopup(index));
     });
-  });
+	
+    function openPopup(index) {
+      currentIndex = index;
+      const { src, alt } = images[index];
+      popup = document.createElement('div');
+      popup.classList.add('img-popup');
+      popup.innerHTML = `
+        <div class="img-popup-content">
+          <button class="close-btn" aria-label="Cerrar">✖</button>
+          <button class="nav-btn prev-btn" aria-label="Anterior">◀</button>
+          <img src="${src}" alt="${alt}">
+          <p class="img-caption">${alt}</p>
+          <button class="nav-btn next-btn" aria-label="Siguiente">▶</button>
+        </div>
+      `;
+      document.body.appendChild(popup);
+	
+      popup.querySelector('.close-btn').onclick = closePopup;
+      popup.querySelector('.prev-btn').onclick = () => navigate(-1);
+      popup.querySelector('.next-btn').onclick = () => navigate(1);
+      popup.onclick = e => {
+        if (e.target === popup) closePopup(); // cerrar al hacer clic fuera
+      };
+	
+      document.addEventListener('keydown', handleKeydown);
+    }
+	
+    function closePopup() {
+      if (popup) {
+        popup.remove();
+        popup = null;
+        document.removeEventListener('keydown', handleKeydown);
+      }
+    }
+	
+    function navigate(direction) {
+      let nextIndex = currentIndex + direction;
+      if (nextIndex < 0) nextIndex = images.length - 1;
+      if (nextIndex >= images.length) nextIndex = 0;
+      closePopup();
+      openPopup(nextIndex);
+    }
+	
+    function handleKeydown(e) {
+      if (!popup) return;
+      switch (e.key) {
+        case 'Escape':
+          closePopup();
+          break;
+        case 'ArrowLeft':
+          navigate(-1);
+          break;
+        case 'ArrowRight':
+          navigate(1);
+          break;
+        case ' ':
+          e.preventDefault(); // evita que la página se desplace
+          navigate(1);
+          break;
+      }
+    }
   </script>
+
 	
   <button id="toTop" title="Volver arriba">🔝</button>
 
