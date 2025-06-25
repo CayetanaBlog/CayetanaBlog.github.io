@@ -102,21 +102,29 @@ article {
 .diario-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
 }
 
 .diario-item {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  background: linear-gradient(135deg, #ffe6f0, #fcd6e3);
+  border: 3px solid #ff69b4; /* rosa chicle */
+  border-radius: 16px;
+  padding: 1.8rem;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2); /* sombra rosa chicle */
+  transition: transform 0.2s;
+}
+
+.diario-item:hover {
+  transform: scale(1.01);
 }
 
 .diario-item h2 {
   margin-top: 0;
+  color: #c2185b;
 }
 
 .diario-item .fecha {
@@ -125,10 +133,15 @@ article {
   margin-bottom: 1rem;
 }
 
+.diario-item p {
+  line-height: 1.6;
+}
+
 .diario-item img {
   max-width: 100%;
   margin-top: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .video iframe {
@@ -136,22 +149,22 @@ article {
   height: 315px;
   border: none;
   margin-top: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .boton {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #007bff;
+  background-color: #ff69b4;
   color: white;
   padding: 0.6rem 1.2rem;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: background-color 0.3s;
 }
 
 .boton:hover {
-  background-color: #0056b3;
+  background-color: #d64991;
 }
 
 /*footer {
