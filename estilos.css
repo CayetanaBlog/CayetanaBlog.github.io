@@ -416,13 +416,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 40px;/*cambia de 20px a 40px*/
+  min-width: 900px; /* o 1000px si es necesario */
 }
 
 /*no estaba */
 .tabla-container {
   overflow-x: auto;
-  border: 20px solid #e91e63;
-  border-radius: 8px;*/
+  border: 4px solid #e91e63;
+  border-radius: 8px;
+  width: 100%;
 }
 
 td,th {
