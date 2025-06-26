@@ -584,6 +584,12 @@ canvas {
 }*/
 
 /* Eventos */
+.cabecera-dos h2 {
+  color: #e91e63;
+  margin-bottom: 20px;/*cambia de 40px a 20px*/
+  text-align: center; /*no esta*/
+}
+
 ul {
   list-style: none;
   padding-left: 0;
