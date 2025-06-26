@@ -19,6 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #fdfdfd;
   color: #333;
+  margin: 0;
 }
 
 /*
@@ -417,10 +418,18 @@ table {
   margin-bottom: 40px;/*cambia de 20px a 40px*/
 }
 
+/*no estaba */
+.tabla-container {
+  overflow-x: auto;
+  border: 2px solid #e91e63;
+  border-radius: 8px;
+}
+
 td,th {
   border: 2px solid #e91e63;
   padding: 10px;
   text-align: center;
+  background-color: white;
 }
 /*table {
   width: 100%;
@@ -440,6 +449,10 @@ td {
 th {
   background-color: #f8e9f0;
   color: #e91e63;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 tr:nth-child(even) {
@@ -452,27 +465,47 @@ tr:nth-child(even) {
 }*/
 
 h2 {
-  color: #e91e63;
+  /*color: #e91e63;
   margin-bottom: 20px;/*cambia de 40px a 20px*/
-  text-align: center; /*no esta*/
+  /*text-align: center; /*no esta*/
+
+  color: #e91e63;
+  margin: 30px 0 15px;
+  text-align: center;
 }
 
 /* 👇 Clase especial para justificar la columna de observaciones */
 .observaciones {
   text-align: justify;
 }
+/*no esta*/
+.graficos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+/*no esta*/
+.grafico {
+  flex: 1 1 400px;
+  max-width: 480px;
+}
+
 .grafico-container {
   max-width: 700px;
   margin: 30px auto;
 }
 /*no esta*/
 canvas {
-  max-width: 100%;
+  /*max-width: 100%;
   margin: 40px auto;
-  display: block;
-}
+  display: block;*/
 
-/*#myChart {
+  width: 100% !important;
+  height: auto !important;
+}
+#myChart {
   max-width: 100%;
   margin-top: 40px;
 }*/
