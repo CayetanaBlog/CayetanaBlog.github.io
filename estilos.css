@@ -510,17 +510,29 @@ h2 {
 
 }
 /*no esta*/
-.graficos {
+/*.graficos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
+}*/
+.graficos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
 }
+
 /*no esta*/
-.grafico {
+/*.grafico {
   flex: 1 1 400px;
   max-width: 480px;
+}*/
+.grafico {
+  flex: 1 1 45%; /* permite que se acomoden dos por fila */
+  min-width: 300px;
 }
 
 .grafico-container {
