@@ -517,28 +517,28 @@ h2 {
   gap: 30px;
   margin-top: 30px;
 }*/
-.graficos {
+/*.graficos {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
   margin-top: 40px;
-}
-
-/*no esta*/
-.grafico {
-  flex: 1 1 400px;
-  max-width: 480px;
-}
-/*.grafico {
-  flex: 1 1 45%; /* permite que se acomoden dos por fila */
-  min-width: 300px;
 }*/
 
-.grafico-container {
+/*no esta*/
+/*.grafico {
+  flex: 1 1 400px;
+  max-width: 480px;
+}*/
+/*.grafico {
+  flex: 1 1 45%; /* permite que se acomoden dos por fila */
+  /*min-width: 300px;
+}*/
+
+/*.grafico-container {
   max-width: 1200px;
   margin: 30px auto;
-}
+}*/
 /*no esta*/
 /*canvas {
   max-width: 100%;
@@ -548,6 +548,29 @@ h2 {
   width: 100% !important;
   height: auto !important;
 }*/
+/*canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}*/
+/* 🔄 Nuevo diseño para mostrar gráficos en fila en pantallas grandes */
+.graficos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.grafico {
+  flex: 1 1 400px;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
 canvas {
   width: 100%;
   height: auto;
