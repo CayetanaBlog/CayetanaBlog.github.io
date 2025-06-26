@@ -428,7 +428,7 @@ table {
 /*no estaba */
 .tabla-container {
   overflow-x: auto;
-  border: 4px solid #e91e63;
+ /* border: 4px solid #e91e63;*/
  /* border-radius: 8px;*/
   width: 100%;
 }
