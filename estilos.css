@@ -431,7 +431,7 @@ table {
 }
 /* Añade un espacio entre la tabla y el siguiente elemento que es la barra de scrooll*/
 .table-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /*no estaba */
@@ -526,28 +526,35 @@ h2 {
 }
 
 /*no esta*/
-/*.grafico {
+.grafico {
   flex: 1 1 400px;
   max-width: 480px;
-}*/
-.grafico {
+}
+/*.grafico {
   flex: 1 1 45%; /* permite que se acomoden dos por fila */
   min-width: 300px;
-}
+}*/
 
 .grafico-container {
   max-width: 700px;
   margin: 30px auto;
 }
 /*no esta*/
-canvas {
+/*canvas {
   max-width: 100%;
   margin: 40px auto;
   display: block;
 
   width: 100% !important;
   height: auto !important;
+}*/
+canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
 }
+
 /*#myChart {
   max-width: 100%;
   margin-top: 40px;
