@@ -540,20 +540,20 @@ h2 {
   margin: 30px auto;
 }
 /*no esta*/
-canvas {
-/*  max-width: 100%;
+/*canvas {
+  max-width: 100%;
   margin: 40px auto;
-  display: block;*/
+  display: block;
 
   width: 100% !important;
   height: auto !important;
-}
-/*canvas {
+}*/
+canvas {
   width: 100%;
   height: auto;
   display: block;
   margin: 20px 0;
-}*/
+}
 
 /*#myChart {
   max-width: 100%;
