@@ -429,6 +429,10 @@ table {
   min-width: 1200px;     /* Aumentado para mayor anchura */
   box-sizing: border-box;
 }
+/* Añade un espacio entre la tabla y el siguiente elemento que es la barra de scrooll*/
+.table-wrapper {
+  margin-bottom: 20px;
+}
 
 /*no estaba */
 .tabla-container {
