@@ -412,6 +412,12 @@ blockquote {
   margin-top: 20px;
   font-size: 0.95em;
 }*/
+.estadistica-container {
+  max-width: 1200px;
+  /*margin: 30px auto;*/
+  margin: 40px auto;
+  padding: 0 20px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
