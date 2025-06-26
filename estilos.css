@@ -585,7 +585,7 @@ canvas {
 
 /* Eventos */
 
-.cabecera-dos h2 {
+h2.cabecera-dos {
   color: #e91e63;
   margin-bottom: 20px;/*cambia de 40px a 20px*/
   /*text-align: center; /*no esta*/
