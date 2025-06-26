@@ -477,6 +477,12 @@ h2 {
 /* 👇 Clase especial para justificar la columna de observaciones */
 .observaciones {
   text-align: justify;
+
+  hyphens: auto;
+  width: 30%; /* Ajustable */
+  min-width: 200px;
+}
+
 }
 /*no esta*/
 .graficos {
