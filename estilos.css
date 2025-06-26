@@ -941,7 +941,7 @@ footer.index {
   bottom: 0;
   right: 0;
   padding: 10px 20px;
-  color: fff;
+  color: #fff;
   background-color: transparent; /* o un color si quieres fondo */
   font-size: 0.9em;
 }
