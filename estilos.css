@@ -121,8 +121,8 @@ footer {
 /* Diario */
 .container {
   max-width: 1000px;
-  /*margin: 30px auto;*/
-  margin: 40px auto;
+  margin: 30px auto;
+  /*margin: 40px auto;*/
   padding: 0 20px;
 }
 /*.container {
@@ -445,6 +445,7 @@ table {
   margin: 0;             /* Elimina espacio externo innecesario */
   box-sizing: border-box;
   border: none;          /* Asegúrate de que no haya bordes si no los necesitas */
+  paddin-bottom: 1rem; /* crea espacio entre tabla y scroll horizontal */
 }
 
 td,th {
