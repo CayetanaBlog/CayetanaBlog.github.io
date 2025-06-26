@@ -431,7 +431,7 @@ table {
 }
 /* Añade un espacio entre la tabla y el siguiente elemento que es la barra de scrooll*/
 .table-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /*no estaba */
@@ -536,7 +536,7 @@ h2 {
 }*/
 
 .grafico-container {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 30px auto;
 }
 /*no esta*/
