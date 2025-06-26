@@ -6,15 +6,22 @@
 /*  background: #f9f9fb;*/
 }
 
-body {
+/*body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f6f6f6;
+  background-color: #f6f6f6;*/
   /*transition: all 0.3s ease-in-out;*/
+/*}*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  color: #333;
 }
 
+/*
 nav {
   background: #fff;
   border-bottom: 2px solid #e91e63;
@@ -23,6 +30,19 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+*/
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  border-bottom: 2px solid #e91e63;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 1em 0;
 }
 
 /* Navegación centrada, con diseño responsive */
@@ -42,15 +62,23 @@ nav {
   
 }*/
 
-nav a {
+/*nav a {
   margin: 0 12px;
   text-decoration: none;
   color: #e91e63;
-  font-weight: bold;
+  font-weight: bold;*/
+  
   /*padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;*/
-}
+/*}*/
 
+nav a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.8em;/*extra*/
+  transition: all 0.3s;/*extra*/
+}
 nav a.active {
   border-bottom: 2px solid #e91e63;
   color: #333;
@@ -92,7 +120,8 @@ footer {
 /* Diario */
 .container {
   max-width: 1000px;
-  margin: 30px auto;
+  /*margin: 30px auto;*/
+  margin: 40px auto;
   padding: 0 20px;
 }
 /*.container {
@@ -376,11 +405,16 @@ blockquote {
 
 /* Estadísticas */
 
-table {
+/*table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 0.95em;
+}*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;/*cambia de 20px a 40px*/
 }
 
 td,th {
@@ -412,10 +446,17 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-h2 {
+/*h2 {
   color: #e91e63;
   margin-top: 40px;
+}*/
+
+h2 {
+  color: #e91e63;
+  margin-bottom: 20px;/*cambia de 40px a 20px*/
+  text-align: center; /*no esta*/
 }
+
 /* 👇 Clase especial para justificar la columna de observaciones */
 .observaciones {
   text-align: justify;
@@ -424,6 +465,13 @@ h2 {
   max-width: 700px;
   margin: 30px auto;
 }
+/*no esta*/
+canvas {
+  max-width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+
 /*#myChart {
   max-width: 100%;
   margin-top: 40px;
@@ -855,6 +903,18 @@ body.index header p {
   background-color: #c2185b;
 }
 
+footer.index {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: fff;
+  background-color: transparent; /* o un color si quieres fondo */
+  font-size: 0.9em;
+}
+
+}
+
 /* Responsive background for index.html */
 @media (max-aspect-ratio: 3/4) {
   body.index {
@@ -875,7 +935,7 @@ body.index header p {
 }
 
 /* Botón "subir arriba" */
-#toTop {
+/*#toTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -892,17 +952,22 @@ body.index header p {
 
 #toTop:hover {
   background: #e91e63;
-}
-footer.index {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 10px 20px;
-  color: fff;
-  background-color: transparent; /* o un color si quieres fondo */
-  font-size: 0.9em;
-}
+}*/
 
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e91e63;/*el que funciona tiene #ff4081;*/
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;/*el que funciona tiene 0.8*/
+  font-size: 20px; /*el que funciona tiene 1.2em;*/
+  cursor: pointer;
+  z-index: 999; /*no esta*/
+	  /*el que funciona tiene una linea con box-shadow: 0 2px 6px rgba(0,0,0,0.3);*/
 }
 
 /* Botón "subir arriba" */
@@ -1000,7 +1065,25 @@ footer.index {
     font-size: 1.4em;
   }
 }*/
+/*no esta*/
+@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  nav a {
+    flex: 1 1 auto;
+  }
 
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
 
 
 
