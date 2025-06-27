@@ -42,6 +42,7 @@ nav {
   gap: 10px;
 }
 */
+/* el bueno*/
 nav {
   position: sticky;/*Hace que el <nav> se quede fijo en la parte superior del viewport cuando se hace scroll, pero sólo cuando llega a esa posición, a diferencia de fixed que siempre se queda arriba.*/
   top: 0;
@@ -84,7 +85,7 @@ nav {
 /*}*/
 
 nav a {
-  color: #e91e63;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   padding: 0.4em 0.8em;/*extra*/
