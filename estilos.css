@@ -20,12 +20,12 @@ body {
   background: #fdfdfd;
   color: #333;
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+ /* padding: 0;
+  overflow-x: hidden;*/
 }
-html {
+/*html {
   overflow-x: hidden;
-}
+}*/
 
 /*header, nav, main, footer {
   max-width: 100vw;
@@ -53,6 +53,7 @@ nav {
   justify-content: center;
   gap: 12px;
   padding: 1em 0;
+  border-bottom: none;
 }
 
 /* Navegación centrada, con diseño responsive */
@@ -105,8 +106,8 @@ header {
   color: white;
   padding: 60px 20px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;	
+/*  display: flex;
+  flex-wrap: wrap;	*/
 }
 
 /*header {
@@ -387,7 +388,7 @@ footer {
   .nav-btn {
     font-size: 20px;
     padding: 6px 10px;
-    .nav-btn:hover {
+  .nav-btn:hover {
     background: rgba(255,255,255,0.9);
 }
 
@@ -1354,7 +1355,7 @@ footer.index {
   }
 }
 /* Adaptación móvil */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -1372,6 +1373,6 @@ footer.index {
     width: 30vw;
   }
 }
-
+*/
 
 
