@@ -100,14 +100,16 @@ nav a:hover {
   color: #fff;
 }
 
-/*header {
+header {
   background-color: #e91e63;
   color: white;
-  padding: 40px 20px;
+ /* padding: 40px 20px;*/
   text-align: center;
-}*/
+  display: flex;
+  flex-wrap: wrap;	
+}
 
-header {
+/*header {
   background-color: #003366;
   color: white;
   display: flex;
@@ -115,7 +117,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-}
+}*/
 
 /* Encabezado fijo */
 /*header {
