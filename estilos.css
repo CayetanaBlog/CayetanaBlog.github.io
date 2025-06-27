@@ -92,7 +92,7 @@ nav a {
   transition: all 0.3s;/*extra*/
 }
 nav a.active {
-  border-bottom: 2px solid #e91e63;
+  border-bottom: 2px solid #fff;
   color: #333;
 }
 /* este hover es el efecto al pasar el raton por el menu*/
@@ -1437,7 +1437,7 @@ table:hover {
 
 /* MENÚ CON EFECTO 3D */
 .menu-3d {
-  background-color: #ccc;
+  background-color: #d1d5db;
   padding: 1rem;
   text-align: center;
 }
