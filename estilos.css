@@ -1512,10 +1512,18 @@ table:hover {
   display: none;
 }
 
-.menu-contenedor {
+/*.menu-contenedor {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}*/
+.menu-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .menu-contenedor a {
@@ -1573,6 +1581,7 @@ table:hover {
   .menu-contenedor {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     gap: 0;
   }
