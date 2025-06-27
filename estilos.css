@@ -441,7 +441,7 @@ table {
  /* border-radius: 8px;*/
   width: 100%;
 
-  padding: 0;            /* Elimina cualquier espacio interno */
+ /* padding: 0;            /* Elimina cualquier espacio interno */
   margin: 0;             /* Elimina espacio externo innecesario */
   box-sizing: border-box;
   border: none;          /* Asegúrate de que no haya bordes si no los necesitas */
@@ -588,7 +588,7 @@ canvas {
 h2.cabecera-dos {
   color: #e91e63;
   /*margin-bottom: 20px;/*cambia de 40px a 20px*/
-  /*text-align: center; /*no esta*/
+  text-align: left; /*no esta*/
 }
 
 ul {
