@@ -1436,7 +1436,7 @@ table:hover {
 
 /* MENÚ CON EFECTO 3D */
 .menu-3d {
-  background-color: #111;
+  background-color: #e91e63;
   padding: 1rem;
   text-align: center;
 }
@@ -1466,5 +1466,5 @@ table:hover {
     2px 2px 2px #222,
     3px 3px 3px #444,
     4px 4px 4px #666;
-  border-bottom: 2px solid #fcd34d;
+  border-bottom: 2px solid #1e3a8a;
 }
