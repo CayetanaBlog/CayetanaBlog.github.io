@@ -97,7 +97,7 @@ nav a.active {
 }
 /* este hover es el efecto al pasar el raton por el menu*/
 nav a:hover {
-  background-color: #ff4081;
+  background-color: #d1d5db;
   border-radius: 10px;
   color: #fff;
 }
