@@ -657,7 +657,7 @@ li:hover {
   border-radius: 8px;
   width: fit-content;
 }*/
-.type {
+/*.type {
   font-size: 0.85rem;
   padding: 3px 10px;
   border-radius: 8px;
@@ -668,20 +668,79 @@ li:hover {
 
 .type.partido {
   background-color: #e91e63; /* rosa fuerte */
-}
+/*}
 
 .type.entrenamiento {
   background-color: #3f51b5; /* azul */
-}
+/*}
 
 .type.torneo {
   background-color: #4caf50; /* verde */
-}
+/*}
 
 @media (max-width: 600px) {
   li {
     padding: 14px 16px;
   }
+}*/
+.eventos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .eventos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.evento-card {
+  background: #fdfdfd;
+  border-left: 6px solid #e91e63;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.evento-card:hover {
+  transform: translateY(-4px);
+}
+
+.evento-card .date {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.evento-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.type {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.type.partido {
+  background-color: #e91e63;
+}
+
+.type.entrenamiento {
+  background-color: #3f51b5;
+}
+
+.type.torneo {
+  background-color: #4caf50;
 }
 
 
