@@ -1452,7 +1452,7 @@ table:hover {
   position: relative;
 }
 
-.menu-3d a {
+/*.menu-3d a {
   color: #fff;
   margin: 0 1rem;
   font-size: 1.2rem;
@@ -1486,7 +1486,7 @@ table:hover {
     2px 2px 2px #222,
     3px 3px 3px #444,
     4px 4px 4px #666;
-  border-bottom: 2px solid #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;*/
 }
 /* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
 .menu-3d {
