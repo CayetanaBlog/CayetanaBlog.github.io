@@ -1436,10 +1436,20 @@ table:hover {
 }*/
 
 /* MENÚ CON EFECTO 3D */
-.menu-3d {
+/*.menu-3d {
   background-color: #d1d5db;
   padding: 1rem;
   text-align: center;
+}*/
+/* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
+.menu-3d {
+  background-color: #f7b3d0; /* rosa pastel */
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .menu-3d a {
@@ -1466,7 +1476,7 @@ table:hover {
     2px 2px 2px #222,
     3px 3px 3px #444,
     4px 4px 4px #666;
-  border-bottom: 2px solid #fcd34d;
+  border-bottom: 2px solid #1e3a8a;
 }
 .menu-3d a.active {
   color: #fff;
@@ -1478,3 +1488,76 @@ table:hover {
     4px 4px 4px #666;
   border-bottom: 2px solid #1e3a8a;
 }
+/* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
+.menu-3d {
+  background-color: #f7b3d0; /* rosa pastel */
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu-3d .menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-contenedor {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu-contenedor a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.menu-contenedor a:hover,
+.menu-contenedor a.active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ==== RESPONSIVO PARA MÓVILES ==== */
+@media (max-width: 768px) {
+  .menu-3d {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-3d .menu-icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-contenedor {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .menu-contenedor a {
+    width: 100%;
+    padding: 12px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu-contenedor {
+    display: flex;
+  }
+}
+
