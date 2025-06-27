@@ -1119,11 +1119,11 @@ body.index header h1 {
   margin-bottom: 10px;
   color: #666;
   text-shadow:
-    /*1px 1px 0 #000,
+    1px 1px 0 #000,
     2px 2px 0 #000,
     3px 3px 0 #000,
-    4px 4px 0 #000;*/
-    2px 2px 6px #000; 	
+    4px 4px 0 #000;
+    /*2px 2px 6px #000; 	*/
   padding: 30px;
   display: block;
 }
@@ -1132,11 +1132,11 @@ body.index header p {
   font-size: 1.2em;
   color: #fff;
   text-shadow:
-    /*1px 1px 0 #000,
+    1px 1px 0 #000,
     2px 2px 0 #000,
     3px 3px 0 #000,
-    4px 4px 0 #000;*/
-    2px 2px 6px #000;
+    4px 4px 0 #000;
+   /* 2px 2px 6px #000;*/
   padding: 30px;
   display: block;
 }
@@ -1465,7 +1465,7 @@ table:hover {
     2px 2px 2px #222,
     3px 3px 3px #444,
     4px 4px 4px #666;
-  border-bottom: 2px solid #1e3a8a;
+  border-bottom: 2px solid #fcd34d;
 }
 .menu-3d a.active {
   color: #fff;
