@@ -689,7 +689,7 @@ li:hover {
   gap: 20px;
   margin-top: 30px;
 }
-
+/* Estilo Grid para pantallas grandes HACER 2 COLUMNAS*/
 @media (min-width: 768px) {
   .eventos-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -697,7 +697,7 @@ li:hover {
 }
 
 .evento-card {
-  background: #fdfdfd;
+  background: #fcd6e3;
   border-left: 6px solid #e91e63;
   padding: 20px;
   border-radius: 12px;
