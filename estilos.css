@@ -1500,13 +1500,21 @@ table:hover {
   position: relative;
 }*/
 
-.menu-3d .menu-icon {
+/*.menu-3d .menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}*/
+.menu-icon {
   display: none;
   font-size: 28px;
   color: white;
   cursor: pointer;
   user-select: none;
 }
+
 
 #menu-toggle {
   display: none;
@@ -1573,10 +1581,15 @@ table:hover {
     align-items: flex-start;
   }
 
-  .menu-3d .menu-icon {
+ /* .menu-3d .menu-icon {
+    display: block;
+    margin-bottom: 10px;
+  }*/
+  .menu-icon {
     display: block;
     margin-bottom: 10px;
   }
+
 
   .menu-contenedor {
     display: none;
