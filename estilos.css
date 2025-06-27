@@ -1442,7 +1442,7 @@ table:hover {
 }
 
 .menu-3d a {
-  color: #fff;
+  /*color: #fff;*/
   margin: 0 1rem;
   font-size: 1.2rem;
   text-decoration: none;
@@ -1457,7 +1457,16 @@ table:hover {
     4px 4px 0 #777;
 }
 
-.menu-3d a:hover,
+.menu-3d a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  text-shadow:
+    1px 1px 1px #000,
+    2px 2px 2px #222,
+    3px 3px 3px #444,
+    4px 4px 4px #666;
+  border-bottom: 2px solid #1e3a8a;
+}
 .menu-3d a.active {
   color: #fff;
   transform: translateY(-3px);
