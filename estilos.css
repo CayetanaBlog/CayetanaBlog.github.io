@@ -1378,7 +1378,7 @@ footer.index {
 /* ==== EFECTOS 3D MODERNOS ==== */
 
 /* 3D para botones */
-.boton, .video-button {
+/*.boton, .video-button {
   perspective: 800px;
   transform-style: preserve-3d;
   box-shadow: 0 6px 15px rgba(233, 30, 99, 0.3);
@@ -1391,7 +1391,7 @@ footer.index {
 }
 
 /* 3D para tarjetas como .diario-item, .evento-card, .tarjeta-imagen */
-.diario-item, .evento-card, .tarjeta-imagen, .season-card {
+/*.diario-item, .evento-card, .tarjeta-imagen, .season-card {
   transform-style: preserve-3d;
   perspective: 1000px;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
@@ -1404,13 +1404,13 @@ footer.index {
 }
 
 /* Imágenes en galería y destacadas */
-.grid img:hover, .galeria img:hover, .galeria-grid img:hover {
+/*.grid img:hover, .galeria img:hover, .galeria-grid img:hover {
   transform: scale(1.05) rotateZ(1deg) translateZ(8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Navegación con profundidad */
-nav {
+/*nav {
   box-shadow: 0 6px 12px rgba(0,0,0,0.05);
   transform-style: preserve-3d;
   perspective: 1200px;
@@ -1425,12 +1425,46 @@ nav a:hover {
 }
 
 /* Transición suave en tablas */
-table {
+/*table {
   transition: transform 0.2s ease;
 }
 
 table:hover {
   transform: scale(1.01);
   box-shadow: 0 8px 20px rgba(233, 30, 99, 0.15);
+}*/
+
+/* MENÚ CON EFECTO 3D */
+.menu-3d {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
 }
 
+.menu-3d a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  text-shadow:
+    1px 1px 0 #aaa,
+    2px 2px 0 #999,
+    3px 3px 0 #888,
+    4px 4px 0 #777;
+}
+
+.menu-3d a:hover,
+.menu-3d a.active {
+  color: #fff;
+  transform: translateY(-3px);
+  text-shadow:
+    1px 1px 1px #000,
+    2px 2px 2px #222,
+    3px 3px 3px #444,
+    4px 4px 4px #666;
+  border-bottom: 2px solid #fcd34d;
+}
