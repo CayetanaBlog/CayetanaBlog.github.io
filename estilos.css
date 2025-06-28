@@ -225,12 +225,7 @@ footer {
 .diario-item h2 {
   margin-top: 0;
   color: #c2185b;
-  color: #fff;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000;
+
 }
 
 .diario-item .fecha {
@@ -241,12 +236,7 @@ footer {
 
 .diario-item p {
   line-height: 1.6;
-  color: #fff;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000;
+
 }
 
 .diario-item img {
@@ -538,12 +528,7 @@ h2 {
   color: #e91e63;
   margin: 30px 0 15px;
   text-align: center;
-  color: #fff;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000;
+
 }
 
 /* 👇 Clase especial para justificar la columna de observaciones */
@@ -641,12 +626,7 @@ h2.cabecera-dos {
   margin: 30px 0 15px;
   text-align: left;
   padding-left: 0; /* asegúrate que no tenga padding distinto al resto */
-  color: #fff;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000;
+
 }
 /*ul {
   list-style: none;
