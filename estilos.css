@@ -1676,3 +1676,8 @@ table:hover {
   
   color: #fff;
 }
+header.efectos3d {
+  overflow: hidden;
+  padding: 2rem;
+  text-align: center;
+}
