@@ -1450,6 +1450,7 @@ table:hover {
   padding: 1rem;
   text-align: center;
 }*/
+
 /* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
 .menu-3d {
   background-color: #d1d5db;/*#f7b3d0; /* rosa pastel */
@@ -1511,7 +1512,7 @@ table:hover {
 
 .menu-3d .menu-icon {
   display: none;
-  font-size: 28px;
+  font-size: 36px;
   color: white;
   cursor: pointer;
   user-select: none;
