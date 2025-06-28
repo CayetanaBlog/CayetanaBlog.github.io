@@ -1649,7 +1649,7 @@ table:hover {
 .efectos3d h3,
 .efectos3d p {
   display: inline-block;
-  color: #ccc;
+  color: #fff;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease-in-out;
@@ -1674,7 +1674,7 @@ table:hover {
     4px 4px 0 #ff69b4,
     5px 5px 0 #e91e63;
   
-  color: #ccc;
+ /* color: #ccc;*/
 }
 header.efectos3d {
   overflow: hidden;
