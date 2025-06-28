@@ -1618,7 +1618,7 @@ table:hover {
     display: flex;
   }
 }
-.efectos3d
+/*.efectos3d
   h1, h2, h3, p {
   color: #fff;
   position: relative;
@@ -1633,7 +1633,37 @@ table:hover {
 }
 
   /* Efecto al pasar el mouse: cambia profundidad y color */
-  h1:hover, h2:hover, h3:hover, p:hover {
+  /*h1:hover, h2:hover, h3:hover, p:hover {
+  text-shadow:
+    1px 1px 0 #fff,
+    2px 2px 0 #ffbfd8,
+    3px 3px 0 #ff99c8,
+    4px 4px 0 #ff69b4,
+    5px 5px 0 #e91e63;
+  transform: scale(1.03);
+  color: #fff;
+}*/
+/* de esta forma se mete en una clase contenedora .efectos3d para poder aplicar exactamente a que quieres el efecto"*/
+.efectos3d h1,
+.efectos3d h2,
+.efectos3d h3,
+.efectos3d p {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  text-shadow:
+    1px 1px 0 #ccc,
+    2px 2px 0 #bbb,
+    3px 3px 0 #aaa,
+    4px 4px 0 #999,
+    5px 5px 0 #888;
+}
+/* Efecto al pasar el mouse: cambia profundidad y color */
+.efectos3d h1:hover,
+.efectos3d h2:hover,
+.efectos3d h3:hover,
+.efectos3d p:hover {
   text-shadow:
     1px 1px 0 #fff,
     2px 2px 0 #ffbfd8,
@@ -1643,4 +1673,3 @@ table:hover {
   transform: scale(1.03);
   color: #fff;
 }
-
