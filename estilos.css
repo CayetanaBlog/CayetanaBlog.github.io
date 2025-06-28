@@ -1649,7 +1649,7 @@ table:hover {
 .efectos3d h3,
 .efectos3d p {
   display: inline-block;
-  color: #fff;
+  color: #ccc;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease-in-out;
