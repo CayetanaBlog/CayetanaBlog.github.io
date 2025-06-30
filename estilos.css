@@ -1727,9 +1727,7 @@ header.efectos3d {
 }
 
 /*videos.html*/
-:root {
-  --color-principal: #ff4081; /* rosa fuerte */
-}
+
 .video-destacado {
   max-width: 960px;
   margin: 2rem auto;
@@ -1791,6 +1789,9 @@ main h1 {
 }
 
 /* Estilo del menú desplegable de temporadas */
+:root {
+  --color-principal: #ff4081; /* rosa fuerte */
+}
 .temporadas-desplegable {
   margin: 1em;
   font-family: 'Poppins', sans-serif;
@@ -1814,7 +1815,7 @@ main h1 {
   border-bottom: 2px solid var(--color-principal, #f2a6c0);
 }
 
-.temporadas-desplegable .season-grid-video {
+.temporadas-desplegable .season-grid-temporadas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.5em;
@@ -1823,11 +1824,11 @@ main h1 {
 
 /* Solo se aplica en pantallas pequeñas */
 @media (max-width: 768px) {
-  .season-grid-video {
+  .season-grid-temporadas {
     display: block; /* Para que los enlaces no ocupen toda la pantalla si no están en el desplegable */
   }
 
-  .temporadas-desplegable .season-card-video {
+  .temporadas-desplegable .season-card-temporadas {
     display: block;
     margin-bottom: 0.5em;
     text-align: center;
@@ -1838,7 +1839,7 @@ main h1 {
     transition: background 0.3s;
   }
 
-  .temporadas-desplegable .season-card-video:hover {
+  .temporadas-desplegable .season-card-temporadas:hover {
     background: #ffe0ea;
   }
 }
