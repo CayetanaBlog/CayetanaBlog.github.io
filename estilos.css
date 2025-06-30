@@ -1727,6 +1727,9 @@ header.efectos3d {
 }
 
 /*videos.html*/
+:root {
+  --color-principal: #ff4081; /* rosa fuerte */
+}
 .video-destacado {
   max-width: 960px;
   margin: 2rem auto;
@@ -1811,7 +1814,7 @@ main h1 {
   border-bottom: 2px solid var(--color-principal, #f2a6c0);
 }
 
-.temporadas-desplegable .season-grid {
+.temporadas-desplegable .season-grid-video {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.5em;
@@ -1820,22 +1823,22 @@ main h1 {
 
 /* Solo se aplica en pantallas pequeñas */
 @media (max-width: 768px) {
-  .season-grid {
+  .season-grid-video {
     display: block; /* Para que los enlaces no ocupen toda la pantalla si no están en el desplegable */
   }
 
-  .temporadas-desplegable .season-card {
+  .temporadas-desplegable .season-card-video {
     display: block;
     margin-bottom: 0.5em;
     text-align: center;
     padding: 0.5em;
-    background: white;
+    background: #e91e63 /*white;*/
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     transition: background 0.3s;
   }
 
-  .temporadas-desplegable .season-card:hover {
+  .temporadas-desplegable .season-card-video:hover {
     background: #ffe0ea;
   }
 }
