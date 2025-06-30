@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Videos destacados de Cayetana Encinas, su pasión por el fútbol en imágenes.">
+  <meta property="og:title" content="Videos - El Sueño de una Futbolista">
+  <meta property="og:description" content="Revive los mejores momentos de Cayetana en el campo de juego.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="URL_A_TU_IMAGEN_DESTACADA.jpg">
+
+  <title>Videos de Cayetana - El Sueño de una Futbolista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    .videos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .video-box {
+      background-color: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .video-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .video-box iframe {
+      width: 100%;
+      height: 200px;
+      display: block;
+    }
+
+    .video-title {
+      padding: 1rem;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    main h1 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu-3d">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="menu-contenedor">
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="diario.html">Diario</a>
+      <a href="logros.html">Logros</a>
+      <a href="estadisticas.html">Estadísticas</a>
+      <a href="historia.html">Historia</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="videos.html" class="active">Videos</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Videos de Cayetana</h1>
+    <section class="videos-container">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/-ULPyZ_kV1Y" allowfullscreen></iframe>
+        <div class="video-title">Gol de Cayetana</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/NcR8nuUmppo" allowfullscreen></iframe>
+        <div class="video-title">Internada de Cayetana</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/Rg18zGE0Cws" allowfullscreen></iframe>
+        <div class="video-title">Salvada en línea de gol</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/d2vs7XdhVcM" allowfullscreen></iframe>
+        <div class="video-title">Explosión de velocidad</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/Mqjd82oWXBU" allowfullscreen></iframe>
+        <div class="video-title">Tiro de penalti</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/u4ev9kSJNFA" allowfullscreen></iframe>
+        <div class="video-title">Recorte y gol</div>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/kDsLbm5saJo" allowfullscreen></iframe>
+        <div class="video-title">Internada y asistencia</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
