@@ -1517,12 +1517,28 @@ table:hover {
   cursor: pointer;
   user-select: none;
 }
-.menu-icon {
+/*.menu-icon {
   display: none;
   font-size: 28px;
   color: white;
   cursor: pointer;
   user-select: none;
+}*/
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background-color: #e91e63; /* Fondo rosa */
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.menu-icon span {
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 
@@ -1595,9 +1611,15 @@ table:hover {
     display: block;
     margin-bottom: 10px;
   }*/
-  .menu-icon {
+/*  .menu-icon {
     display: block;
     margin-bottom: 10px;
+  }*/
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -1619,6 +1641,8 @@ table:hover {
     display: flex;
   }
 }
+
+/*<-- ######################### */
 /*.efectos3d
   h1, h2, h3, p {
   color: #fff;
