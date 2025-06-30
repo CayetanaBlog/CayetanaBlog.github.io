@@ -1786,3 +1786,56 @@ main h1 {
   font-size: 2rem;
   margin-top: 1rem;
 }
+
+/* Estilo del menú desplegable de temporadas */
+.temporadas-desplegable {
+  margin: 1em;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--color-principal, #f2a6c0);
+  border-radius: 10px;
+  background: #fff0f5;
+  overflow: hidden;
+}
+
+.temporadas-desplegable summary {
+  cursor: pointer;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  background: var(--color-principal, #f2a6c0);
+  color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.temporadas-desplegable[open] summary {
+  border-bottom: 2px solid var(--color-principal, #f2a6c0);
+}
+
+.temporadas-desplegable .season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5em;
+  padding: 1em;
+}
+
+/* Solo se aplica en pantallas pequeñas */
+@media (max-width: 768px) {
+  .season-grid {
+    display: block; /* Para que los enlaces no ocupen toda la pantalla si no están en el desplegable */
+  }
+
+  .temporadas-desplegable .season-card {
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+  }
+
+  .temporadas-desplegable .season-card:hover {
+    background: #ffe0ea;
+  }
+}
