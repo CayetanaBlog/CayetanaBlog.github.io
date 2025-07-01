@@ -1622,8 +1622,10 @@ table:hover {
     align-items: center;
     justify-content: flex-end; /*center;*/
     
-    width: 100%;        /* ocupa todo el ancho */
+    /*width: 100%;        /* ocupa todo el ancho */
+    width: auto;         /* ✅ Solo lo que ocupa el ícono y el texto */
     margin-bottom: 10px;
+    align-self: flex-end; /* ✅ Lo empuja a la derecha en flex column */
   }
 
 
