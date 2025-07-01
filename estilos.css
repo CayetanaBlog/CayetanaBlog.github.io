@@ -6,49 +6,18 @@
 
 }
 
-/*body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f6f6f6;*/
-  /*transition: all 0.3s ease-in-out;*/
-/*}*/
-
 body {
   font-family: 'Poppins', sans-serif;
   background: #fdfdfd;
   color: #333;
   margin: 0;
- /* padding: 0;
-  overflow-x: hidden;*/
-}
-/*html {
-  overflow-x: hidden;
-}*/
 
-/*header, nav, main, footer {
-  max-width: 100vw;
-  overflow-x: hidden;
-}*/
-/*
-nav {
-  background: #fff;
-  border-bottom: 2px solid #e91e63;
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
 }
-*/
-/* el bueno*/
 nav {
   position: sticky;/*Hace que el <nav> se quede fijo en la parte superior del viewport cuando se hace scroll, pero sólo cuando llega a esa posición, a diferencia de fixed que siempre se queda arriba.*/
   top: 0;
   background: #fff;
   z-index: 1000;
- /* border-bottom: 2px solid #e91e63;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -56,33 +25,6 @@ nav {
   padding: 1em 0;
   border-bottom: none;
 }
-
-/* Navegación centrada, con diseño responsive */
-/*nav {
-  background: #fff;
-  border-bottom: 2px solid #e91e63;
-  padding: 1em 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  position: sticky; /* fija el nav */
-  /*top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  
-}*/
-
-/*nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #e91e63;
-  font-weight: bold;*/
-  
-  /*padding: 0.5rem 1rem;
-  transition: all 0.3s ease-in-out;*/
-/*}*/
 
 nav a {
   color: #fff;
@@ -107,34 +49,9 @@ header {
   color: white;
   padding: 60px 20px;
   text-align: center;
-/*  display: flex;
-  flex-wrap: wrap;	*/
+
 }
 
-/*header {
-  background-color: #003366;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}*/
-
-/* Encabezado fijo */
-/*header {
-  background-color: #e91e63;
-  /*color: white;*/
-  /*padding: 40px 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-in-out;
-}*/
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -149,54 +66,7 @@ footer {
   /*margin: 40px auto;*/
   padding: 0 20px;
 }
-/*.container {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-  text-align: center;
-  overflow-x: auto; /* permite desplazamiento horizontal si es necesario */
-  /*background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-radius: 12px;
-}*/
 
-
-/*article {
-  background-color: #fce4ec;
-  border: 1px solid #eee;
-  border-left: 5px solid #e91e63;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.fecha {
-  color: #999;
-  font-size: 0.9em;
-}
-
-.video {
-  margin-top: 10px;
-}
-
-.video iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 8px;
-}
-
-.boton {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #e91e63;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9em;
-}*/
 .diario-container {
   display: flex;
   flex-direction: column;
@@ -207,7 +77,7 @@ footer {
 
 .diario-item {
   background: linear-gradient(135deg, #ffe6f0, #fcd6e3);
-  /*border-left: 3px solid #ff69b4; /* rosa chicle */
+  
   border: 1px solid #eee;
   border-left: 5px solid #e91e63;
   border-radius: 16px;
@@ -252,26 +122,6 @@ footer {
   transition: transform 0.2s;
 }
 
-/*.img-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 2rem;
-}
-
-.img-popup img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-}*/
 .img-popup {
   position: fixed;
   top: 0;
@@ -355,7 +205,6 @@ footer {
   to { opacity: 1; }
 }
 
-
 .video iframe {
   width: 100%;
   height: 315px;
@@ -398,16 +247,6 @@ footer {
   }
 }
 
-/*footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #222;
-  color: white;
-  margin-top: 2rem;
-}*/
-
-/* Sobre*/
-/* Sección "Sobre" con imagen al lado */
 .intro {
   display: flex;
   flex-direction: row;
@@ -436,12 +275,6 @@ blockquote {
 
 /* Estadísticas */
 
-/*table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 0.95em;
-}*/
 .estadistica-container {
   max-width: 1200px;
   /*margin: 30px auto;*/
@@ -449,10 +282,7 @@ blockquote {
   padding: 0 20px;
 }
 table {
- /* width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 40px;/*cambia de 20px a 40px*/
-  /*min-width: 900px; /* o 1000px si es necesario */
+
   width: 100%;
   border-collapse: collapse;
   margin: 0;             /* Elimina espacio inferior (puedes agregarlo abajo si quieres separación) */
@@ -464,11 +294,9 @@ table {
   margin-bottom: 60px;
 }
 
-/*no estaba */
 .tabla-container {
   overflow-x: auto;
- /* border: 4px solid #e91e63;*/
- /* border-radius: 8px;*/
+
   width: 100%;
 
  /* padding: 0;            /* Elimina cualquier espacio interno */
@@ -484,20 +312,6 @@ td,th {
   text-align: center;
   background-color: white;
 }
-/*table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 0.95em;
-  overflow-x: auto;
-  min-width: 800px; /* para evitar que se comprima demasiado */
-/*}
-
-th,
-td {
-  min-width: 100px;
-  word-wrap: break-word;
-}*/
 
 th {
   background-color: #f8e9f0;
@@ -515,16 +329,7 @@ tr:nth-child(odd) {
   background-color: #fff;
 }
 
-/*h2 {
-  color: #e91e63;
-  margin-top: 40px;
-}*/
-
 h2 {
-  /*color: #e91e63;
-  margin-bottom: 20px;/*cambia de 40px a 20px*/
-  /*text-align: center; /*no esta*/
-
   color: #e91e63;
   margin: 30px 0 15px;
   text-align: center;
@@ -540,51 +345,7 @@ h2 {
   min-width: 200px;
 }
 
-/*no esta*/
-/*.graficos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
-}*/
-/*.graficos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 40px;
-}*/
 
-/*no esta*/
-/*.grafico {
-  flex: 1 1 400px;
-  max-width: 480px;
-}*/
-/*.grafico {
-  flex: 1 1 45%; /* permite que se acomoden dos por fila */
-  /*min-width: 300px;
-}*/
-
-/*.grafico-container {
-  max-width: 1200px;
-  margin: 30px auto;
-}*/
-/*no esta*/
-/*canvas {
-  max-width: 100%;
-  margin: 40px auto;
-  display: block;
-
-  width: 100% !important;
-  height: auto !important;
-}*/
-/*canvas {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-}*/
 /* 🔄 Nuevo diseño para mostrar gráficos en fila en pantallas grandes */
 .graficos {
   display: flex;
@@ -609,11 +370,6 @@ canvas {
   margin: 20px 0;
 }
 
-/*#myChart {
-  max-width: 100%;
-  margin-top: 40px;
-}*/
-
 /* Eventos */
 .eventos-container {
   max-width: 1000px;
@@ -628,28 +384,7 @@ h2.cabecera-dos {
   padding-left: 0; /* asegúrate que no tenga padding distinto al resto */
 
 }
-/*ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-li {
-  padding: 12px;
-  margin-bottom: 10px;
-  border-left: 4px solid #e91e63;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.date {
-  font-weight: bold;
-  color: #444;
-}
-
-.type {
-  font-style: italic;
-  color: #888;
-}*/
 ul {
   list-style: none;
   padding: 0;
@@ -679,42 +414,6 @@ li:hover {
   font-size: 1.1rem;
 }
 
-/*.type {
-  font-size: 0.9rem;
-  color: #666;
-  display: inline-block;
-  background-color: #fce4ec;
-  color: #c2185b;
-  padding: 2px 8px;
-  border-radius: 8px;
-  width: fit-content;
-}*/
-/*.type {
-  font-size: 0.85rem;
-  padding: 3px 10px;
-  border-radius: 8px;
-  width: fit-content;
-  font-weight: bold;
-  color: white;
-}
-
-.type.partido {
-  background-color: #e91e63; /* rosa fuerte */
-/*}
-
-.type.entrenamiento {
-  background-color: #3f51b5; /* azul */
-/*}
-
-.type.torneo {
-  background-color: #4caf50; /* verde */
-/*}
-
-@media (max-width: 600px) {
-  li {
-    padding: 14px 16px;
-  }
-}*/
 .eventos-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -856,15 +555,6 @@ li:hover {
   gap: 20px;
 }
 
-/*.galeria-grid img {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  object-fit: cover; /* Recorta inteligentemente sin deformar */
-  /*box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}*/
-
 .galeria-grid a:hover img {
   transform: scale(1.05);
 }
@@ -894,13 +584,7 @@ li:hover {
   display: block;
   margin-bottom: 12px;
   transition: transform 0.3s ease;
-  /*width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;*/
+
 }
 
 .tarjeta-imagen:hover img {
@@ -930,32 +614,7 @@ li:hover {
 }
 
 /* Historia */
-/*.timeline {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
 
-.season {
-  background-color: #fce4ec;
-  border-left: 4px solid #e91e63;
-  padding-left: 20px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.season h2 {
-  color: #e91e63;
-  margin-bottom: 10px;
-}
-
-.season p {
-  margin: 8px 0;
-}
-*/
 .timeline {
   max-width: 900px;
   margin: 40px auto;
@@ -1025,22 +684,8 @@ li:hover {
 .logro-content {
   flex: 1;
 }
-
-/*.logro img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
-}*/
-
 .logro img {
-  /*width: 100%;
-  max-width: 400px; /* o cualquier ancho que prefieras */
-  /*height: auto;     /* mantiene la proporción */
-  /*border-radius: 10px;
-  margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;*/
+ 
   width: 100%;
   height: 250px;               /* Altura fija para todas */
   object-fit: contain;         /* Mostrar la imagen completa */
@@ -1112,8 +757,6 @@ body.index {
 }
 
 body.index header {
-  /*background: rgba(0, 0, 0, 0.7);*/
-  /*padding: 60px 20px 40px;*/
   background: none;
   padding: 60px 20px 40px;
   text-align: center;
@@ -1214,26 +857,6 @@ footer.index {
   }
 }
 
-/* Botón "subir arriba" */
-/*#toTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  background: #ff4081;
-  color: white;
-  border: none;
-  padding: 0.8em;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-#toTop:hover {
-  background: #e91e63;
-}*/
-
 #toTop {
   display: none;
   position: fixed;
@@ -1247,48 +870,9 @@ footer.index {
   font-size: 20px; /*el que funciona tiene 1.2em;*/
   cursor: pointer;
   z-index: 999; /*no esta*/
-	  /*el que funciona tiene una linea con box-shadow: 0 2px 6px rgba(0,0,0,0.3);*/
+	  
 }
 
-/* Botón "subir arriba" */
-/*#toTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  font-size: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: background-color 0.3s;
-}
-
-#toTop:hover {
-  background-color: #c2185b;
-}*/
-
-/*Boton volveer atras */
-/*#volverAtras {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #f8bbd0; /* rosa pastel */
-  /*color: #880e4f;             /* color de texto más oscuro */
-  /*border: none;
-  border-radius: 30px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}*/
 
 /* Efecto hover para pantallas grandes */
 #volverAtras:hover {
@@ -1306,46 +890,6 @@ footer.index {
   }
 }
 
-/*@media (max-width: 600px) {
-  nav {
-    justify-content: center;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  th, td {
-    font-size: 0.85em;
-    padding: 6px;
-  }
-}*/
-
-/* Responsividad mejorada en móviles*/
-
-/*@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  table {
-    font-size: 0.85em;
-  }
-
-  h1, h2 {
-    font-size: 1.4em;
-  }
-}*/
-/*no esta*/
 @media (max-width: 600px) {
   nav {
     justify-content: center;
@@ -1365,92 +909,9 @@ footer.index {
   }
 }
 /* Adaptación móvil */
-/*@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: 10px;
-  }
-
-  #logo {
-    width: 30vw;
-  }
-}
-*/
 
 /* ==== EFECTOS 3D MODERNOS ==== */
-
-/* 3D para botones */
-/*.boton, .video-button {
-  perspective: 800px;
-  transform-style: preserve-3d;
-  box-shadow: 0 6px 15px rgba(233, 30, 99, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.boton:hover, .video-button:hover {
-  transform: translateZ(10px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(233, 30, 99, 0.5);
-}
-
-/* 3D para tarjetas como .diario-item, .evento-card, .tarjeta-imagen */
-/*.diario-item, .evento-card, .tarjeta-imagen, .season-card {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.diario-item:hover, .evento-card:hover, .tarjeta-imagen:hover, .season-card:hover {
-  transform: rotateX(3deg) rotateY(-3deg) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-/* Imágenes en galería y destacadas */
-/*.grid img:hover, .galeria img:hover, .galeria-grid img:hover {
-  transform: scale(1.05) rotateZ(1deg) translateZ(8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* Navegación con profundidad */
-/*nav {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-  transform-style: preserve-3d;
-  perspective: 1200px;
-}
-
-nav a {
-  transition: transform 0.3s ease, background-color 0.3s;
-}
-
-nav a:hover {
-  transform: translateZ(5px);
-}
-
-/* Transición suave en tablas */
-/*table {
-  transition: transform 0.2s ease;
-}
-
-table:hover {
-  transform: scale(1.01);
-  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.15);
-}*/
-
-/* MENÚ CON EFECTO 3D */
-/*.menu-3d {
-  background-color: #d1d5db;
-  padding: 1rem;
-  text-align: center;
-}*/
-
 /* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
 .menu-3d {
   background-color: #d1d5db;/*#f7b3d0; /* rosa pastel */
@@ -1463,53 +924,6 @@ table:hover {
   text-align: center;
 }
 
-/*.menu-3d a {
-  color: #fff;
-  margin: 0 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-  position: relative;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
-  text-shadow:
-    1px 1px 0 #aaa,
-    2px 2px 0 #999,
-    3px 3px 0 #888,
-    4px 4px 0 #777;
-}
-
-.menu-3d a:hover {
-  color: #fff;
-  transform: translateY(-3px);
-  text-shadow:
-    1px 1px 1px #000,
-    2px 2px 2px #222,
-    3px 3px 3px #444,
-    4px 4px 4px #666;
-  border-bottom: 2px solid #1e3a8a;
-}
-.menu-3d a.active {
-  color: #fff;
-  transform: translateY(-3px);
-  text-shadow:
-    1px 1px 1px #000,
-    2px 2px 2px #222,
-    3px 3px 3px #444,
-    4px 4px 4px #666;
-  border-bottom: 2px solid #1e3a8a;*/
-}
-/* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
-/*.menu-3d {
-  background-color: #f7b3d0; /* rosa pastel */
- /* padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-}*/
-
 .menu-3d .menu-icon {
   display: none;
   font-size: 36px;
@@ -1517,13 +931,7 @@ table:hover {
   cursor: pointer;
   user-select: none;
 }
-/*.menu-icon {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-}*/
+
 .menu-icon {
   display: none;
   font-size: 28px;
@@ -1546,11 +954,6 @@ table:hover {
   display: none;
 }
 
-/*.menu-contenedor {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}*/
 .menu-contenedor {
   display: flex;
   justify-content: center;
@@ -1607,15 +1010,6 @@ table:hover {
     align-items: flex-start;
   }
 
- /* .menu-3d .menu-icon {
-    display: block;
-    margin-bottom: 10px;
-  }*/
-/*  .menu-icon {
-    display: block;
-    margin-bottom: 10px;
-  }*/
-
   .menu-icon {
     display: flex;
     align-items: center;
@@ -1642,70 +1036,6 @@ table:hover {
   }
 }
 
-/*<-- ######################### */
-/*.efectos3d
-  h1, h2, h3, p {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-  text-shadow:
-    1px 1px 0 #ccc,
-    2px 2px 0 #bbb,
-    3px 3px 0 #aaa,
-    4px 4px 0 #999,
-    5px 5px 0 #888;
-}
-
-  /* Efecto al pasar el mouse: cambia profundidad y color */
-  /*h1:hover, h2:hover, h3:hover, p:hover {
-  text-shadow:
-    1px 1px 0 #fff,
-    2px 2px 0 #ffbfd8,
-    3px 3px 0 #ff99c8,
-    4px 4px 0 #ff69b4,
-    5px 5px 0 #e91e63;
-  transform: scale(1.03);
-  color: #fff;
-}*/
-/* de esta forma se mete en una clase contenedora .efectos3d para poder aplicar exactamente a que quieres el efecto"*/
-/*.efectos3d h1,
-.efectos3d h2,
-.efectos3d h3,
-.efectos3d p {
-  display: inline-block;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-  text-shadow:
-    1px 1px 0 #ccc,
-    2px 2px 0 #bbb,
-    3px 3px 0 #aaa,
-    4px 4px 0 #999,
-    5px 5px 0 #888;
-  will-change: transform, text-shadow;
-}*/
-/* Efecto al pasar el mouse: cambia profundidad y color */
-/*.efectos3d h1:hover,
-.efectos3d h2:hover,
-.efectos3d h3:hover,
-.efectos3d p:hover {
-  transform: scale(1.03);
-  text-shadow:
-    1px 1px 0 #fff,
-    2px 2px 0 #ffbfd8,
-    3px 3px 0 #ff99c8,
-    4px 4px 0 #ff69b4,
-    5px 5px 0 #e91e63;*/
-  
- /* color: #ccc;*/
-/*}
-header.efectos3d {
-  overflow: hidden;
-  padding: 2rem;
-  text-align: center;
-}*/
 /* Efecto completo solo para el h1 dentro del header */
 header.efectos3d h1 {
   display: inline-block;
@@ -1731,17 +1061,6 @@ header.efectos3d h1:hover {
     4px 4px 0 #ff69b4,
     5px 5px 0 #e91e63;
 }
-
-/* Estilo 3D simple para otros textos */
-/*.efectos3d h2,
-.efectos3d h3,
-.efectos3d p {
-  color: #fff;
-  text-shadow:
-    1px 1px 0 #ccc,
-    2px 2px 0 #bbb,
-    3px 3px 0 #aaa;
-}*/
 
 /* Estilo base del contenedor header */
 header.efectos3d {
