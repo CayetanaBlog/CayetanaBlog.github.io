@@ -8,170 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- <!-- <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fdfdfd;
-      color: #333;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      z-index: 1000;
-      border-bottom: 2px solid #e91e63;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      padding: 1em 0;
-    }
-
-    nav a {
-      color: #e91e63;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.4em 0.8em;/*extra/*
-      transition: all 0.3s;/*extra/*
-    }
-
-    nav a:hover {
-      background-color: #ff4081;
-      color: #fff;
-      border-radius: 6px;
-    }
-
-    nav a.active {
-      border-bottom: 2px solid #e91e63;
-      color: #333;
-    }
-
-    header {
-      background-color: #e91e63;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;/*cambia de 30px a 
-      padding: 0 20px;40 px*/
-    }
-
-    h2 {
-      color: #e91e63;
-      margin-bottom: 20px;/*cambia de 40px a 20px*/
-      text-align: center; /*no esta*/
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 40px;/*cambia de 20px a 40px*/
-    }
-
-    th, td {
-      border: 2px solid #e91e63;
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #f8e9f0;
-      color: #e91e63;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .observaciones {
-      text-align: justify;
-    }
-/*no esta*/
-    canvas {
-      max-width: 100%;
-      margin: 40px auto;
-      display: block;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-      font-size: 0.9em;
-    }
-
-    #toTop {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #e91e63;/*el que funciona tiene #ff4081;*/
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 10px 14px;/*el que funciona tiene 0.8*/
-      font-size: 20px; /*el que funciona tiene 1.2em;*/
-      cursor: pointer;
-      z-index: 999; /*no esta*/
-	  /*el que funciona tiene una linea con box-shadow: 0 2px 6px rgba(0,0,0,0.3);*/
-    }
-
-/*no esta*/
-    @media (max-width: 600px) {
-      nav {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav a {
-        flex: 1 1 auto;
-      }
-
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      .container {
-        padding: 0 10px;
-      }
-    }
-  </style>-->
 </head>
 <body>
 
-  <!--<nav>
-    <a href="index.html">Inicio</a>
-    <a href="galeria.html">Galería</a>
-    <a href="eventos.html">Eventos</a>
-    <a href="diario.html">Diario</a>
-    <a href="logros.html">Logros</a>
-    <a href="estadisticas.html" class="active">Estadísticas</a>
-    <a href="historia.html">Historia</a>
-    <a href="sobre.html">Sobre</a>
-  </nav>-->
-  <!--<nav class="menu-3d">
-    <a href="index.html">Inicio</a>
-    <a href="galeria.html">Galería</a>
-    <a href="eventos.html">Eventos</a>
-    <a href="diario.html">Diario</a>
-    <a href="logros.html">Logros</a>
-    <a href="estadisticas.html" class="active">Estadísticas</a>
-    <a href="historia.html">Historia</a>
-    <a href="sobre.html">Sobre</a>
-  </nav>-->
   <nav class="menu-3d">
     <input type="checkbox" id="menu-toggle" />
-    <!--<label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+    
     <label for="menu-toggle" class="menu-icon">
       &#9776; <span style="font-size: 16px; margin-left: 8px;">Menú</span>
     </label>  
@@ -189,9 +32,7 @@
     </div>
   </nav>
 
- 
-
-  <header class="efectos3d">
+   <header class="efectos3d">
     <h1>🧮 Estadísticas por Temporada</h1>
     <p>El recorrido brillante de Cayetana, temporada tras temporada</p>
   </header>
@@ -239,18 +80,6 @@
         </tbody>
       </table>
     </div>
-
-  <!-- Gráficos -->
-  <!--<div class="graficos">
-    <div class="grafico">
-      <h2>Goles por Temporada (Barras)</h2>
-      <canvas id="graficoBarras"></canvas>
-    </div>
-    <div class="grafico">
-      <h2>Goles por Temporada (Líneas)</h2>
-      <canvas id="graficoLineas"></canvas>
-    </div>
-  </div>-->
 
   </div>
   <!-- Gráficos -->
