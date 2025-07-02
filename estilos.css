@@ -812,6 +812,13 @@ body.index header p {
   padding: 30px;
   display: block;
 }
+@media (max-width: 768px) {
+  body.index .menu-icon {
+    background-color: #ffd6db; /* Cambia esto por el color que quieras solo en index */
+    color: #000; /* Si quieres cambiar el color del ícono también */
+  }
+}
+
 
 .content {
   background: rgba(255, 255, 255, 0.95);
@@ -962,7 +969,7 @@ footer.index {
   font-size: 28px;
   color: white;
   cursor: pointer;
-  background-color: #fcd6e3; /* Fondo rosa */
+  background-color: #e91e63; /* Fondo rosa */
   padding: 10px 16px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
