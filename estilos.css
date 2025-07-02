@@ -949,7 +949,7 @@ footer.index {
 }
 /* ==== MENÚ RESPONSIVO ADAPTADO A "menu-3d" ==== */
 
-.menu-3d .menu-icon {
+.menu-3d {
   display: none;
   font-size: 36px;
   color: white;
