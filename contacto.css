@@ -248,11 +248,16 @@
   .contacto-page h2 {
     font-size: 1.5em;
   }
-}
+
   .contacto-page #boton-contacto-header {
     padding: 10px 16px;
     font-size: 14px;
     top: 15px;
     right: 15px;
+  }
+
+  .contacto-page header img {
+    top: 0; /* o -5% si quieres */
+    width: 70%;
   }
 }
