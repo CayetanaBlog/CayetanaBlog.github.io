@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Videos destacados de Cayetana Encinas, su pasión por el fútbol en imágenes.">
+  <meta property="og:title" content="Videos - El Sueño de una Futbolista">
+  <meta property="og:description" content="Revive los mejores momentos de Cayetana en el campo de juego.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/foto_caye.jpg">
+  <title>contactar con Cayetana - El Sueño de una Futbolista</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <!--<style>
+    :root {
+      --color-contacto-primario: #e60026; /* Rojo Granada CF */
+      --color-contacto-secundario: #ffffff;
+      --color-acento: #00f0ff; /* Azul neón */
+      --color-contacto-texto: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: var(--color-contacto-texto);
+      background-color: var(--color-contacto-secundario);
+    }
+
+    header {
+      position: relative;
+      height: 90vh;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;/* centra verticalmente */
+      align-items: center;    /* centra horizontalmente */
+      flex-direction: column;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(230, 0, 38, 0.7), rgba(0, 0, 0, 0.7));
+      z-index: 1;
+    }
+
+
+	header img {
+	  position: absolute;
+	  top: -17%;/*sube o baja la foto negativo sube positivo baja */
+	  left: 50%;/*alinea y para que se quede centrada necesita transform*/
+	  transform: translateX(-50%);
+	  width: 37%; /* Aumenta o reduce para controlar el "zoom" */
+	  height: auto;
+	  object-fit: cover;
+	  
+	  filter: brightness(0.9);
+	  transition: all 0.3s ease;
+	}
+
+
+    header h1, header p {
+      position: relative;
+	  transform: translateY(-190px); /* valor negativo sube, positivo baja cuando use position: relative*/
+      z-index: 2;
+      margin: 0;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      color: var(--color-acento);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--color-contacto-primario);
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border: 2px solid var(--color-contacto-primario);
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--color-acento);
+      outline: none;
+    }
+
+    button {
+      background-color: var(--color-acento);
+      color: #000;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #00e0ef;
+      transform: scale(1.05);
+    }
+
+    #redes {
+      background-color: #f7f7f7;
+      padding: 40px 20px;
+    }
+
+    #redes a {
+      margin: 0 15px;
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    #redes a:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      background-color: var(--color-contacto-primario);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #boton-contacto {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--color-acento);
+      color: #000;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #boton-contacto:hover {
+      background-color: #00e0ef;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+	#popup-mensaje {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0,0,0,0.6);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  z-index: 9999;
+	}
+
+	.popup-contenido {
+	  background: white;
+	  padding: 30px;
+	  border-radius: 15px;
+	  max-width: 90%;
+	  text-align: center;
+	  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+	  animation: aparecer 0.4s ease;
+	}
+
+	.popup-contenido p {
+	  margin-bottom: 20px;
+	  font-size: 1.2em;
+	  color: var(--color-contacto-primario);
+	}
+
+	.popup-contenido button {
+	  background-color: var(--color-acento);
+	  color: #000;
+	  border: none;
+	  padding: 12px 20px;
+	  border-radius: 8px;
+	  font-size: 1em;
+	  cursor: pointer;
+	  transition: background-color 0.3s, transform 0.2s;
+	}
+
+	.popup-contenido button:hover {
+	  background-color: #00e0ef;
+	  transform: scale(1.05);
+	}
+
+	@keyframes aparecer {
+	  from { transform: scale(0.8); opacity: 0; }
+	  to { transform: scale(1); opacity: 1; }
+	}
+
+  </style>-->
+</head>
+<body class="contacto-page">
+  <nav class="menu-3d">
+    <input type="checkbox" id="menu-toggle" />
+   
+    <label for="menu-toggle" class="menu-icon">
+      &#9776; <span style="font-size: 16px; margin-left: 8px;">Menú</span>
+    </label>
+    <div class="menu-contenedor">
+      <a href="../index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="diario.html">Diario</a>
+      <a href="logros.html">Logros</a>
+      <a href="videos.html">Videos</a>
+      <a href="estadisticas.html">Estadísticas</a>
+      <a href="historia.html">Historia</a>
+      <a href="sobre.html">Sobre</a>
+	  <a href="contacto.html" class="active">Contacto</a>
+    </div>
+  </nav>
+
+<header>
+  <img src="foto_caye.jpg" alt="Cayetana">
+  <a href="#contacto" id="boton-contacto-header">Contacto</a>
+  <h1>Cayetana Futbolista</h1>
+  <p>Pasión, talento y futuro brillante ⚽</p>
+</header>
+
+<section id="contacto">
+  <h2>¿Eres sponsor o representante?</h2>
+  <p>Si quieres apoyar a Cayetana o sumarte a su carrera profesional, contáctanos aquí.</p>
+
+  <form id="mi-formulario">
+	<input type="text" name="nombre" placeholder="Tu nombre" required>
+	<input type="email" name="correo" placeholder="Tu correo" required>
+	<input type="text" name="asunto" placeholder="Asunto">
+	<textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+	<button type="submit">Enviar mensaje</button>
+  </form>
+
+
+</section>
+
+<section id="redes">
+  <h2>Síguela en redes</h2>
+  <a href="https://instagram.com/cayetana" target="_blank">
+	<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="45" />
+  </a>
+  <a href="https://tiktok.com/@cayetana" target="_blank">
+	<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" width="45" />
+  </a>
+  <a href="https://twitter.com/cayetana" target="_blank">
+	<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter" width="45" />
+  </a>
+</section>
+
+<footer>
+  <a href="https://instagram.com/cayetana" target="_blank">
+	<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="45" />
+  </a>
+  © 2025 Cayetana. Todos los derechos reservados.
+</footer>
+
+
+<div id="popup-mensaje" style="display: none;">
+  <div class="popup-contenido">
+	<p id="popup-texto"></p>
+	<button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+</div>
+
+
+<script>
+document.getElementById("mi-formulario").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const datos = new FormData(form);
+  const url = "https://formspree.io/f/xzzgwdgb";
+
+  fetch(url, {
+	method: "POST",
+	body: datos,
+	headers: {
+	  'Accept': 'application/json'
+	}
+  })
+  .then(response => {
+	if (response.ok) {
+	  mostrarPopup("¡Gracias! Tu mensaje ha sido enviado.");
+	  form.reset();
+	} else {
+	  mostrarPopup("Ups, ocurrió un error. Por favor intenta nuevamente.");
+	}
+  })
+  .catch(error => {
+	mostrarPopup("Ups, ocurrió un error. Por favor intenta nuevamente.");
+  });
+});
+
+function mostrarPopup(texto) {
+  document.getElementById("popup-texto").innerText = texto;
+  document.getElementById("popup-mensaje").style.display = "flex";
+}
+
+function cerrarPopup() {
+  document.getElementById("popup-mensaje").style.display = "none";
+	  
+  // Hace scroll hacia arriba suavemente
+  window.scrollTo({
+	top: 0,
+	behavior: "smooth"
+  });
+
+}
+</script>
+
+<!-- Boton subir arriba -->
+  <button id="toTop" title="Volver arriba">🔝</button>
+
+  <script>
+    // Mostrar el botón al hacer scroll hacia abajo
+    window.addEventListener("scroll", function () {
+      const toTop = document.getElementById("toTop");
+      if (window.scrollY > 300) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+    });
+  
+    // Subir arriba al hacer clic
+    document.getElementById("toTop").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+  <script>
+    // Cierra el menú móvil al hacer clic en una opción
+    document.querySelectorAll('.menu-contenedor a').forEach(enlace => {
+      enlace.addEventListener('click', () => {
+        const checkbox = document.getElementById('menu-toggle');
+        if (checkbox.checked) {
+          checkbox.checked = false;
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
