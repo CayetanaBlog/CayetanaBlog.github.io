@@ -257,7 +257,7 @@
   }
 
   .contacto-page header img {
-    top: 50; /* o -5% si quieres */
+    top: 20px; /* o -5% si quieres */
     width: 90%;
   }
 }
