@@ -817,6 +817,17 @@ body.index header p {
     background-color: #ffd6db; /* Cambia esto por el color que quieras solo en index */
     color: #000; /* Si quieres cambiar el color del ícono también */
   }
+  body.index {
+    background: #1b263b url('header-image.jpg') no-repeat top center scroll;
+    background-size: contain;
+    background-attachment: scroll; /* más compatible en móviles */
+  }
+
+  /*.contacto-page header img {
+    top: 20px; /* o -5% si quieres */
+    /*width: 100%;
+  }*/
+  
 }
 
 
