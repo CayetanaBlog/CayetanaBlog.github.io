@@ -777,6 +777,8 @@ body.index {
   flex-direction: column;
   justify-content: flex-start;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body.index header {
@@ -819,8 +821,8 @@ body.index header p {
   }
   body.index {
     background: #1b263b url('header-image.jpg') no-repeat top center scroll;
-    background-size: contain;
-    background-attachment: scroll; /* más compatible en móviles */
+    background-size: contain !important;
+    background-attachment: scroll !important;
   }
 
   /*.contacto-page header img {
