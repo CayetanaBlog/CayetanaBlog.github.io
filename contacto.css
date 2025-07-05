@@ -236,7 +236,7 @@
   to { transform: scale(1); opacity: 1; }
 }
 
-.contacto-page #redes-header {
+/*.contacto-page #redes-header {
   position: relative;
   z-index: 2;
   transform: translateY(-150px); /* sube dentro del header */
@@ -257,8 +257,49 @@
 
 .contacto-page #redes-header a img:hover {
   transform: scale(1.2);
+}*/
+
+.contacto-page #redes-header {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-140px);
+  text-align: center;
+  color: white;
+  padding-top: 10px;
 }
 
+.contacto-page #redes-header h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: var(--color-acento); /* azul neón */
+}
+
+.contacto-page #redes-header a img {
+  width: 45px;
+  height: auto;
+  filter: invert(100%); /* blanco */
+  transition: transform 0.2s;
+}
+
+/* Efecto hover en escritorio */
+.contacto-page #redes-header a img:hover {
+  transform: scale(1.2);
+}
+
+/* Versión responsive: ícono más pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+  .contacto-page #redes-header {
+    transform: translateY(-120px);
+  }
+
+  .contacto-page #redes-header h2 {
+    font-size: 1.1em;
+  }
+
+  .contacto-page #redes-header a img {
+    width: 36px;
+  }
+}
 @media (max-width: 768px) {
   .contacto-page header h1 {
     font-size: 2em;
