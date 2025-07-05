@@ -236,6 +236,29 @@
   to { transform: scale(1); opacity: 1; }
 }
 
+.contacto-page #redes-header {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-150px); /* sube dentro del header */
+  text-align: center;
+  color: white;
+}
+
+.contacto-page #redes-header h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: var(--color-acento);
+}
+
+.contacto-page #redes-header a img {
+  filter: invert(100%); /* hace blanco el ícono */
+  transition: transform 0.2s;
+}
+
+.contacto-page #redes-header a img:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .contacto-page header h1 {
     font-size: 2em;
