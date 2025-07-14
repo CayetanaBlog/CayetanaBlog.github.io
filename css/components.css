@@ -62,6 +62,18 @@ body.index {
   justify-content: flex-start;
   height: 100vh;
 }
+body.index nav.menu-3d-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ asegura alineación vertical */
+  padding: 1em 2em;    /* puedes ajustar horizontalmente */
+}
+
+body.index .menu-left,
+body.index .menu-right {
+  display: flex;
+  align-items: center; /* ✅ centra el contenido verticalmente dentro de cada bloque */
+}
 
 body.index header {
   background: none;
