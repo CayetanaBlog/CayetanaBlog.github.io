@@ -238,7 +238,7 @@ body.index .menu-contenedor {
 
 }
 
-body.index .menu-right {
+body.index .menu-right-index {
   flex: 1;
   display: flex;
   justify-content: flex-end;
