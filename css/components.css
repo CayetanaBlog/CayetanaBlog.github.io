@@ -1002,7 +1002,8 @@ blockquote {
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
+  justify-content: space-between;
   gap: 12px;
   padding: 1em 0;
   border-bottom: none;
