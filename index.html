@@ -88,7 +88,7 @@
 		  &#9776; <span style="font-size: 16px; color: white; margin-left: 8px;">Menú</span>
 		</label>
 
-		<div class="menu-contenedor">
+		<div class="menu-contenedor-movil">
 		  <a href="index.html" class="active">Inicio</a>
 		  <a href="html/galeria.html">Galería</a>
 		  <a href="html/eventos.html">Eventos</a>
@@ -140,7 +140,7 @@
 
   <script>
     // Cierra el menú móvil al hacer clic en una opción
-    document.querySelectorAll('.menu-contenedor a').forEach(enlace => {
+    document.querySelectorAll('.menu-contenedor-movil a').forEach(enlace => {
       enlace.addEventListener('click', () => {
         const checkbox = document.getElementById('menu-toggle');
         if (checkbox.checked) {
