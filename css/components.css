@@ -187,7 +187,7 @@ body.index nav {
 }
 
 body.index nav a {
-  margin: 0 12px;
+  margin: 0 2px;
   text-decoration: none;
   color: var(--color-blanco);
   font-weight: bold;
@@ -209,7 +209,7 @@ body.index span {
 /* ==========================
 ✅ Ajuste especial solo para index.html
 ========================== */
-body.index .menu-3d {
+body.index {
   display: flex;
   justify-content: space-between;
   align-items: center;
