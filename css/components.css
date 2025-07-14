@@ -100,7 +100,7 @@ body.index .menu-right {
   justify-content: flex-end;
 }
 
-----------------------------------
+/*----------------------------------*/
 body.index header {
   background: none;
   padding: 60px 20px 40px;
