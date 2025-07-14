@@ -1,0 +1,82 @@
+
+/* === 🗺️ Layout general === */
+header {
+  background-color: var(--color-principal); 
+  color: var(--color-blanco);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--color-blanco); /*Hace que el <nav> se quede fijo en la parte superior del viewport 
+									cuando se hace scroll, pero sólo cuando llega a esa posición, a 
+									diferencia de fixed que siempre se queda arriba.*/
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 1em 0;
+  border-bottom: none;
+}
+
+/* Navegación centrada, con diseño responsive */
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.8em;
+  transition: all 0.3s;/*extra*/
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--color-blanco);
+  color: var(--color-texto);
+}
+
+/* este hover es el efecto al pasar el raton por el menu*/
+nav a:hover {
+  background-color: var(--color-gris-claro);
+  border-radius: 10px;
+  color: var(--color-blanco);
+}
+
+/*footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}*/
+
+/*
+footer {
+  flex-shrink: 0;
+}*/
+
+
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.estadistica-container,
+.eventos-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.diario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+

@@ -1,0 +1,299 @@
+:root {
+  --color-contacto-primario: #e60026; /* Rojo Granada CF */
+  --color-contacto-secundario: #ffffff;
+  --color-acento: #00f0ff; /* Azul neón */
+  --color-contacto-texto: #333333;
+}
+
+@import url('variables.css');
+
+.contacto-page1 {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--color-contacto-texto);
+  background-color: var(--color-contacto-secundario);
+  /*background: linear-gradient(135deg, #e60026, #ffffff);*/
+
+}
+
+
+.contacto-page1 header {
+  position: relative;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;/* centra verticalmente */
+  align-items: center;    /* centra horizontalmente */
+  flex-direction: column;
+}
+
+.contacto-page1 header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(230, 0, 38, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.contacto-page1 header img {
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: all 0.3s ease;
+}
+
+.contacto-page1 header h1,
+.contacto-page1 header p,
+#boton-contacto-header {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.contacto-page1 header h1 {
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  transform: translateY(-150px);
+}
+
+.contacto-page1 header p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: var(--color-acento, #00f0ff);
+  transform: translateY(-150px);
+}
+
+#boton-contacto-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--color-acento, #00f0ff);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#boton-contacto-header:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+.contacto-page1 section {
+  padding: 60px 20px 100px; /* deja espacio al footer fijo */
+  text-align: center;
+}
+
+.contacto-page1 h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-contacto-primario, #e60026);
+}
+
+.contacto-page1 p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.contacto-page1 form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contacto-page1 .form-campos1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-page1 .form-campos1 input,
+.contacto-page1 .form-campos1 textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--color-contacto-primario, #e60026);
+  border-radius: 8px;
+  font-size: 18px;
+  transition: border-color 0.3s;
+}
+
+.contacto-page1 form button {
+  height: fit-content;
+  align-self: flex-start;
+  background-color: var(--color-acento, #00f0ff);
+  color: #000;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contacto-page1 form button:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+#contacto {
+  display: none;
+}
+
+.contenido-contacto1 {
+  display: block;
+  padding: 0 20px;
+  margin-top: -50px;
+  padding-bottom: 80px; /* Espacio para que no tape el footer fijo */
+}
+
+.contacto-page1 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-contacto-primario, #e60026);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.contacto-page-footer-left1 {
+  font-size: 14px;
+}
+
+.contacto-page-footer-right1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto-page-footer-right1 span {
+  font-size: 14px;
+}
+
+.contacto-page-footer-right1 a img {
+  width: 30px;
+  transition: transform 0.2s;
+}
+
+.contacto-page-footer-right1 a:hover img {
+  transform: scale(1.2);
+}
+
+#popup-mensaje {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-contenido1 {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: aparecer 0.4s ease;
+}
+
+.popup-contenido1 p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: var(--color-contacto-primario);
+}
+
+.popup-contenido1 button {
+  background-color: var(--color-acento);
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.popup-contenido1 button:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ✅ Adaptar en móviles */
+@media (max-width: 768px) {
+  .contacto-page1 header h1 {
+    font-size: 2em;
+	margin-top: -155px; /* o 0 si quieres pegado arriba */
+  }
+  .contacto-page1 header p {
+    font-size: 1em;
+  }
+  .contacto-page1 h2 {
+    font-size: 1.5em;
+  }
+  
+  /*1--------------------------*/
+  .contacto-page1 #boton-contacto-header {
+    padding: 10px 16px;
+    font-size: 14px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .contacto-page1 header img {
+    top: 5px; /* o -5% si quieres */
+    width: 100%;
+  }
+  /*--------------------------*/
+  .contacto-page1 form {
+    flex-direction: column;
+  }
+  .contacto-page1 form button {
+    width: 100%;
+    align-self: stretch;
+  }
+  .contacto-page1 footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .contacto-page-footer-left1,
+  .contacto-page-footer-right1 {
+    margin: 5px 0;
+  }
+  .contacto-page-footer-right1 a img {
+    width: 25px;
+  }
+}

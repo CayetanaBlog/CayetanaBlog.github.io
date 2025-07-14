@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Footballer’s Dream - Cayetana</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; background: #f8f8f8; }
+    header { background: #2c3e50; color: white; padding: 2rem; text-align: center; position: relative; }
+    header h1 { margin: 0; }
+    nav { display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; }
+    nav a { text-decoration: none; color: #2c3e50; font-weight: bold; }
+    section { padding: 2rem; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A Footballer’s Dream</h1>
+    <p>Sigue el camino de Cayetana Encinas desde sus primeros pasos en el fútbol...</p>
+    <div style="position: absolute; top: 1rem; right: 1rem;">
+      <a href="index.html" style="color:white; margin-right: 1rem;">🇪🇸 Español</a>
+      <a href="index-en.html" style="color:white;">🇬🇧 English</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="gallery.html">Galería</a>
+    <a href="posts/primer-dia.html">Diario</a>
+    <a href="logros/capitana.html">Logros</a>
+    <a href="calendario/partidos.html">Calendario</a>
+    <a href="#sobre">Sobre Nosotros</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>About Cayetana</h2>
+    <p>Cayetana empezó a jugar al fútbol con 7 años, demostrando desde el inicio talento, pasión y liderazgo.</p>
+  </section>
+
+  <footer>
+    © 2025 A Footballer’s Dream - Todos los derechos reservados.
+  </footer>
+    <button id="toTop title="Volver arriba"">🔝</button>
+  <script>
+    // Mostrar el botón al hacer scroll hacia abajo
+    window.addEventListener("scroll", function () {
+      const toTop = document.getElementById("toTop");
+      if (window.scrollY > 300) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+    });
+  
+    // Subir arriba al hacer clic
+    document.getElementById("toTop").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+</html>

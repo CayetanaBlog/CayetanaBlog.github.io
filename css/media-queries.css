@@ -1,0 +1,61 @@
+
+/* === 📱 Media queries === */
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+  header h1 { font-size: 1.6em; }
+  .container { padding: 0 10px; }
+  .menu-icon { display: flex; }
+  .menu-contenedor { 
+	display: none; 
+	flex-direction: column; 
+	align-items: flex-start; 
+	width: 100%; 
+  }
+  
+  #menu-toggle:checked + .menu-icon + .menu-contenedor { display: flex; }
+  
+  .logro { flex-direction: column; 
+	align-items: center; 
+  }
+  .logro img { max-width: 100%;
+	height: auto;
+  }
+  .eventos-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .prev-btn { left: -30px; }
+  .next-btn { right: -30px; }
+  .nav-btn { font-size: 20px; padding: 6px 10px; }
+  .tarjeta-imagen img { height: 160px; }
+  .tarjeta-imagen { padding: 10px; }
+  .tarjeta-imagen p { font-size: 0.95rem; }
+  #volverAtras { padding: 8px 14px; font-size: 14px; top: 15px; left: 15px; }
+  header h1 { font-size: 1.6em; }
+  nav a { flex: 1 1 auto; }
+  .container { padding: 0 10px; }
+  .logro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logro img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 3/4) {
+  body.index { background-size: cover; }
+}
+
+@media (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/9) {
+  body.index { background-size: contain; }
+}
+
+@media (min-aspect-ratio: 17/9) {
+  body.index { background-size: contain; }
+}

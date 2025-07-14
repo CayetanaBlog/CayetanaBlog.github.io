@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Cayetana Encinas</title>
+  <meta name="description" content="Ponte en contacto con Cayetana Encinas para colaboraciones, entrevistas u otras consultas.">
+  <meta name="keywords" content="Cayetana Encinas, contacto, colaboraciones, entrevistas, futbolista, cayetanablog">
+  <meta property="og:title" content="Contacto - Cayetana Encinas">
+  <meta property="og:description" content="Formulario y datos de contacto de Cayetana Encinas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../images/foto_caye.jpg">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body class="contacto-page1">
+  <nav class="menu-3d">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776; <span style="font-size: 16px; margin-left: 8px;">Menú</span></label>
+    <div class="menu-contenedor">
+      <a href="../index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="diario.html">Diario</a>
+      <a href="logros.html">Logros</a>
+      <a href="videos.html">Videos</a>
+      <a href="estadisticas.html">Estadísticas</a>
+      <a href="historia.html">Historia</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <img src="foto_caye.jpg" alt="Cayetana">
+    <a href="#" id="boton-contacto-header">Contacto</a>
+    <h1>Cayetana Futbolista</h1>
+    <p>Pasión, talento y futuro brillante ⚽</p>
+  </header>
+
+  <section id="contacto">
+    <div class="contenido-contacto1">
+      <h2>¿Eres sponsor o representante?</h2>
+      <p>Si quieres apoyar a Cayetana o sumarte a su carrera profesional, contáctanos aquí.</p>
+      <form id="mi-formulario" class="form1">
+        <div class="form-campos1">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="correo" placeholder="Tu correo" required>
+          <input type="text" name="asunto" placeholder="Asunto">
+          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contacto-page-footer-left1">
+      © 2025 Cayetana. Todos los derechos reservados.
+    </div>
+    <div class="contacto-page-footer-right1">
+      <span>Síguela en redes</span>
+      <a href="https://instagram.com/cayetana" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <!-- <a href="https://tiktok.com/@cayetana" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+      </a>
+      <a href="https://twitter.com/cayetana" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter" />
+      </a> -->
+    </div>
+  </footer>
+
+  <div id="popup-mensaje">
+    <div class="popup-contenido1">
+      <p id="popup-texto">Mensaje enviado correctamente.</p>
+      <button onclick="cerrarPopup()">Volver</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("boton-contacto-header").addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector("header").style.display = "none";
+      document.getElementById("contacto").style.display = "block";
+      document.body.style.overflow = "hidden";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.getElementById("mi-formulario").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const datos = new FormData(form);
+      const url = "https://formspree.io/f/xzzgwdgb"; // ✅ Tu URL de Formspree
+
+      fetch(url, {
+        method: "POST",
+        body: datos,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          mostrarPopup("¡Gracias! Tu mensaje ha sido enviado.");
+          form.reset();
+        } else {
+          mostrarPopup("Ups, ocurrió un error. Por favor intenta nuevamente.");
+        }
+      })
+      .catch(() => {
+        mostrarPopup("Ups, ocurrió un error. Por favor intenta nuevamente.");
+      });
+    });
+
+    function mostrarPopup(texto) {
+      document.getElementById("popup-texto").innerText = texto;
+      document.getElementById("popup-mensaje").style.display = "flex";
+    }
+
+    function cerrarPopup() {
+      document.getElementById("popup-mensaje").style.display = "none";
+      document.getElementById("contacto").style.display = "none";
+      document.querySelector("header").style.display = "flex";
+      document.body.style.overflow = "hidden";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
+  <!-- Botón subir arriba -->
+  <button id="toTop" title="Volver arriba">🔝</button>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const toTop = document.getElementById("toTop");
+      if (window.scrollY > 300) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+    });
+
+    document.getElementById("toTop").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.menu-contenedor a').forEach(enlace => {
+      enlace.addEventListener('click', () => {
+        const checkbox = document.getElementById('menu-toggle');
+        if (checkbox.checked) {
+          checkbox.checked = false;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

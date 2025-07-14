@@ -1,0 +1,44 @@
+
+:root {
+  /* 🎨 Colores principales */
+  --color-principal: #e91e63;
+  --color-principa: #e91e63;
+  --color-primario: #e91e63;
+  --color-secundario: #ff69b4;
+  --color-rosa-pastel: #fcd6e3;
+  --color-rosa-pastel-claro: #ffe6f0;
+  --color-rosa-muy-claro: #ffbfd8;
+  --color-rosa-bebe: #fcd6e3;
+  --color-rosa-melocoton-suave: #f2a6c0;
+  --color-rosa-chicle: #ff99c8;
+  --color-rosa-fucsia: #d64991;
+  --color-rosa-fucsia-profundo: #c2185b;
+  --color-rosa-intenso: #ff69b4;
+  --color-temporada: #ff4081;
+  --color-texto: #333;
+  --color-fondo: #fdfdfd;
+  --color-blanco: #fff;
+  --color-negro-puro: #000;
+  --color-gris-muy-oscuro: #222;
+  --color-gris-oscuro-medio: #444;
+  --color-gris-oscuro-suave: #666;
+  --color-gris-medio: #999;
+  --color-gris-medio-oscuro: #777;
+  --color-gris-claro: #d1d5db;
+  --color-gris-claro-medio: #aaa;
+  --color-gris-suave: #ccc;
+  --color-gris-texto: #888;
+  --color-gris-fondo: #f9f9f9;
+
+  /* 🌟 Gradientes */
+  --gradiente-diario: linear-gradient(135deg, var(--color-rosa-pastel-claro), #fcd6e3);
+  --gradiente-season-card: linear-gradient(135deg, #ee9ca7, #ffdde1);
+  --gradiente-temporada: linear-gradient(to bottom right, #ffb6c1, #fce4ec);
+  --gradiente-fondo: linear-gradient(to bottom, #1b263b 0%, #000000 100%);
+
+  /* 💬 Otros */
+  --fuente-principal: 'Poppins', sans-serif;
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --sombra-intensa: 0 8px 20px rgba(255, 105, 180, 0.2);/* sombra rosa chicle */
+  --borde-rosa: 5px solid var(--color-principal);
+}
