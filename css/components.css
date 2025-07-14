@@ -62,19 +62,37 @@ body.index {
   justify-content: flex-start;
   height: 100vh;
 }
-body.index nav.menu-3d-index {
+/* ==========================
+✅ Ajuste especial solo para index.html
+========================== */
+body.index .menu-3d {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ✅ asegura alineación vertical */
-  padding: 1em 2em;    /* puedes ajustar horizontalmente */
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
 }
 
 body.index .menu-left,
 body.index .menu-right {
   display: flex;
-  align-items: center; /* ✅ centra el contenido verticalmente dentro de cada bloque */
+  align-items: center;
 }
 
+/* Ajuste para limitar ancho del contenedor de enlaces */
+body.index .menu-contenedor {
+  max-width: 800px; /* ✅ Ajusta este valor según el tamaño que quieras */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+body.index .menu-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+----------------------------------
 body.index header {
   background: none;
   padding: 60px 20px 40px;
