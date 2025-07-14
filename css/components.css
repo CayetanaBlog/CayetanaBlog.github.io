@@ -81,7 +81,7 @@ body.index .menu-right {
 
 /* Ajuste para limitar ancho del contenedor de enlaces */
 body.index .menu-contenedor {
-  max-width: 800px; /* ✅ Ajusta este valor según el tamaño que quieras */
+  max-width: 1000px; /* ✅ Ajusta este valor según el tamaño que quieras */
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -1032,13 +1032,9 @@ blockquote {
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
-  justify-content: space-between;
-  align-items: center;            /* ✅ nuevo */
-  padding: 1em 2em;              /* Ajusta según tu gusto */
-  width: 100%;                   /* ✅ nuevo, ocupa todo el ancho */
+  justify-content: center;
   gap: 12px;
- /* padding: 1em 0;*/
+  padding: 1em 0;
   border-bottom: none;
   perspective: 1000px;
 }
