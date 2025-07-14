@@ -1016,8 +1016,11 @@ blockquote {
   flex-wrap: wrap;
   /*justify-content: center;*/
   justify-content: space-between;
+  align-items: center;            /* ✅ nuevo */
+  padding: 1em 2em;              /* Ajusta según tu gusto */
+  width: 100%;                   /* ✅ nuevo, ocupa todo el ancho */
   gap: 12px;
-  padding: 1em 0;
+ /* padding: 1em 0;*/
   border-bottom: none;
   perspective: 1000px;
 }
