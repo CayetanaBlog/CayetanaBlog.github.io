@@ -262,11 +262,12 @@ footer.index {
 }
 
 @media (max-width: 768px) {
-  body.index .menu-contenedor {
-    display: none; /* cerrado por defecto */
+  /*body.index .menu-contenedor {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    margin-top: 10px;
   }
 
   body.index #menu-toggle:checked ~ .menu-contenedor {
@@ -283,7 +284,147 @@ footer.index {
     display: flex;
     align-items: center;
   }
+
+  body.index .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-self: flex-end;
+  }*/
+
+  /* Contenedor del menú desplegable */
+  body.index .menu-contenedor {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+	
+  .menu-contenedor a {
+    width: 100%;
+    padding: 12px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .menu-3d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+  } 
+
+  /* Contenedor izquierdo para Instagram */
+  .menu-left-index {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Contenedor derecho para menú */
+  .menu-right-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align-items: flex-end; /* alinea a la derecha */
+    gap: 10px;
+  }
+
+  /* Estilo del botón hamburguesa */
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /*margin: 0;*/
+  }
+
+  /*2---------------------*/
+  .instagram-icon-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 24px;  /* botón redondeado */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .instagram-icon-inline:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+
+  .instagram-icon-inline img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
+  }
+
+  .instagram-text {
+    color: #E1306C;
+    font-weight: bold;
+  }
+
+
+  /*-----------------------------*/
+
+  /* Mostrar el menú al hacer clic */
+  #menu-toggle:checked ~ .menu-icon ~ .menu-contenedor {
+    display: flex;
+	  
+  }
+
+	/*header.header-fix-mobile {
+      padding-top: 80px; /* Ajusta según la altura real del nav móvil */
+    /*}*/
+	
+  header.efectos3d.header-fix-mobile {
+    padding-top: 60px;
+  }
+
+  /* ✅ Efecto 3D en h1 dentro del header con clase .efectos3d */
+
+  header.efectos3d.header-fix-mobile  h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;/*agrega un espacio debajo del h1*/
+    color: var(--color-blanco); /* Usas el gris que elegiste */
+	  
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-shadow:
+    1px 1px 0 var(--color-gris-suave),
+    2px 2px 0 #bbb,
+    3px 3px 0 var(--color-gris-claro-medio),
+    4px 4px 0 var(--color-gris-medio),
+    5px 5px 0 var(--color-gris-texto);
+    padding-bottom: 10px;
+    will-change: transform, text-shadow;
+    font-weight: bold; /* 💥 Aquí se aplica la negrita */
+  }
+
+  header.efectos3d.header-fix-mobile h1:hover {
+    transform: scale(1.03);
+    text-shadow:
+    1px 1px 0 var(--color-blanco),
+    2px 2px 0 var(--color-rosa-muy-claro),
+    3px 3px 0 var(--color-rosa-chicle),
+    4px 4px 0 var(--color-rosa-intenso),
+    5px 5px 0 var(--color-principal);
+    }
+	
+    header.efectos3d.header-fix-mobile  p {
+      margin-top: 0;
+      padding-top: 0;
+    }
 }
+
 
 
 /* Galería */
