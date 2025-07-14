@@ -187,7 +187,7 @@ body.index nav {
 }
 
 body.index nav a {
-  margin: 0 12px;
+  margin: 0 5px;
   text-decoration: none;
   color: var(--color-blanco);
   font-weight: bold;
@@ -293,7 +293,7 @@ footer.index {
     align-self: flex-end;*/
 	
 	/* Contenedor del menú desplegable */
-	body.index .menu-contenedor {
+	body.index .menu-contenedor-movil {
 	  display: none;
 	  flex-direction: column;
 	  align-items: flex-start;
@@ -301,7 +301,7 @@ footer.index {
 	  margin-top: 10px;
 	}
 	
-	.menu-contenedor a {
+	.menu-contenedor-movil a {
       width: 100%;
 	  padding: 12px 20px;
 	  border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -376,7 +376,7 @@ footer.index {
 /*-----------------------------*/
 
 	/* Mostrar el menú al hacer clic */
-	#menu-toggle:checked ~ .menu-icon ~ .menu-contenedor {
+	#menu-toggle:checked ~ .menu-icon ~ .menu-contenedor-movil {
 	  display: flex;
 	  
 	}
