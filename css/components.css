@@ -81,9 +81,17 @@ body.index .menu-right {
 
 /* Ajuste para limitar ancho del contenedor de enlaces */
 body.index .menu-contenedor {
-  max-width: 1000px; /* ✅ Ajusta este valor según el tamaño que quieras */
-  flex-wrap: wrap;
-  justify-content: flex-end;
+/*  max-width: 1000px; /* ✅ Ajusta este valor según el tamaño que quieras */
+ /* flex-wrap: wrap;
+  justify-content: flex-end;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
 
 body.index .menu-right {
