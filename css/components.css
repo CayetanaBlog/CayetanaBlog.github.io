@@ -44,7 +44,7 @@ h2 {
 }
 
 /* === 🎨 Estilos específicos para index.html === */
-/* === 🎨 Estilos específicos para index.html === */
+
 
 body.index nav.menu-3d .menu-contenedor a:hover,
 body.index nav.menu-3d .menu-contenedor a.active {
@@ -52,15 +52,6 @@ body.index nav.menu-3d .menu-contenedor a.active {
 }
 
 
-/*body.index {
-  background: #1b263b url('../images/header-image.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: var(--color-blanco);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100vh;
-}*/
 body.index {
   background: 
   url('../images/header-image.jpg') no-repeat center center fixed,
@@ -108,11 +99,7 @@ body.index header p {
 body.index header h1:hover {
   /*color: var(--color-blanco);*/
   text-shadow:
-   /* 1px 1px 1px var(--color-negro-puro),
-    2px 2px 2px #111,
-    3px 3px 3px var(--color-rosa-gris-muy-oscuro),
-    4px 4px 4px var(--color-texto);*/
-	1px 1px 0 var(--color-blanco),
+    1px 1px 0 var(--color-blanco),
     2px 2px 0 var(--color-rosa-muy-claro),
     3px 3px 0 var(--color-rosa-chicle),
     4px 4px 0 var(--color-rosa-intenso),
@@ -225,9 +212,6 @@ body.index .menu-right-index {
 
 /* Ajuste para limitar ancho del contenedor de enlaces */
 body.index .menu-contenedor {
-/*  max-width: 1000px; /* ✅ Ajusta este valor según el tamaño que quieras */
- /* flex-wrap: wrap;
-  justify-content: flex-end;*/
 
     display: flex;
     justify-content: center;
@@ -262,35 +246,6 @@ footer.index {
 }
 
 @media (max-width: 768px) {
-  /*body.index .menu-contenedor {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  body.index #menu-toggle:checked ~ .menu-contenedor {
-    display: flex;
-  }
-
-  body.index .menu-right-index {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  body.index .menu-left-index {
-    display: flex;
-    align-items: center;
-  }
-
-  body.index .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    align-self: flex-end;*/
 	
 	/* Contenedor del menú desplegable */
 	body.index .menu-contenedor-movil {
@@ -319,7 +274,7 @@ footer.index {
 	.menu-left-index {
 	  flex: 1;
 	  display: flex;
-	  /*align-items: center;*/
+	  
 	  align-items: flex-start;
 	}
 
@@ -328,7 +283,7 @@ footer.index {
 	  flex: 1;
 	  display: flex;
 	  flex-direction: column;
-	 /* align-items: center;*/
+	 
 	  align-items: flex-end; /* alinea a la derecha */
 	  gap: 10px;
 	}
@@ -338,7 +293,7 @@ footer.index {
 	  display: flex;
 	  align-items: center;
 	  justify-content: flex-end;
-	  /*margin: 0;*/
+	  
 	}
 
 /*2---------------------*/
@@ -381,9 +336,6 @@ footer.index {
 	  
 	}
 
-	/*header.header-fix-mobile {
-      padding-top: 80px; /* Ajusta según la altura real del nav móvil */
-    /*}*/
 	
 	header.efectos3d.header-fix-mobile {
 	  padding-top: 60px;
@@ -587,11 +539,6 @@ footer.index {
 
 /* Estilo del menú desplegable de temporadas */
 
-/*:root {
-  --color-temporadas: #ff4081; /* rosa fuerte */
-/*}*/
-
-
 .temporadas-desplegable {
   margin: 1em;
   font-family: 'Poppins', sans-serif;
@@ -653,21 +600,7 @@ footer.index {
     margin-bottom: 10px;
     align-self: flex-end;
   }
-
-  /*.menu-contenedor {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0;
-  }
-
-  .menu-contenedor a {
-    width: 100%;
-    padding: 12px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }*/
-  
+    
 }
 
 /* === Eventos (eventos.html) === */
@@ -785,7 +718,7 @@ li:hover {
 .container {
   max-width: 1000px;
   margin: 30px auto;
-  /*margin: 40px auto;*/
+  
   padding: 0 20px;
 }
 
@@ -843,26 +776,6 @@ li:hover {
 .diario-item img:hover {
   transform: scale(1.02);
 }
-
-/*.diario-item h1 {
-  font-size: 2.5rem;
-  color: var(--color-rosa-fucsia-profundo);
-  text-shadow:
-    1px 1px 0 var(--color-negro-puro),
-    2px 2px 0 var(--color-rosa-gris-muy-oscuro),
-    3px 3px 0 var(--var(--color-gris-oscuro-mediio));
-  transition: all 0.3s ease;
-}
-
-.diario-item h1:hover {
-  transform: scale(1.05);
-  color: var(--color-secundario);
-  text-shadow:
-    1px 1px 1px var(--color-negro-puro),
-    2px 2px 1px #111,
-    3px 3px 1px var(--color-rosa-gris-muy-oscuro),
-    4px 4px 1px var(--color-texto);
-}*/
 
 .tarjeta-imagen {
   background-color: var(--color-rosa-pastel);
@@ -1255,44 +1168,6 @@ blockquote {
   width: 100%;
 }
 
-/*.menu-contenedor a {
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 10px;
-  position: relative;
-  transition: background 0.3s, transform 0.3s ease, text-shadow 0.3s ease;
-  text-shadow:
-    1px 1px 0 var(--color-gris-claro-medio),
-    2px 2px 0 var(--color-gris-medio),
-    3px 3px 0 var(--color-gris-texto),
-    4px 4px 0 var(--color-gris-medio-oscuro);
-}
-
-.menu-contenedor a:hover {
-  color: var(--color-blanco);
-  transform: translateY(-3px);
-  text-shadow:
-    1px 1px 1px var(--color-negro-puro),
-    2px 2px 2px var(--color-rosa-gris-muy-oscuro),
-    3px 3px 3px var(--var(--color-gris-oscuro-mediio)),
-    4px 4px 4px var(--color-gris-oscuro-suave);
-  border-bottom: 2px solid #1e3a8a;
-}
-
-.menu-contenedor a.active {
-  color: var(--color-blanco);
-  transform: translateY(-3px);
-  text-shadow:
-    1px 1px 1px var(--color-negro-puro),
-    2px 2px 2px var(--color-rosa-gris-muy-oscuro),
-    3px 3px 3px var(--var(--color-gris-oscuro-mediio)),
-    4px 4px 4px var(--color-gris-oscuro-suave);
-  border-bottom: 2px solid #1e3a8a;
-}*/
-
 /* ============================
    🌐 ESTILOS GENERALES (ESCRITORIO)
 ============================ */
@@ -1337,52 +1212,6 @@ blockquote {
   display: none; /* ocultos en escritorio */
 }
 
-/*.instagram-icon-inline {
-  /*display: none; /* ocultos en escritorio */
-  /*display: inline-flex; /* ✅ Recomendado: tamaño controlado, alineación precisa */
-
-/*}*/
-/*.instagram-icon-inline {
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  padding: 4px;
-  background-color: white; /* opcional para mejor visibilidad */
-/*  border-radius: 50%;       /* círculo */
-/*  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* efecto sombra */
-/*  align-items: center;
-  justify-content: center;
-}
-
-.instagram-icon-inline img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-}*/
-/*1----------------------------*/
-/*.instagram-icon-inline {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;               /* espacio entre icono y texto */
-/*    text-decoration: none;
-    color: inherit;
-}
-
-.instagram-icon-inline img {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-    background-color: white;
-    border-radius: 50%;
-    padding: 4px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}*/
-
-
-/*-----------------------------*/
-
 /*2----------------------------*/
 .instagram-icon-inline {
     display: inline-flex;
@@ -1411,193 +1240,13 @@ blockquote {
 
 /*-------------------------------*/
 
-/*.menu-3d {
-  position: sticky;
-  top: 0;
-  background: #d1d5db;
-  z-index: 1000;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  padding: 1em 0;
-  border-bottom: none;
-  perspective: 1000px;
-}
-
-.menu-contenedor a {
-  text-decoration: none;
-  display: inline-block;
-  color: var(--color-texto);
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 10px;
-  position: relative;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
-
-.menu-contenedor a:hover {
-  transform: rotateX(15deg);
-  text-shadow:
-    1px 1px 0 var(--color-gris-claro-medio),
-    2px 2px 0 var(--color-gris-medio),
-    3px 3px 0 var(--color-gris-texto),
-    4px 4px 0 var(--color-gris-medio-oscuro);
-}
-.menu-contenedor {
-  display: flex; /* en PC */
-/*  gap: 16px;
-}*/
-
 .menu-contenedor a.active {
   border-bottom: 2px solid var(--color-principal);
 }
 /* ============================
    🌐 ESTILOS GENERALES (ESCRITORIO)
 ============================ */
-/*.menu-3d {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #d1d5db;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 1em 0;
-  flex-wrap: wrap;
-  perspective: 1000px;
-}
 
-.menu-icon {
-  display: none; /* Ocultamos el botón hamburguesa en escritorio */
-/*}
-
-.menu-contenedor {
-  display: flex;
-  gap: 16px;
-}
-
-.menu-contenedor a {
-  text-decoration: none;
-  padding: 8px 12px;
-  color: black;
-}
-
-.instagram-icon-inline {
-  display: none; /* Ocultamos el icono de Instagram en escritorio (usamos el del footer) */
-/*}*/
-
-
-
-/* ==== RESPONSIVO ==== */
-/*@media (max-width: 768px) {
-  .menu-3d {
-    flex-direction: column;
-    /*align-items: flex-start;/*alinea el icono del menu a la izquierda*/
- /*   align-items: flex-end; /* alinea a la derecha */
-  /*}
-  .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto;
-    margin-bottom: 10px;
-    align-self: flex-end;
-  }
-
-  .menu-contenedor {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0;
-  }
-
-  .menu-contenedor a {
-    width: 100%;
-    padding: 12px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  #menu-toggle:checked + .menu-icon + .menu-contenedor {
-    display: flex;
-  }
-
-
-  .instagram-icon-inline {
-    display: flex;
-    align-items: left;
-    padding: 5px;
-    margin-left: 10px;
-    width: 32px;
-    height: 32px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .instagram-icon-inline img {
-    width: 100%;
-    height: auto;
-    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-  }
-
-
-}*/
-
-/*@media (max-width: 768px) {
-  .menu-3d {
-    display: flex;
-    flex-direction: row;
-	/*flex-direction: column;*/
- /*   justify-content: space-between;
-    align-items: center;
-    padding: 10px 16px;
-  }*/
-  /*.menu-3d {
-    flex-direction: column;
-    /*align-items: flex-start;/*alinea el icono del menu a la izquierda*/
-    /*align-items: flex-end; /* alinea a la derecha */
-  /*}*/
-
- /* .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-  }
-
-  .instagram-icon-inline {
-    display: inline-flex;
-    width: 52px;
-    height: 52px;
-    padding: 4px;
-    background-color: transparent;
-    /*border-radius: 50%;*/
-    /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);*/
- /*   flex-shrink: 0;
-  }
-
-  .instagram-icon-inline img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-  }
-
-  .menu-contenedor {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  #menu-toggle:checked + .menu-icon + .menu-contenedor {
-    display: flex;
-  }
-}*/
 @media (max-width: 768px) {
 	/* Contenedor del menú desplegable */
 	.menu-contenedor {
@@ -1633,7 +1282,7 @@ blockquote {
 	  display: flex;
 	  flex-direction: column;
 	  align-items: center;
-	  /*align-items: flex-end; /* alinea a la derecha */
+	  
 	  gap: 10px;
 	}
 
@@ -1642,43 +1291,8 @@ blockquote {
 	  display: flex;
 	  align-items: center;
 	  justify-content: flex-end;
-	  /*margin: 0;*/
+	  
 	}
-
-	/* Icono de Instagram */
-	/*.instagram-icon-inline {
-	  display: inline-flex;
-	  width: 36px;
-	  height: 36px;
-	  padding: 4px;
-	  background-color: transparent;
-	  flex-shrink: 0;
-	}
-
-	.instagram-icon-inline img {
-	  width: 100%;
-	  height: 100%;
-	  object-fit: contain;
-	  filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-	}*/
-/*1--------------------*/
-	/*.instagram-icon-inline {
-		display: inline-flex;
-		align-items: center;  /* Alinea verticalmente el icono con el texto */
-	 /*   gap: 8px;             /* Espacio entre el icono y el texto */
-	 /*   text-decoration: none;
-		color: inherit;
-		background-color: transparent;
-		flex-shrink: 0;
-	}*/
-
-	/*.instagram-icon-inline img {
-		width: 36px;
-		height: 36px;
-		object-fit: contain;
-		filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-	}*/
-
 
 /*2---------------------*/
 	.instagram-icon-inline {
@@ -1720,9 +1334,6 @@ blockquote {
 	  
 	}
 
-	/*header.header-fix-mobile {
-      padding-top: 80px; /* Ajusta según la altura real del nav móvil */
-    /*}*/
 	
 	header.efectos3d.header-fix-mobile {
 	  padding-top: 60px;
@@ -1771,77 +1382,6 @@ blockquote {
 
 /*=== INSTAGRAM EN MOVILES ===*/
 
-/*@media (max-width: 768px) {
-  .instagram-icon {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 999;
-    font-size: 28px;
-    color: #E1306C; /* color típico de Instagram */
-    /*display: block;
-  }
-}*/
-
-/*@media (max-width: 768px) {
-  .instagram-icon-fixed {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    width: 32px;
-    height: 32px;
-    display: block;
-    background-color: white; /* opcional: fondo blanco para que se vea bien */
-  /*  padding: 5px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  }
-
-  .instagram-icon-fixed img {
-    width: 100%;
-    height: auto;
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(315deg);
-  }
-}*/
-/*@media (max-width: 768px) {
-  .instagram-icon-fixed {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 999;
-    width: 36px;
-    height: 36px;
-    display: block;
-    padding: 6px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-  }
-
-  .instagram-icon-fixed img {
-    width: 100%;
-    height: auto;
-    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-  }
-}
-
-@media (min-width: 769px) {
-  .instagram-icon-fixed {
-    display: none;
-  }
-}*/
-
-
-/*================================*/
-
-/*@media (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
-}*/
-
-
 /* Aspect ratios para index */
 @media (max-aspect-ratio: 3/4) {
   body.index {
@@ -1862,68 +1402,6 @@ blockquote {
 }
 
 /*== COMPONENTES ESPECIALES == */
-
-/*.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-.popup-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup-content img {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-}
-
-.close-btn, .prev-btn, .next-btn {
-  position: absolute;
-  background: var(--color-principal);
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  cursor: pointer;
-  font-size: 24px;
-  border-radius: 50%;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.close-btn:hover, .prev-btn:hover, .next-btn:hover {
-  background: var(--color-rosa-fucsia);
-  transform: scale(1.1);
-}
-
-.close-btn {
-  top: 20px;
-  right: 20px;
-}
-
-.prev-btn {
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%);
-}
-
-.next-btn {
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
-}*/
 
 .img-popup {
   position: fixed;
@@ -2053,26 +1531,6 @@ nav.menu-3d .menu-contenedor a.active {
   border-bottom: 2px solid #1e3a8a; /* Línea inferior para activo */
 }
 
-  
-/*footer.contacto-page {
-  /*position: fixed;
-  bottom: 0;*/
-/*  margin-top: auto;
-  left: 0;
-  width: 100%;
-  background-color: var(--color-principal, #f2a6c0);
-  /*background: transparent;*/
-
-/*  color: #aaa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  z-index: 10;
-}*/
-
-
 .contacto-page {
   margin-top: auto;
   display: flex;
@@ -2112,34 +1570,6 @@ nav.menu-3d .menu-contenedor a.active {
 footer.contacto-page {
   flex-direction: row-reverse;
 }
-/*footer.contacto-page {
-  border-top: 5px solid yellow;
-}*/
-
-/*html, body {
-  min-height: 100%;
-}*/
-
-/*html {
-  height: 100%;
-}
-
-.galeria-page body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-}
-
-.galeria-page main {
-  flex: 1;
-}*/
-
-/* Esto va global, no rompe nada */
-
-/*html {
-  height: 100%;
-}*/
 
 /* SOLO se activa cuando body tiene galeria-page */
 body.galeria-page {
@@ -2157,8 +1587,8 @@ body.galeria-page footer.contacto-page {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  /*background-color: var(--color-principal, #f2a6c0);*/
+  
   color: #aaa;
   box-sizing: border-box;
- /* z-index: 10;*/
+ 
 }
