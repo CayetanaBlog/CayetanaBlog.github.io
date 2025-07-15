@@ -44,20 +44,6 @@ nav a:hover {
   color: var(--color-blanco);
 }
 
-/*footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #aaa;
-}*/
-
-/*
-footer {
-  flex-shrink: 0;
-}*/
-
-
-
 .container {
   max-width: 1000px;
   margin: 30px auto;
