@@ -170,14 +170,6 @@
   font-size: 14px;
 }
 
-/* Nav y menú superior */
-/*.menu-contacto {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}*/
-
 .menu-left-contacto {
   display: flex;
   align-items: center;
@@ -190,31 +182,6 @@
   gap: 10px;
 }
 
-/*.instagram-icon-inline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  background-color: white;
-  border-radius: 24px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.instagram-icon-inline:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
-}
-
-.instagram-icon-inline img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
-}*/
-
 .menu-icon {
   display: flex;
   align-items: center;
@@ -222,27 +189,6 @@
   cursor: pointer;
 }
 
-/*.menu-contenedor-contacto {
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: var(--color-contacto-primario);
-  width: 100%;
-  margin-top: 10px;
-}
-
-.menu-contenedor-contacto a {
-  width: 100%;
-  padding: 12px 20px;
-  color: white;
-  text-decoration: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background-color 0.2s;
-}
-
-.menu-contenedor a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}*/
 #contacto {
   display: none; /* Oculto por defecto */
   position: fixed; 
@@ -439,12 +385,7 @@ nav.contacto-menu-3d .menu-contenedor-contacto a.active {
     padding: 15px 10px;
   }
 
-  /*.menu-contacto {
-    flex-direction: column;
-    align-items: stretch;
-  }*/
-
-   .menu-contenedor-contacto {
+  .menu-contenedor-contacto {
     align-items: stretch;
   }
  
@@ -486,10 +427,10 @@ nav.contacto-menu-3d .menu-contenedor-contacto a.active {
 	/* Contenedor derecho para menú */
 	.menu-right-contacto {
 	  display: flex;
-	  /*flex-direction: column;*/
+	 
 	   flex-direction: row; /* ✅ EN FILA */
 	  align-items: center;
-	  /*align-items: flex-end; /* alinea a la derecha */
+	 
 	  gap: 10px;
 	}
 
@@ -498,10 +439,9 @@ nav.contacto-menu-3d .menu-contenedor-contacto a.active {
 	  display: flex;
 	  align-items: center;
 	  justify-content: flex-end;
-	  /*margin: 0;*/
+	  
 	}
 
-	
 /*-----------------------------*/
 
 	/* Mostrar el menú al hacer clic */
