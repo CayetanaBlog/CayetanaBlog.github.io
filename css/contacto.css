@@ -1,0 +1,513 @@
+:root {
+  --color-contacto-primario: #e60026; /* Rojo Granada CF */
+  --color-contacto-secundario: #ffffff;
+  --color-acento: #00f0ff; /* Azul neón */
+  --color-contacto-texto: #333333;
+}
+
+@import url('variables.css');
+
+/* General */
+.contacto-page1 {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--color-contacto-texto);
+  background-color: var(--color-contacto-secundario);
+}
+
+.contacto-page1 header {
+  position: relative;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto-page1 header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(230, 0, 38, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.contacto-page1 header img {
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: all 0.3s ease;
+}
+
+.contacto-page1 header h1,
+.contacto-page1 header p,
+#boton-contacto-header {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.contacto-page1 header h1 {
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  transform: translateY(-150px);
+}
+
+.contacto-page1 header p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: var(--color-acento, #00f0ff);
+  transform: translateY(-150px);
+}
+
+#boton-contacto-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--color-acento, #00f0ff);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#boton-contacto-header:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+/* Sección contacto */
+.contacto-page1 section {
+  padding: 60px 20px 100px;
+  text-align: center;
+}
+
+.contacto-page1 h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-contacto-primario, #e60026);
+}
+
+.contacto-page1 p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.contacto-page1 form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contacto-page1 .form-campos1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-page1 .form-campos1 input,
+.contacto-page1 .form-campos1 textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--color-contacto-primario, #e60026);
+  border-radius: 8px;
+  font-size: 18px;
+  transition: border-color 0.3s;
+}
+
+.contacto-page1 form button {
+  height: fit-content;
+  align-self: flex-start;
+  background-color: var(--color-acento, #00f0ff);
+  color: #000;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contacto-page1 form button:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.contacto-page1 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-contacto-primario, #e60026);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.contacto-page-footer-left1 {
+  font-size: 14px;
+}
+
+/* Nav y menú superior */
+/*.menu-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}*/
+
+.menu-left-contacto {
+  display: flex;
+  align-items: center;
+}
+
+.menu-right-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/*.instagram-icon-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.instagram-icon-inline:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.instagram-icon-inline img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: invert(0.4) sepia(1) saturate(5) hue-rotate(315deg);
+}*/
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+/*.menu-contenedor-contacto {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-contacto-primario);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.menu-contenedor-contacto a {
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s;
+}
+
+.menu-contenedor a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}*/
+#contacto {
+  display: none; /* Oculto por defecto */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-contacto-secundario);
+  overflow-y: auto;
+  z-index: 20;
+}
+
+
+/* Mostrar menú al abrir el checkbox */
+#menu-toggle:checked ~ .menu-icon ~ .menu-contenedor-contacto {
+  display: flex;
+}
+
+/* Pop-up */
+#popup-mensaje {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-contenido1 {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: aparecer 0.4s ease;
+}
+
+.popup-contenido1 p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: var(--color-contacto-primario);
+}
+
+.popup-contenido1 button {
+  background-color: var(--color-acento);
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.popup-contenido1 button:hover {
+  background-color: #00e0ef;
+  transform: scale(1.05);
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ==============================
+✅ Bloque final para el menú en .menu-contenedor
+✅ Coloca esto en components.css (o al final de tu CSS)
+✅ Selector reforzado: nav.menu-3d .menu-contenedor a
+============================== */
+
+nav.contacto-menu-3d .menu-contenedor-contacto a {
+  text-decoration: none;             /* Quitamos subrayado */
+  display: inline-block;             /* Permite usar transform y padding */
+  color: white;                      /* Texto en blanco */
+  font-weight: bold;                 /* Negrita */
+  padding: 8px 12px;                /* Espaciado interno */
+  border-radius: 10px;              /* Bordes redondeados */
+  position: relative;               /* Necesario para efectos con transform */
+  transition: background 0.3s, transform 0.3s ease, text-shadow 0.3s ease; /* Transiciones suaves */
+  text-shadow:                      /* Sombra múltiple para efecto 3D inicial */
+    1px 1px 0 var(--color-gris-claro-medio),
+    2px 2px 0 var(--color-gris-medio),
+    3px 3px 0 var(--color-gris-texto),
+    4px 4px 0 var(--color-gris-medio-oscuro);
+}
+
+nav.contacto-menu-3d .menu-contenedor-contacto a:hover {
+  color: var(--color-blanco);                       /* Mantener blanco */
+  transform: translateY(-3px);      /* Efecto "flotar" hacia arriba */
+  text-shadow:                      /* Sombras más oscuras al pasar el ratón */
+    1px 1px 1px var(--color-negro-puro),
+    2px 2px 2px var(--color-rosa-gris-muy-oscuro),
+    3px 3px 3px var(--var(--color-gris-oscuro-mediio)),
+    4px 4px 4px var(--color-gris-oscuro-suave);
+  border-bottom: 2px solid #1e3a8a; /* Línea inferior azul oscuro */
+}
+
+nav.contacto-menu-3d .menu-contenedor-contacto a.active {
+  color: var(--color-blanco);                       /* Blanco activo */
+  transform: translateY(-3px);      /* Igual que hover */
+  text-shadow:                      /* Igual que hover */
+    1px 1px 1px var(--color-negro-puro),
+    2px 2px 2px var(--color-rosa-gris-muy-oscuro),
+    3px 3px 3px var(--var(--color-gris-oscuro-mediio)),
+    4px 4px 4px var(--color-gris-oscuro-suave);
+  border-bottom: 2px solid #1e3a8a; /* Línea inferior para activo */
+}
+* ============================
+   🌐 ESTILOS GENERALES (ESCRITORIO)
+============================ */
+.contacto-menu-3d {
+  position: sticky;
+  top: 0;
+  background: #d1d5db;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 1em 0;
+  border-bottom: none;
+  perspective: 1000px;
+}
+
+.contacto-menu-3d a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-texto);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contacto-menu-3d a:hover {
+  transform: rotateX(15deg);
+  text-shadow:
+    1px 1px 0 var(--color-gris-claro-medio),
+    2px 2px 0 var(--color-gris-medio),
+    3px 3px 0 var(--color-gris-texto),
+    4px 4px 0 var(--color-gris-medio-oscuro);
+}
+
+.contacto-menu-3d a.active {
+  border-bottom: 2px solid var(--color-principal);
+}
+.menu-icon {
+  display: none; /* ocultos en escritorio */
+}
+
+/* Adaptar en móviles */
+@media (max-width: 768px) {
+  .contacto-page1 header h1 {
+    font-size: 2em;
+    margin-top: -155px;
+  }
+  .contacto-page1 header p {
+    font-size: 1em;
+  }
+  .contacto-page1 h2 {
+    font-size: 1.5em;
+  }
+
+  #boton-contacto-header {
+    padding: 10px 16px;
+    font-size: 14px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .contacto-page1 header img {
+    top: 5px;
+    width: 100%;
+  }
+
+  .contacto-page1 form {
+    flex-direction: column;
+  }
+  .contacto-page1 form button {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .contacto-page1 footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  /*.menu-contacto {
+    flex-direction: column;
+    align-items: stretch;
+  }*/
+
+   .menu-contenedor-contacto {
+    align-items: stretch;
+  }
+ 
+	/* Contenedor del menú desplegable */
+	.menu-contenedor-contacto {
+	  display: none;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  width: 100%;
+	  margin-top: 10px;
+	}
+	
+	.menu-contenedor-contacto a {
+      width: 100%;
+	  padding: 12px 20px;
+	  border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.contacto-menu-3d {
+	  display: flex;
+	  flex-direction: row;/*fila*/
+	  justify-content: space-between;/*repartir entre izquierda y derecha */
+	  align-items: center;
+	  padding: 10px 16px;
+	} 
+
+	/* Contenedor izquierdo para Instagram */
+	.menu-left-contacto {
+	  display: flex;
+	  align-items: center;
+	}
+
+	*/.menu-right-contacto {
+		align-items: stretch;
+		width: 100%;
+	  }*/
+
+	 
+	/* Contenedor derecho para menú */
+	.menu-right-contacto {
+	  display: flex;
+	  /*flex-direction: column;*/
+	   flex-direction: row; /* ✅ EN FILA */
+	  align-items: center;
+	  /*align-items: flex-end; /* alinea a la derecha */
+	  gap: 10px;
+	}
+
+	/* Estilo del botón hamburguesa */
+	.menu-icon {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+	  /*margin: 0;*/
+	}
+
+	
+/*-----------------------------*/
+
+	/* Mostrar el menú al hacer clic */
+	#menu-toggle:checked ~ .menu-icon ~ .menu-contenedor-contacto {
+	  display: flex;
+	  
+	}
+
+}
