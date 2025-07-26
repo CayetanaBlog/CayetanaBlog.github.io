@@ -12,4 +12,4 @@ Sitio dedicado a Cayetana Encinas, una joven promesa del f√∫tbol. Incluye galer√
 2. Abre `index.html` en tu navegador.
 
 ## Autor
-[Tu nombre o alias]
+[Antonio Encinas]
