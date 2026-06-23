@@ -1,129 +1,588 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cayetana Encinas Camacho — El Sueño de una Futbolista</title>
+  <meta name="description" content="Cayetana Encinas Camacho comparte su viaje como futbolista en su blog personal. Descubre su historia, logros y pasión en cayetanablog." />
+  <meta name="keywords" content="Cayetana Encinas Camacho, cayetanablog, futbolista, blog personal, Granada, fútbol femenino" />
   <meta name="google-site-verification" content="3tGqabmRlsTPtVPqSN1ZZixR2QkX_x7vGNQbuJ18-uY" />
   <meta name="msvalidate.01" content="39591F8A3DD0A2211DA800F65D598490" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cayetana Encinas Camacho - El Sueño de una Futbolista</title>
-  <meta name="description" content="Cayetana Encinas Camacho comparte su viaje como futbolista en su blog personal. Descubre su historia, logros y pasión en cayetanablog.">
-  <meta name="keywords" content="Cayetana Encinas Camacho, cayetanablog, futbolista, blog personal, Granada, fútbol femenino">
-  <!-- Twitter Card (opcional, para que también se vea bien en Twitter) -->
-  <meta name="Twitter:card" content="summary_large_image">
-  <meta name="Twitter:title" content="Cayetana Encinas Camacho - El Sueño de una Futbolista">
-  <meta name="Twitter:description" content="Conoce la historia y el camino de esfuerzo y pasión de Cayetana Encinas Camacho en el fútbol.">
-  <meta name="Twitter:image" content="https://cayetanablog.github.io/images/foto_caye.jpg">
-	
-  <meta property="og:title" content="Cayetana Encinas Camacho - El Sueño de una Futbolista">
-  <meta property="og:description" content="Conoce a Cayetana Encinas Camacho y su historia de esfuerzo, logros y pasión por el fútbol en su blog personal.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://cayetanablog.github.io/images/foto_caye.jpg">
-  <meta property="og:url" content="https://cayetanablog.github.io/">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="https://cayetanablog.github.io/">	
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/estilos.css">
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Cayetana Encinas Camacho",
-      "url": "https://cayetanablog.github.io/",
-      "image": "https://cayetanablog.github.io/images/foto_caye.jpg",
-      "description": "Cayetana Encinas comparte su viaje y logros como futbolista en su blog personal.",
-      "sameAs": [
-      "https://instagram.com/caye.15"
-      ]
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cayetana Encinas Camacho — El Sueño de una Futbolista" />
+  <meta property="og:description" content="Conoce a Cayetana Encinas Camacho y su historia de esfuerzo, logros y pasión por el fútbol." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cayetanablog.github.io/images/foto_caye.jpg" />
+  <meta property="og:url" content="https://cayetanablog.github.io/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cayetana Encinas Camacho — El Sueño de una Futbolista" />
+  <meta name="twitter:description" content="Conoce la historia y el camino de esfuerzo y pasión de Cayetana Encinas Camacho en el fútbol." />
+  <meta name="twitter:image" content="https://cayetanablog.github.io/images/foto_caye.jpg" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://cayetanablog.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════
+       IMAGEN FIJA DE FONDO — position:fixed garantiza que la
+       imagen NUNCA se mueve. Todo lo demás (contenido) se
+       desplaza por encima al hacer scroll.
+    ═══════════════════════════════════════════════════════════ */
+
+    /* El body no tiene background propio */
+    body {
+      background: #0a0a0a;
     }
+
+    /* Contenedor fijo: ocupa toda la ventana y nunca se mueve */
+    #fixed-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;          /* detrás de todo el contenido */
+      overflow: hidden;
+    }
+
+    /* La imagen se centra y cubre sin distorsionarse */
+    #fixed-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;   /* muestra la foto completa sin recortar */
+      object-position: center top;
+      display: block;
+    }
+
+    /* Degradados que funden la imagen con el fondo negro:
+       izquierda, derecha y abajo */
+    #fixed-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        /* oscurecer los bordes izquierdo y derecho */
+        linear-gradient(to right,
+          rgba(10,10,10,0.85) 0%,
+          rgba(10,10,10,0.0) 25%,
+          rgba(10,10,10,0.0) 75%,
+          rgba(10,10,10,0.85) 100%
+        ),
+        /* oscurecer la parte inferior para que el contenido aparezca */
+        linear-gradient(to bottom,
+          rgba(10,10,10,0.3) 0%,
+          rgba(10,10,10,0.0) 30%,
+          rgba(10,10,10,0.0) 65%,
+          rgba(10,10,10,0.9) 100%
+        );
+      z-index: 1;
+    }
+
+    /* Overlay sutil de color para integrar con la paleta granate */
+    #fixed-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(5,5,5,0.45) 0%,
+        rgba(80,10,10,0.15) 50%,
+        rgba(5,5,5,0.55) 100%
+      );
+      z-index: 2;
+    }
+
+    /* Todo el contenido de la página va sobre el fondo fijo */
+    #page-content {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* El hero es transparente: deja ver la imagen fija */
+    .hero {
+      background: transparent !important;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 64px;
+    }
+
+    /* Quitamos el ::before del hero (ya no hace falta) */
+    .hero::before { display: none !important; }
+
+    /* Las secciones de contenido tienen fondo sólido para
+       que el texto sea legible cuando el usuario hace scroll */
+    .logros-strip {
+      background: linear-gradient(135deg, var(--granate) 0%, #5a0f0f 100%);
+      padding: 3rem 2rem;
+    }
+    .home-perfil {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      min-height: 480px;
+      background: var(--negro);
+    }
+    .home-perfil-img {
+      position: relative;
+      overflow: hidden;
+      max-height: 560px; /* Solo limita en desktop donde hay 2 columnas */
+    }
+    .home-perfil-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: brightness(0.85) saturate(0.9);
+      transition: transform 0.6s ease;
+    }
+    .home-perfil-img:hover img { transform: scale(1.03); }
+    .home-perfil-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent 60%, var(--negro) 100%);
+    }
+    .home-perfil-texto {
+      background: var(--negro);
+      padding: 4rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .home-perfil-texto .section-label { margin-bottom: 0.5rem; }
+    .home-perfil-texto h2 { margin-bottom: 1.25rem; }
+    .home-perfil-texto p  { color: var(--texto-gris); margin-bottom: 1rem; }
+
+    .logros-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .logro-strip-item .num {
+      font-family: var(--fuente-titulo);
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--dorado);
+      line-height: 1;
+      display: block;
+    }
+    .logro-strip-item .desc {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 0.4rem;
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .quick-link-card {
+      background: var(--gris-oscuro);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radio-lg);
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      transition: all var(--transicion);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .quick-link-card:hover {
+      background: var(--gris-medio);
+      border-color: rgba(201,168,76,0.25);
+      transform: translateY(-5px);
+      box-shadow: var(--sombra-card);
+    }
+    .quick-link-icon { display: flex; align-items: center; justify-content: center; color: var(--dorado); width: 32px; height: 32px; }
+    .quick-link-icon svg { display: block; stroke: currentColor; }
+    .quick-link-card span {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--texto-claro);
+    }
+    .quick-link-card:hover span { color: var(--dorado); }
+
+    .ultimas-entradas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      /* Quick-links en tablet/móvil: 2 columnas */
+      .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+      .quick-link-card { padding: 1.25rem 1rem; }
+      /* Ultimas entradas en tablet: 1 columna */
+      .ultimas-entradas {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .home-perfil {
+        grid-template-columns: 1fr;
+        min-height: 0 !important;
+      }
+      .home-perfil-img {
+        height: auto;
+        max-height: none;
+        background: var(--negro);
+      }
+      .home-perfil-img img {
+        width: 100%;
+        height: auto;          /* Altura natural de la imagen */
+        object-fit: unset;     /* Mostrar la foto completa sin recortar */
+        display: block;
+      }
+      .home-perfil-img::after { background: linear-gradient(180deg, transparent 60%, var(--negro) 100%); }
+      .home-perfil-texto { padding: 2rem 1.25rem; }
+      /* En móvil la imagen no puede ser fixed (iOS bug),
+         la dejamos como fondo normal */
+      #fixed-bg { position: absolute; height: 100vh; }
+      /* Hero en móvil: fondo oscuro en la parte inferior para separar visualmente del contenido */
+      .hero {
+        background: linear-gradient(to bottom,
+          transparent 0%,
+          transparent 55%,
+          rgba(10,10,10,0.97) 100%
+        ) !important;
+      }
+    }
+  </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cayetana Encinas Camacho",
+    "url": "https://cayetanablog.github.io/",
+    "image": "https://cayetanablog.github.io/images/foto_caye.jpg",
+    "description": "Futbolista del Granada C.F. S.A.D. Cadete Femenino. Seleccionada granadina sub-16.",
+    "sameAs": ["https://instagram.com/caye.15"]
+  }
   </script>
 </head>
 
+<body>
 
-<body class="index">
+  <!-- ══════════════════════════════════════════════════════════
+       IMAGEN FIJA — Este div está fuera del flujo del documento.
+       Queda clavado en la pantalla. El usuario la ve siempre.
+       El contenido (#page-content) se desplaza por encima.
+  ══════════════════════════════════════════════════════════ -->
+  <div id="fixed-bg">
+    <img src="images/header-image.webp" alt="" aria-hidden="true" />
+  </div>
 
-  <!-- NAVEGACIÓN -->
-  <nav class="menu-3d">
-  
-      <div class="menu-left-index">
-		<a href="https://instagram.com/caye.15" class="instagram-icon-inline" target="_blank" aria-label="Instagram">
-			<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
-			<span class="instagram-text">Instagram</span>
-		</a>
+  <!-- ══════════════════════════════════════════════════════════
+       CONTENIDO — Todo esto se mueve al hacer scroll
+  ══════════════════════════════════════════════════════════ -->
+  <div id="page-content">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/foto_caye.jpg" alt="Cayetana" />
+        <span>Cayetana <em>Encinas</em></span>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="html/galeria.html">Galería</a>
+        <a href="html/eventos.html">Eventos</a>
+        <a href="html/diario.html">Diario</a>
+        <a href="html/logros.html">Logros</a>
+        <a href="html/videos.html">Vídeos</a>
+        <a href="html/estadisticas.html">Estadísticas</a>
+        <a href="html/historia.html">Historia</a>
+        <a href="html/sobre.html">Sobre mí</a>
+        <a href="html/contacto.html">Contacto</a>
       </div>
+      <div class="navbar-social">
+        <a href="https://instagram.com/caye.15" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+          <span>@caye.15</span>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="html/galeria.html">Galería</a>
+      <a href="html/eventos.html">Eventos</a>
+      <a href="html/diario.html">Diario</a>
+      <a href="html/logros.html">Logros</a>
+      <a href="html/videos.html">Vídeos</a>
+      <a href="html/estadisticas.html">Estadísticas</a>
+      <a href="html/historia.html">Historia</a>
+      <a href="html/sobre.html">Sobre mí</a>
+      <a href="html/contacto.html">Contacto</a>
+      <a href="https://instagram.com/caye.15" target="_blank" rel="noopener">Instagram @caye.15</a>
+    </div>
 
-	  <div class="menu-right-index">
-		<input type="checkbox" id="menu-toggle" />
-		<label for="menu-toggle" class="menu-icon">
-		  &#9776; <span style="font-size: 16px; color: white; margin-left: 8px;">Menú</span>
-		</label>
+    <!-- HERO — Transparente, deja ver la imagen fija -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg> Granada C.F. S.A.D. · Cadete Femenino</div>
+        <h1>El Sueño de una<br /><em>Futbolista</em></h1>
+        <p class="hero-subtitle">Sigue el camino de Cayetana desde sus primeros pasos<br />hasta sus mayores logros en el fútbol femenino</p>
 
-		<div class="menu-contenedor-movil">
-		  <a href="index.html" class="active">Inicio</a>
-		  <a href="html/galeria.html">Galería</a>
-		  <a href="html/eventos.html">Eventos</a>
-		  <a href="html/diario.html">Diario</a>
-		  <a href="html/logros.html">Logros</a>
-		  <a href="html/videos.html">Videos</a>
-		  <a href="html/estadisticas.html">Estadísticas</a>
-		  <a href="html/historia.html">Historia</a>
-		  <a href="html/sobre.html">Sobre</a>
-		  <a href="html/contacto.html">Contacto</a>
-		</div>
-	  </div>
-  </nav>  
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="num" data-count="8">0</span>
+            <span class="label">Temporadas</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="23">0</span>
+            <span class="label">Goles</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="157">0</span>
+            <span class="label">Partidos</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="0">0</span>
+            <span class="label">Tarjetas</span>
+          </div>
+        </div>
 
-  <!-- CABECERA -->
-  <header class="efectos3d">
-    <h1>El Sueño de una Futbolista</h1>
-    <p>Sigue el camino de Cayetana desde sus primeros pasos hasta sus mayores logros.</p>
-  </header>
+        <div class="hero-cta">
+          <a href="html/historia.html" class="btn btn-primary">Ver mi historia</a>
+          <a href="html/videos.html" class="btn btn-outline">▶ Ver vídeos</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- PIE DE PÁGINA -->
-  <footer class="index">
-    © 2025 Cayetana Encinas | Proyecto web personal
-  </footer>
+    <!-- FRANJA DE LOGROS — Fondo sólido granate -->
+    <div class="logros-strip">
+      <div class="logros-strip-inner">
+        <div class="logro-strip-item">
+          <span class="num">2018</span>
+          <span class="desc">Inicio en Ogíjares 89 C.F.</span>
+        </div>
+        <div class="logro-strip-item">
+          <span class="num">2023</span>
+          <span class="desc">Fichaje Granada C.F. S.A.D.</span>
+        </div>
+        <div class="logro-strip-item">
+          <span class="num">Sub-16</span>
+          <span class="desc">Selección Granadina</span>
+        </div>
+        <div class="logro-strip-item">
+          <span class="num">0</span>
+          <span class="desc">Tarjetas en toda la carrera</span>
+        </div>
+      </div>
+    </div>
 
-  <!-- BOTÓN SUBIR -->
-  <button id="toTop" title="Volver arriba">🔝</button>
+    <!-- PERFIL — Fondo negro sólido -->
+    <section class="home-perfil">
+      <div class="home-perfil-img">
+        <img src="images/foto_caye.jpg" alt="Cayetana Encinas Camacho" />
+      </div>
+      <div class="home-perfil-texto">
+        <span class="section-label">Sobre Cayetana</span>
+        <h2>Pasión, Talento<br />y Determinación</h2>
+        <p>Empecé a jugar al fútbol con solo 7 años en el Ogíjares 89 C.F., siendo la única niña en un equipo de niños. Desde entonces, el balón ha sido parte inseparable de mi vida.</p>
+        <p>Hoy defiendo los colores del <strong>Granada C.F. S.A.D.</strong> en el Cadete Femenino de 1ª Andaluza, y he tenido el honor de representar a la <strong>Selección Granadina</strong> en varias ocasiones.</p>
+        <a href="html/sobre.html" class="btn btn-primary" style="margin-top: 0.5rem; align-self: flex-start;">Conoce mi historia</a>
+      </div>
+    </section>
 
-  <!-- SCRIPTS -->
+    <!-- ACCESOS RÁPIDOS -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Explorar</span>
+          <h2>Todo sobre Cayetana</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="quick-links fade-in-up">
+          <a href="html/galeria.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></span>
+            <span>Galería</span>
+          </a>
+          <a href="html/videos.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
+            <span>Vídeos</span>
+          </a>
+          <a href="html/logros.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+            <span>Logros</span>
+          </a>
+          <a href="html/estadisticas.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg></span>
+            <span>Estadísticas</span>
+          </a>
+          <a href="html/historia.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+            <span>Historia</span>
+          </a>
+          <a href="html/diario.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <span>Diario</span>
+          </a>
+          <a href="html/eventos.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
+            <span>Eventos</span>
+          </a>
+          <a href="html/contacto.html" class="quick-link-card">
+            <span class="quick-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÚLTIMAS ENTRADAS DEL DIARIO -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Diario</span>
+          <h2>Últimas Entradas</h2>
+          <p>Los momentos más especiales de mi trayectoria deportiva</p>
+          <div class="divider"></div>
+        </div>
+        <div class="ultimas-entradas">
+
+          <div class="diario-card fade-in-up">
+            <div class="diario-card-img">
+              <img src="images/2025-26C/equipo5.webp" alt="Segunda temporada Cadete Granada CF" loading="lazy" />
+            </div>
+            <div class="diario-card-body">
+              <span class="diario-fecha">Temporada 2025/26</span>
+              <h3>Segunda Temporada en el Cadete del Granada</h3>
+              <p>Otro año más defendiendo los colores del Granada C.F. S.A.D. en 1ª Andaluza Cadete Femenino. Todos los partidos como titular.</p>
+            </div>
+          </div>
+
+          <div class="diario-card fade-in-up">
+            <div class="diario-card-img">
+              <img src="images/2024-25I/seleccion-portada.jpg" alt="Selección Granadina Sub-14" loading="lazy" />
+            </div>
+            <div class="diario-card-body">
+              <span class="diario-fecha">Noviembre 2024</span>
+              <h3>Capitana de la Selección Granadina</h3>
+              <p>Convocada con la Selección Granadina Sub-14, fui una de las capitanas y marqué un gol ante Jaén. Un momento inolvidable.</p>
+            </div>
+          </div>
+
+          <div class="diario-card fade-in-up">
+            <div class="diario-card-img">
+              <img src="images/2023-24I/inf-capi.jpg" alt="Capitana Granada CF Infantil" loading="lazy" />
+            </div>
+            <div class="diario-card-body">
+              <span class="diario-fecha">Temporada 2023/24</span>
+              <h3>Primera Temporada en el Granada C.F.</h3>
+              <p>Fichaje por el Granada C.F. S.A.D. Infantil Femenino. Capitana del equipo, 4 goles y subcampeonas de liga.</p>
+            </div>
+          </div>
+
+        </div>
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="html/diario.html" class="btn btn-outline">Ver todas las entradas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEO DESTACADO -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Vídeos</span>
+          <h2>Último Vídeo Destacado</h2>
+          <p>Pared, recorte y gol — la magia de Cayetana en acción</p>
+          <div class="divider"></div>
+        </div>
+        <div class="video-destacado-wrap fade-in-up">
+          <iframe src="https://www.youtube.com/embed/d0WTzB2Zl_s" allowfullscreen title="Pared, Recorte y Gol - Cayetana Encinas"></iframe>
+          <div class="video-destacado-label">
+            <span class="badge">Último vídeo</span>
+            <h3>Pared, Recorte y Gol</h3>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <a href="html/videos.html" class="btn btn-granate">Ver todos los vídeos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Cayetana <span>Encinas</span></h3>
+          <p>Futbolista del Granada C.F. S.A.D. Cadete Femenino. Seleccionada Granadina Sub-16. Apasionada del fútbol desde los 7 años.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="html/sobre.html">Sobre mí</a></li>
+            <li><a href="html/historia.html">Historia</a></li>
+            <li><a href="html/logros.html">Logros</a></li>
+            <li><a href="html/estadisticas.html">Estadísticas</a></li>
+            <li><a href="html/galeria.html">Galería</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Más</h4>
+          <ul>
+            <li><a href="html/diario.html">Diario</a></li>
+            <li><a href="html/videos.html">Vídeos</a></li>
+            <li><a href="html/eventos.html">Eventos</a></li>
+            <li><a href="html/contacto.html">Contacto</a></li>
+            <li><a href="https://instagram.com/caye.15" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Cayetana Encinas Camacho. Todos los derechos reservados.</p>
+        <p>Proyecto web personal · <a href="html/contacto.html">Contacto</a></p>
+      </div>
+    </footer>
+
+    <button id="toTop" aria-label="Volver arriba">↑</button>
+
+  </div><!-- /#page-content -->
+
+  <script src="js/main.js"></script>
   <script>
-    // Mostrar el botón al hacer scroll hacia abajo
-    window.addEventListener("scroll", function () {
-      const toTop = document.getElementById("toTop");
-      if (window.scrollY > 300) {
-        toTop.style.display = "block";
-      } else {
-        toTop.style.display = "none";
-      }
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
     });
-
-    // Subir arriba al hacer clic
-    document.getElementById("toTop").addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
       });
     });
   </script>
-
-  <script>
-    // Cierra el menú móvil al hacer clic en una opción
-    document.querySelectorAll('.menu-contenedor-movil a').forEach(enlace => {
-      enlace.addEventListener('click', () => {
-        const checkbox = document.getElementById('menu-toggle');
-        if (checkbox.checked) {
-          checkbox.checked = false;
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>

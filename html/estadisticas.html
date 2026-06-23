@@ -2,202 +2,276 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estadísticas - Cayetana Encinas Camacho</title>
-  <meta name="description" content="Consulta las estadísticas oficiales y los datos deportivos de Cayetana Encinas Camacho.">
-  <meta name="keywords" content="Cayetana Encinas Camacho, estadísticas, datos, futbolista, cayetanablog">
-  <meta property="og:title" content="Estadísticas - Cayetana Encinas Camacho">
-  <meta property="og:description" content="Datos y estadísticas deportivas de Cayetana Encinas Camacho.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="../images/foto_caye.jpg">
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="https://cayetanablog.github.io/html/estadisticas.html">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estadísticas — Cayetana Encinas Camacho</title>
+  <meta name="description" content="Consulta las estadísticas oficiales y los datos deportivos de Cayetana Encinas Camacho temporada a temporada." />
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://cayetanablog.github.io/html/estadisticas.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  <nav class="menu-3d">
+  <!-- HERO DE PÁGINA -->
+  <div class="page-hero">
+    <span class="section-label">Datos deportivos</span>
+    <h1>Estadísticas por Temporada</h1>
+    <p>El recorrido brillante de Cayetana, temporada tras temporada</p>
+  </div>
 
-      <div class="menu-left">
-		<a href="https://instagram.com/caye.15" class="instagram-icon-inline" target="_blank" aria-label="Instagram">
-			<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
-			<span>Instagram</span>
-		</a>
+  <!-- RESUMEN GLOBAL -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Resumen global</span>
+        <h2>Números de una Carrera</h2>
+        <div class="divider"></div>
       </div>
 
-
-	  <div class="menu-right">
-		<input type="checkbox" id="menu-toggle" />
-		<label for="menu-toggle" class="menu-icon">
-		  &#9776; <span style="font-size: 16px; margin-left: 8px;">Menú</span>
-		</label>
-
-		<div class="menu-contenedor">
-		  <a href="../index.html">Inicio</a>
-		  <a href="galeria.html">Galería</a>
-		  <a href="eventos.html">Eventos</a>
-		  <a href="diario.html">Diario</a>
-		  <a href="logros.html">Logros</a>
-		  <a href="videos.html">Videos</a>
-		  <a href="estadisticas.html" class="active">Estadísticas</a>
-		  <a href="historia.html">Historia</a>
-		  <a href="sobre.html">Sobre</a>
-		  <a href="contacto.html">Contacto</a>
-		</div>
-	  </div>
-  </nav>  
-  
-
-   <header class="efectos3d">
-    <h1>🧮 Estadísticas por Temporada</h1>
-    <p>El recorrido brillante de Cayetana, temporada tras temporada</p>
-  </header>
-
-  <div class="estadistica-container">
-
-    <h2>Resumen de Rendimiento</h2>
-    <div class="tabla-container table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Temporada</th>
-            <th>Equipo</th>
-            <th>Categoría</th>
-            <th>Partidos</th>
-            <th>Titular</th>
-            <th>Goles ⚽</th>
-            <th>Asistencias 🎯</th>
-            <th>Tarjetas 🚫</th>
-            <th>Observaciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2018/19</td><td>Ogíjares 89 C.F.</td><td>Prebenjamín</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td class="observaciones">Campeona de liga, única niña</td>
-          </tr>
-          <tr>
-            <td>2019/20</td><td>Ogíjares 89 C.F.</td><td>3ª Andaluza Benjamín</td><td>18</td><td>17</td><td>—</td><td>—</td><td>0</td><td class="observaciones">Temporada afectada por COVID</td>
-          </tr>
-          <tr>
-            <td>2020/21</td><td>Ogíjares 89 C.F.</td><td>3ª Andaluza Benjamín</td><td>13</td><td>8</td><td>2</td><td>—</td><td>0</td><td class="observaciones">Defensa goleadora</td>
-          </tr>
-          <tr>
-            <td>2021/22</td><td>Ogíjares 89 C.F.</td><td>4ª Andaluza Alevín</td><td>26</td><td>23</td><td>1</td><td>Varias</td><td>0</td><td class="observaciones">Lesión (brazo) — convocatoria con la Selección Granadina Femenina</td>
-          </tr>
-          <tr>
-            <td>2022/23</td><td>Ogíjares 89 C.F.</td><td>2ª Andaluza Alevín</td><td>27</td><td>22</td><td>—</td><td>Varias</td><td>0</td><td class="observaciones">Jugó Copa Andalucía con la Selección Granadina Femenina</td>
-          </tr>
-          <tr>
-            <td>2023/24</td><td>Granada C.F. S.A.D.</td><td>4ª Andaluza Infantil</td><td>23</td><td>21</td><td>4</td><td>Varias</td><td>0</td><td class="observaciones">Capitana del equipo</td>
-          </tr>
-          <tr>
-            <td>2024/25</td><td>Granada C.F. S.A.D.(Cadete)</td><td>1ª Andaluza Femenina</td><td>24</td><td>24</td><td>11</td><td>Varias</td><td>0</td><td class="observaciones">Convocada con la Selección Granadina SUB-14 y torneos con Cadete e Infantil</td>
-          </tr>
-          <tr>
-            <td>2025/26</td><td>Granada C.F. S.A.D.(Cadete)</td><td>1ª Andaluza Femenina</td><td>26</td><td>25</td><td>5</td><td>Varias</td><td>0</td><td class="observaciones">Convocada con la Selección Granadina SUB-16 y torneos con el Cadetel</td>
-          </tr>			
-        </tbody>
-      </table>
+      <div class="stats-summary fade-in-up">
+        <div class="stat-box">
+          <div class="big-num" data-count="8">0</div>
+          <div class="stat-label">Temporadas</div>
+        </div>
+        <div class="stat-box">
+          <div class="big-num" data-count="157">0</div>
+          <div class="stat-label">Partidos</div>
+        </div>
+        <div class="stat-box">
+          <div class="big-num" data-count="141">0</div>
+          <div class="stat-label">Titularidades</div>
+        </div>
+        <div class="stat-box">
+          <div class="big-num" data-count="23">0</div>
+          <div class="stat-label">Goles</div>
+        </div>
+        <div class="stat-box">
+          <div class="big-num" data-count="0">0</div>
+          <div class="stat-label">Tarjetas</div>
+        </div>
+        <div class="stat-box">
+          <div class="big-num" data-count="3">0</div>
+          <div class="stat-label">Selecciones</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-  <!-- Gráficos -->
-  <div class="graficos">
-    <div class="grafico">
-      <h2>Goles por Temporada (Barras)</h2>
-      <canvas id="graficoBarras"></canvas>
+  <!-- TABLA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Detalle</span>
+        <h2>Resumen de Rendimiento</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="tabla-wrap fade-in-up">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Temporada</th>
+              <th>Equipo</th>
+              <th>Categoría</th>
+              <th>Partidos</th>
+              <th>Titular</th>
+              <th>Goles</th>
+              <th>Asistencias</th>
+              <th>Tarjetas</th>
+              <th>Observaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2018/19</td>
+              <td>Ogíjares 89 C.F.</td>
+              <td>Prebenjamín</td>
+              <td>—</td><td>—</td><td>—</td><td>—</td><td>0</td>
+              <td>Campeona de liga · Única niña</td>
+            </tr>
+            <tr>
+              <td>2019/20</td>
+              <td>Ogíjares 89 C.F.</td>
+              <td>3ª Andaluza Benjamín</td>
+              <td>18</td><td>17</td><td>—</td><td>—</td><td>0</td>
+              <td>Temporada afectada por COVID-19</td>
+            </tr>
+            <tr>
+              <td>2020/21</td>
+              <td>Ogíjares 89 C.F.</td>
+              <td>3ª Andaluza Benjamín</td>
+              <td>13</td><td>8</td><td>2</td><td>—</td><td>0</td>
+              <td>Defensa goleadora</td>
+            </tr>
+            <tr>
+              <td>2021/22</td>
+              <td>Ogíjares 89 C.F.</td>
+              <td>4ª Andaluza Alevín</td>
+              <td>26</td><td>23</td><td>1</td><td>Varias</td><td>0</td>
+              <td>Lesión (brazo) · Convocada Selección Granadina Femenina</td>
+            </tr>
+            <tr>
+              <td>2022/23</td>
+              <td>Ogíjares 89 C.F.</td>
+              <td>2ª Andaluza Alevín</td>
+              <td>27</td><td>22</td><td>—</td><td>Varias</td><td>0</td>
+              <td>Copa Andalucía con la Selección Granadina Femenina</td>
+            </tr>
+            <tr>
+              <td>2023/24</td>
+              <td>Granada C.F. S.A.D.</td>
+              <td>4ª Andaluza Infantil</td>
+              <td>23</td><td>21</td><td>4</td><td>Varias</td><td>0</td>
+              <td>Capitana del equipo · Subcampeonas de liga</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>2024/25</td>
+              <td>Granada C.F. S.A.D. (Cadete)</td>
+              <td>1ª Andaluza Femenina</td>
+              <td>24</td><td>24</td><td>11</td><td>Varias</td><td>0</td>
+              <td>Selección Granadina Sub-14 · Capitana · Torneos Almería, Granada y Nerja</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>2025/26</td>
+              <td>Granada C.F. S.A.D. (Cadete)</td>
+              <td>1ª Andaluza Femenina</td>
+              <td>26</td><td>25</td><td>5</td><td>Varias</td><td>0</td>
+              <td>Selección Granadina Sub-16 · Torneo Nerja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="grafico">
-      <h2>Goles por Temporada (Líneas)</h2>
-      <canvas id="graficoLineas"></canvas>
+  </section>
+
+  <!-- GRÁFICOS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Evolución</span>
+        <h2>Progresión Goleadora</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="graficos-grid fade-in-up">
+        <div class="grafico-card">
+          <h3>Goles por Temporada</h3>
+          <canvas id="graficoBarras"></canvas>
+        </div>
+        <div class="grafico-card">
+          <h3>Evolución de Goles</h3>
+          <canvas id="graficoLineas"></canvas>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-
-  <footer class="contacto-page">
-    <div class="contacto-page-footer-left">
-      © 2025 Cayetana. Todos los derechos reservados.
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Cayetana <span>Encinas</span></h3>
+        <p>Futbolista del Granada C.F. S.A.D. Cadete Femenino. Seleccionada Granadina Sub-16.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="sobre.html">Sobre mí</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="logros.html">Logros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Más</h4>
+        <ul>
+          <li><a href="diario.html">Diario</a></li>
+          <li><a href="videos.html">Vídeos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://instagram.com/caye.15" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
     </div>
-
+    <div class="footer-bottom">
+      <p>© 2025 Cayetana Encinas Camacho. Todos los derechos reservados.</p>
+    </div>
   </footer>
-  <button id="toTop" title="Volver arriba">🔝</button>
-	
-  <script>
-    // Botón volver arriba
-    const btn = document.getElementById('toTop');
-    window.addEventListener("scroll", () => {
-      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
-    });
-    btn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 
+  <button id="toTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
     const labels = ['2018/19','2019/20','2020/21','2021/22','2022/23','2023/24','2024/25','2025/26'];
-    const goles = [0, 0, 2, 1, 0, 4, 11, 5];
-	
+    const goles  = [0, 0, 2, 1, 0, 4, 11, 5];
+
+    const chartDefaults = {
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(10,10,10,0.9)',
+          titleColor: '#c9a84c',
+          bodyColor: '#d4cfc6',
+          borderColor: 'rgba(201,168,76,0.3)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: { label: ctx => ` ${ctx.parsed.y} goles` }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#8a8a8a', font: { size: 11 } },
+          grid: { color: 'rgba(255,255,255,0.04)' }
+        },
+        y: {
+          beginAtZero: true,
+          ticks: { color: '#8a8a8a', font: { size: 11 }, stepSize: 2 },
+          grid: { color: 'rgba(255,255,255,0.06)' },
+          title: { display: true, text: 'Goles', color: '#8a8a8a', font: { size: 11 } }
+        }
+      }
+    };
+
     new Chart(document.getElementById('graficoBarras'), {
       type: 'bar',
       data: {
-        labels: labels,
+        labels,
         datasets: [{
-          label: 'Goles ⚽',
+          label: 'Goles',
           data: goles,
-          backgroundColor: '#e91e63'
+          backgroundColor: goles.map((v, i) => i >= 6 ? '#c9a84c' : 'rgba(139,26,26,0.7)'),
+          borderColor:      goles.map((v, i) => i >= 6 ? '#e8c96d' : '#8b1a1a'),
+          borderWidth: 1,
+          borderRadius: 4
         }]
       },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: { display: true, text: 'Goles' }
-          }
-        }
-      }
+      options: { ...chartDefaults, responsive: true }
     });
 
     new Chart(document.getElementById('graficoLineas'), {
       type: 'line',
       data: {
-        labels: labels,
+        labels,
         datasets: [{
-          label: 'Goles ⚽',
+          label: 'Goles',
           data: goles,
-          fill: false,
-          borderColor: '#e91e63',
-          tension: 0.3,
-          pointBackgroundColor: '#e91e63',
-          pointRadius: 5
+          fill: true,
+          backgroundColor: 'rgba(139,26,26,0.12)',
+          borderColor: '#c9a84c',
+          tension: 0.4,
+          pointBackgroundColor: '#c9a84c',
+          pointBorderColor: '#e8c96d',
+          pointRadius: 6,
+          pointHoverRadius: 8
         }]
       },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: { display: true, text: 'Goles' }
-          }
-        }
-      }
+      options: { ...chartDefaults, responsive: true }
     });
   </script>
-  <script>
-    // Cierra el menú móvil al hacer clic en una opción
-    document.querySelectorAll('.menu-contenedor a').forEach(enlace => {
-      enlace.addEventListener('click', () => {
-        const checkbox = document.getElementById('menu-toggle');
-        if (checkbox.checked) {
-          checkbox.checked = false;
-        }
-      });
-    });
-  </script>
-
-
 </body>
 </html>
